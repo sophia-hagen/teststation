@@ -146,11 +146,11 @@ buttonFrame = Frame(rightFrame)
 buttonFrame.grid(row=0, column=0, padx=50,pady=3) 
 
 ###LED Streifen ein aus####
-btled = Button(buttonFrame,text="Leuchten EIN", bg = "#FFFFFF", width=15,command = LED)
+btled = Button(buttonFrame,text="Leuchten ein", bg = "#FFFFFF", width=15,command = LED)
 btled.grid(row=10,column=0, padx=10,pady=3)
 
 ###Motor ein aus####
-btmot = Button(buttonFrame,text="Motor EIN", bg = "#FFFFFF", width=15, command=MOT_click)
+btmot = Button(buttonFrame,text="Motor ein", bg = "#FFFFFF", width=15, command=MOT_click)
 btmot.grid(row=20,column=0, padx=10,pady=3)
 
 
@@ -159,10 +159,12 @@ btexit = Button(buttonFrame, text="Exit", bg = "#FF0000", width=15,command=exitP
 btexit.grid(row=50, column=1, padx=0,pady=5)
 
 ###Button Netzteil ein aus####
-btnt= Button(buttonFrame, text="Netzteil Ein", bg = "#FFFFFF", width=15,command = Netzteil)
+btnt= Button(buttonFrame, text="Netzteil ein", bg = "#FFFFFF", width=15,command = Netzteil)
 btnt.grid(row=0, column=0)
 
-
+###Button UV-Lampe####
+btuv= Button(buttonFrame, text="UV-Lampe ein", bg = "#FFFFFF", width=15,command = UVLampe)
+btuv.grid(row=20, column=1)
 
 
 root.mainloop();
