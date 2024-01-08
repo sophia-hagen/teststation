@@ -31,9 +31,14 @@ temp_c=0
 ###Relay Netzteil###
 NC= 14
 SIG=15
+PUL=16
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(NC, GPIO.OUT)
 GPIO.setup(SIG, GPIO.OUT)
+
+###Motor####
+GPIO.setup(PUL, GPIO.OUT)
+
 
 ###Fenster erstellen###
 root = Tk()
@@ -115,12 +120,15 @@ def MOTstart():
     
     print("W")
     
-    for i in range(10):
+    for i in range(100000):
         print("H")
-        time.sleep(2.0)
+        GPIO.output(PUL,GPIO.HIGH)
+        time.sleep(0.00005)
+        GPIO.output(PUL,GPIO.LOW)
+        
   
 
-def MOT_click(): ##hallo
+def MOT_click(): 
     t2 = threading.Thread(target=MOTstart)  ##threading Motor
     
     t2.start()
