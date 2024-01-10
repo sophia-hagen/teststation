@@ -27,6 +27,7 @@ from time import sleep
 count =0
 countnt =0
 temp_c=0
+countmt=0
 
 ###Relay Netzteil###
 NC= 14
@@ -77,8 +78,8 @@ def REFRTMP():
 ###Netzteil ein aus #####
 def Netzteil():
     global countnt
-    countnt += 2
-    if countnt &2 == 0 :
+    countnt += 1
+    if countnt %2 == 0 :
         
         GPIO.output(SIG,GPIO.LOW)
         btnt["text"]= "Netzgerät EIN"
@@ -92,10 +93,10 @@ def Netzteil():
 ###LED Streifen ein aus
 def LED():
     global count
-    count += 2
+    count += 1
     pixels = neopixel.NeoPixel(board.D21, 40, brightness =5)
     pixels.fill((0,0,0))
-    if count &2 == 0 :
+    if count %2 == 0 :
         pixels.fill((0,0,0))
         btled["text"]= "Leuchten EIN"
         print(count)
@@ -117,21 +118,21 @@ def exitProgram():
 
 ###Motor ein aus###
 def MOTstart():
-    
     print("W")
-    
-    for i in range(100000):
-        print("H")
-        GPIO.output(PUL,GPIO.HIGH)
-        time.sleep(0.00005)
+    global countmt
+    countmt += 1
+    if countmt %2 == 0 :
+        btmot["text"]= "Motor EIN"
+        print("Aus")
         GPIO.output(PUL,GPIO.LOW)
+    else:
+        btmot["text"]= "Motor Aus"
+        
         
   
-
-def MOT_click(): 
-    t2 = threading.Thread(target=MOTstart)  ##threading Motor
+def threadmotor():
+    threading.Thread(target= MOTstart).start()
     
-    t2.start()
     
     
     
@@ -158,7 +159,7 @@ btled = Button(buttonFrame,text="Leuchten ein", bg = "#FFFFFF", width=15,command
 btled.grid(row=10,column=0, padx=10,pady=3)
 
 ###Motor ein aus####
-btmot = Button(buttonFrame,text="Motor ein", bg = "#FFFFFF", width=15, command=MOT_click)
+btmot = Button(buttonFrame,text="Motor ein", bg = "#FFFFFF", width=15, command=threadmotor)
 btmot.grid(row=20,column=0, padx=10,pady=3)
 
 
