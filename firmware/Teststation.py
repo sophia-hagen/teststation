@@ -115,7 +115,11 @@ def exitProgram():
     pixels.fill((0,0,0))
     GPIO.cleanup()
     
-
+    
+def threadmotor():
+    
+    t2 = threading.Thread(target= MOTstart())
+    t2.start()
 ###Motor ein aus###
 def MOTstart():
     print("W")
@@ -127,13 +131,16 @@ def MOTstart():
         GPIO.output(PUL,GPIO.LOW)
     else:
         btmot["text"]= "Motor Aus"
-        
+        for x in range(10100):
+            
+            print("EIN")
+            GPIO.output(PUL,GPIO.HIGH)
+            time.sleep(1)
+            GPIO.output(PUL,GPIO.LOW)
+            time.sleep(1)
         
   
-def threadmotor():
-    threading.Thread(target= MOTstart).start()
-    
-    
+
     
     
 ##thread
@@ -142,9 +149,8 @@ if __name__ == "__main__":
     t1 = threading.Thread(target=REFRTMP)  ##threading Temperatursensor
     
     t1.start()
-    
 
-    
+                          
     
 ###Program mit X schließen####
 #alle GPIO solle cleanen
