@@ -28,6 +28,7 @@ count =0
 countnt =0
 temp_c=0
 countmt=0
+countUV=0
 
 ###Relay Netzteil###
 NC= 14
@@ -52,27 +53,71 @@ rightFrame.grid(row=100, column =200, padx=0, pady=3)
 ###Waning Fenster Netzteil muss ein sein###
 
 ## init sensor device ##
-dhtDevice = adafruit_dht.DHT22(board.D4)
+dhtDevice1 = adafruit_dht.DHT22(board.D2)
+dhtDevice2 = adafruit_dht.DHT22(board.D1)
 
+###Relay UV-Lampe###
+PinUV=12
+VersorgUV=4
+GNDUV=14
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(GNDUV, GPIO.OUT)
+GPIO.setup(PinUV, GPIO.OUT)
 
-##Temperatursensor
+##Temperatursensoren
+
+##Temperatursensor oben 
 def REFRTMP():
     while TRUE:
         try:
-            temp_c = dhtDevice.temperature
-            humidity = dhtDevice.humidity
-            tmplab = Label(buttonFrame,text="Temperatur: {:.1f} °C ".format(temp_c),bg = "#FFFFFF")
-            tmplab.grid(row=0, column=1)
-            humlab = Label(buttonFrame,text="Feuchtigkeit: {} %".format(humidity),bg = "#FFFFFF")
-            humlab.grid(row=10, column=1)
+            temp_c = dhtDevice1.temperature
+            humidity = dhtDevice1.humidity
+            tmplab1 = Label(buttonFrame,text="Temperatur: {:.1f} °C ".format(temp_c),bg = "#FFFFFF")
+            tmplab1.grid(row=0, column=1)
+            humlab1 = Label(buttonFrame,text="Feuchtigkeit: {} %".format(humidity),bg = "#FFFFFF")
+            humlab1.grid(row=10, column=1)
         except RuntimeError as error:
             print(error.args[0])                                                                                                                                 
             time.sleep(2.0)
             continue
         except Exception as error:
-            dhtDevice.exit()
+            dhtDevice1.exit()
             raise error
         time.sleep(2.0)
+
+##Temperatursensor unten 
+def REFRTMP():
+    while TRUE:
+        try:
+            temp_c = dhtDevice2.temperature
+            humidity = dhtDevice2.humidity
+            tmplab2 = Label(buttonFrame,text="Temperatur: {:.1f} °C ".format(temp_c),bg = "#FFFFFF")
+            tmplab2.grid(row=0, column=2)
+            humlab2 = Label(buttonFrame,text="Feuchtigkeit: {} %".format(humidity),bg = "#FFFFFF")
+            humlab2.grid(row=10, column=2)
+        except RuntimeError as error:
+            print(error.args[0])                                                                                                                                 
+            time.sleep(2.0)
+            continue
+        except Exception as error:
+            dhtDevice2.exit()
+            raise error
+        time.sleep(2.0)
+        
+###UV Lampe#####
+def UVLampe():
+    global countUV
+    countUV += 1
+    if countUV %2 == 0 :
+        
+        GPIO.output(PinUV,GPIO.LOW)
+        btuv["text"]= "UV-Lampe ein"
+        print(countUV)
+    else:
+        
+        GPIO.output(PinUV,GPIO.HIGH)
+        btuv["text"]= "UV-Lampe aus"
+        print(countUV)
 
 
 ###Netzteil ein aus #####
@@ -116,10 +161,10 @@ def exitProgram():
     GPIO.cleanup()
     
     
-def threadmotor():
-    
+def Button_click():
     t2 = threading.Thread(target= MOTstart())
     t2.start()
+    
 ###Motor ein aus###
 def MOTstart():
     print("W")
@@ -165,7 +210,7 @@ btled = Button(buttonFrame,text="Leuchten ein", bg = "#FFFFFF", width=15,command
 btled.grid(row=10,column=0, padx=10,pady=3)
 
 ###Motor ein aus####
-btmot = Button(buttonFrame,text="Motor ein", bg = "#FFFFFF", width=15, command=threadmotor)
+btmot = Button(buttonFrame,text="Motor ein", bg = "#FFFFFF", width=15, command=Button_click)
 btmot.grid(row=20,column=0, padx=10,pady=3)
 
 
