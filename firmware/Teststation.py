@@ -67,7 +67,7 @@ GPIO.setup(PinUV, GPIO.OUT)
 ##Temperatursensoren
 
 ##Temperatursensor oben 
-def REFRTMP():
+def REFRTMP1():
     while TRUE:
         try:
             temp_c = dhtDevice1.temperature
@@ -86,7 +86,7 @@ def REFRTMP():
         time.sleep(2.0)
 
 ##Temperatursensor unten 
-def REFRTMP():
+def REFRTMP2():
     while TRUE:
         try:
             temp_c = dhtDevice2.temperature
@@ -162,7 +162,7 @@ def exitProgram():
     
     
 def Button_click():
-    t2 = threading.Thread(target= MOTstart())
+    t2 = threading.Thread(target= MOTstart)
     t2.start()
     
 ###Motor ein aus###
@@ -187,13 +187,15 @@ def MOTstart():
   
 
     
-    
-##thread
 if __name__ == "__main__":
     
-    t1 = threading.Thread(target=REFRTMP)  ##threading Temperatursensor
+    t1 = threading.Thread(target=REFRTMP1)  ##threading Temperatursensor oben 
     
     t1.start()
+    
+    t3 = threading.Thread(target=REFRTMP2)  ##threading Temperatursensor unten 
+    
+    t3.start()
 
                           
     
