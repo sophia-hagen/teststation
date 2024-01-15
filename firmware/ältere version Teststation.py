@@ -27,25 +27,19 @@ from time import sleep
 count =0
 countnt =0
 temp_c=0
-boolMotor = False
-boolUV = False
+countmt=0
+countUV=0
 
 ###Relay Netzteil###
 NC= 14
 SIG=15
+PUL=16
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(NC, GPIO.OUT)
 GPIO.setup(SIG, GPIO.OUT)
 
-#motor
-PUL=16
-EN =12
-GPIO.setmode(GPIO.BCM)
-GPIO.setup(EN, GPIO.OUT)
-GPIO.setup(PUL, GPIO.OUT)
-
 ###Motor####
-
+GPIO.setup(PUL, GPIO.OUT)
 
 
 ###Fenster erstellen###
@@ -65,7 +59,7 @@ dhtDevice2 = adafruit_dht.DHT22(board.D1)
 ###Relay UV-Lampe###
 PinUV=12
 VersorgUV=4
-GNDUV=18
+GNDUV=14
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(GNDUV, GPIO.OUT)
 GPIO.setup(PinUV, GPIO.OUT)
@@ -112,25 +106,18 @@ def REFRTMP2():
         
 ###UV Lampe#####
 def UVLampe():
-    
-    global boolUV
-    
-    print(boolUV)
-    boolUV = not boolUV
-    print(boolUV)
-    
-    if boolUV == True :
-        
-        GPIO.output(PinUV,GPIO.HIGH)
-        btuv["text"]= "UV-Lampe aus"
-        print("ein")
-        
-    else:
+    global countUV
+    countUV += 1
+    if countUV %2 == 0 :
         
         GPIO.output(PinUV,GPIO.LOW)
         btuv["text"]= "UV-Lampe ein"
-        print("aus")
+        print(countUV)
+    else:
         
+        GPIO.output(PinUV,GPIO.HIGH)
+        btuv["text"]= "UV-Lampe aus"
+        print(countUV)
 
 
 ###Netzteil ein aus #####
@@ -174,46 +161,31 @@ def exitProgram():
     GPIO.cleanup()
     
     
-def ButMOT_click():
+def Button_click():
     t2 = threading.Thread(target= MOTstart)
     t2.start()
     
 ###Motor ein aus###
 def MOTstart():
-    
-    global boolMotor
-    
     print("W")
-    print(boolMotor)
-    
-    boolMotor = not boolMotor  #setzt immer zum gegenteil, 
-    print(boolMotor)
-    
-    
-    if boolMotor==True:
-        
+    global countmt
+    countmt += 1
+    if countmt %2 == 0 :
+        btmot["text"]= "Motor EIN"
+        print("Aus")
+        GPIO.output(PUL,GPIO.LOW)
+    else:
         btmot["text"]= "Motor Aus"
-        
-        for x in range(10100):  # illegaler Zähler - eventuell falsches signal darum funktioniert schritmotor noicht
-            #eventuell Bibs verwenden / DC-Motor
+        for x in range(10100):
             
             print("EIN")
             GPIO.output(PUL,GPIO.HIGH)
             time.sleep(1)
             GPIO.output(PUL,GPIO.LOW)
             time.sleep(1)
-            
-            if boolMotor == False:
-                break
-    else:
         
-        btmot["text"]= "Motor EIN"
-        GPIO.output(PUL,GPIO.LOW)
-        print("Aus")
-        
-        
-        
-        
+  
+
     
 if __name__ == "__main__":
     
@@ -240,7 +212,7 @@ btled = Button(buttonFrame,text="Leuchten ein", bg = "#FFFFFF", width=15,command
 btled.grid(row=10,column=0, padx=10,pady=3)
 
 ###Motor ein aus####
-btmot = Button(buttonFrame,text="Motor ein", bg = "#FFFFFF", width=15, command=ButMOT_click)
+btmot = Button(buttonFrame,text="Motor ein", bg = "#FFFFFF", width=15, command=Button_click)
 btmot.grid(row=20,column=0, padx=10,pady=3)
 
 
