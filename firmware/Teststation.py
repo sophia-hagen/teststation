@@ -24,8 +24,8 @@ from tkinter import messagebox as mbox
 from time import sleep
 
 ###Variablne###
-count =0
-countnt =0
+boolLED = False
+boolNetz = False 
 temp_c=0
 boolMotor = False
 boolUV = False
@@ -135,33 +135,48 @@ def UVLampe():
 
 ###Netzteil ein aus #####
 def Netzteil():
-    global countnt
-    countnt += 1
-    if countnt %2 == 0 :
-        
-        GPIO.output(SIG,GPIO.LOW)
-        btnt["text"]= "Netzgerät EIN"
-        print(countnt)
-    else:
+    
+    global boolNetz
+    print(boolNetz)
+    boolNetz = not boolNetz
+    print(boolNetz)
+    
+    if boolNetz == True :
         
         GPIO.output(SIG,GPIO.HIGH)
-        btnt["text"]= "Netzgerät AUS"
-        print(countnt)
+        btnt["text"]= "Netzgerät aus"
+        print(boolNetz)
+        
+    else:
+        GPIO.output(SIG,GPIO.LOW)
+        btnt["text"]= "Netzgerät ein"
+        print(boolNetz)
+        
 
 ###LED Streifen ein aus
 def LED():
-    global count
-    count += 1
+    
+    global boolLED
+    
+    print(boolLED)
+    boolLED = not boolLED
+    print(boolLED)
+    
     pixels = neopixel.NeoPixel(board.D21, 40, brightness =5)
     pixels.fill((0,0,0))
-    if count %2 == 0 :
-        pixels.fill((0,0,0))
-        btled["text"]= "Leuchten EIN"
-        print(count)
-    else:
+    
+    if boolLED == True :
+        
         pixels.fill((0,255,0))
-        btled["text"]= "Leuchten AUS"
-        print(count)
+        btled["text"]= "Leuchten aus"
+        print(boolLED)
+        
+    else:
+        
+        pixels.fill((0,0,0))
+        btled["text"]= "Leuchten ein"
+        print(boolLED)
+        
 
 
 
