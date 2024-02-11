@@ -4,7 +4,7 @@ import neopixel
 
 ###GPIO und TKinter###
 from tkinter import *
-import RPi.GPIO as GPIO
+import RPi.GPIO as- GPIO
 import sys
 
 ###Thread###
@@ -39,9 +39,9 @@ GPIO.setup(SIG, GPIO.OUT)
 
 #motor
 PUL=16
-EN =12
+DIR =12
 GPIO.setmode(GPIO.BCM)
-GPIO.setup(EN, GPIO.OUT)
+GPIO.setup(DIR, GPIO.OUT)
 GPIO.setup(PUL, GPIO.OUT)
 
 ###Motor####
@@ -60,7 +60,7 @@ rightFrame.grid(row=100, column =200, padx=0, pady=3)
 
 ## init sensor device ##
 dhtDevice1 = adafruit_dht.DHT22(board.D2)
-dhtDevice2 = adafruit_dht.DHT22(board.D1)
+dhtDevice2 = adafruit_dht.DHT22(board.D3)
 
 ###Relay UV-Lampe###
 PinUV=12
@@ -208,15 +208,16 @@ def MOTstart():
     if boolMotor==True:
         
         btmot["text"]= "Motor Aus"
+        GPIO.output(DIR,GPIO.HIGH)
         
         for x in range(10100):  # illegaler Zähler - eventuell falsches signal darum funktioniert schritmotor noicht
             #eventuell Bibs verwenden / DC-Motor
             
             print("EIN")
             GPIO.output(PUL,GPIO.HIGH)
-            time.sleep(1)
+            time.sleep(0.00001)
             GPIO.output(PUL,GPIO.LOW)
-            time.sleep(1)
+            time.sleep(0.00001)
             
             if boolMotor == False:
                 break
