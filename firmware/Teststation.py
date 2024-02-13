@@ -4,7 +4,7 @@ import neopixel
 
 ###GPIO und TKinter###
 from tkinter import *
-import RPi.GPIO as- GPIO
+import RPi.GPIO as GPIO
 import sys
 
 ###Thread###
