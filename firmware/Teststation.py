@@ -273,4 +273,4 @@ btuv= Button(buttonFrame, text="UV-Lampe ein", bg = "#FFFFFF", width=15,command 
 btuv.grid(row=20, column=1)
 
 
-root.mainloop();
+root.mainloop()
