@@ -147,6 +147,7 @@ def ledstreifen():
     
 
 
+#---------------------------------------Motor------------------------------------------#
 @app.post("/motor")
 def motor():
     global boolMotor
@@ -169,3 +170,5 @@ def motor():
     else:
         GPIO.output(PUL,GPIO.LOW)
         return{"Motor ausgeschalten"}
+#----------------------------------------------------------------------------------------------#
+
