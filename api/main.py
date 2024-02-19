@@ -1,7 +1,28 @@
 #Sophia Hagen 
 #API für Teststation Code 
 #Version1
+#-----------------Postfach--------------------#
+import socket
 
+def start_tcp_server(host='0.0.0.0', port=1110):
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+        s.bind((host, port))
+        s.listen()
+        print(f"TCP Server listening on {host}:{port}")
+        conn, addr = s.accept()
+        with conn:
+            print(f"Connected by {addr}")
+            while True:
+                data = conn.recv(1024)
+                if not data:
+                    break
+                print(f"Received: {data.decode()}")
+                conn.sendall(data)  # Echo back the received data
+
+if __name__ == '__main__':
+
+    start_tcp_server()
+#-----------------------------------------------------------------------#
 
 #-------------Einbindungen-------------#
 import board
@@ -59,7 +80,7 @@ GPIO.setup(PUL, GPIO.OUT)
 #------------------------------------UV-Sensor-------------------------------------------------#
 @app.get("/uv")
 def uv():
-    i2c=busio.I2C(board.SCL, board.SDA)
+    i2c = busio.I2C(board.D3, board.D2)
     ltr = adafruit_ltr390.LTR390(i2c)
     return {"UV":ltr.uvs, "Ambient Light":ltr.light , "UV Index":ltr.uvi, "LUX": ltr.lux}
 #----------------------------------------------------------------------------------------------#
@@ -80,10 +101,10 @@ def temp1():
 #------------------------------------Temp-Sensor-2---------------------------------------------#
 @app.get("/temp2")
 def temp2():
-    dhtDevice2 = adafruit_dht.DHT22(board.D3)
+    dhtDevice2 = adafruit_dht.DHT22(board.D8)
     temp_c = dhtDevice2.temperature
     humidity = dhtDevice2.humidity
-    return{"Temperatur":temp_c , "Feuchtigkeit": humidity}
+    return{"Temperatur in °C":temp_c, "Feuchtigkeit in %": humidity + "%"}
 #----------------------------------------------------------------------------------------------#
 
 
@@ -91,8 +112,9 @@ def temp2():
 #------------------------------------Druck-Sensor---------------------------------------------#
 @app.get("/druck")
 def druck():
-    bmp = BMP085(0x77)
-    pressure = bmp.readPressure()
+    i2c = busio.I2C(board.SCL, board.SDA)
+    sensor = BMP085.BMP085(i2c, mode=0x00)
+    pressure = sensor.readPressure()
     return{"Druck": pressure}
 #----------------------------------------------------------------------------------------------#
 

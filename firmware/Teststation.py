@@ -44,8 +44,23 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(DIR, GPIO.OUT)
 GPIO.setup(PUL, GPIO.OUT)
 
+###Endschalter
+
+END1=22	
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(END1, GPIO.OUT)
+
+END2=27
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(END2, GPIO.OUT)
+
 ###Motor####
 
+#Kühlung
+
+# Pin 11 (GPIO17) als Ausgang initialisieren
+motorPin = 17
+GPIO.setup(motorPin, GPIO.OUT)
 
 
 ###Fenster erstellen###
@@ -195,39 +210,58 @@ def ButMOT_click():
     
 ###Motor ein aus###
 def MOTstart():
-    
-    global boolMotor
-    
-    print("W")
-    print(boolMotor)
-    
-    boolMotor = not boolMotor  #setzt immer zum gegenteil, 
-    print(boolMotor)
-    
-    
-    if boolMotor==True:
+    while (GPIO.input(END1) == GPIO.LOW) and (GPIO.input(END2) == GPIO.LOW):
+        global boolMotor
         
-        btmot["text"]= "Motor Aus"
-        GPIO.output(DIR,GPIO.HIGH)
+        print("W")
+        print(boolMotor)
         
-        for x in range(10100):  # illegaler Zähler - eventuell falsches signal darum funktioniert schritmotor noicht
-            #eventuell Bibs verwenden / DC-Motor
+        boolMotor = not boolMotor  #setzt immer zum gegenteil, 
+        print(boolMotor)
+        
+        
+        if boolMotor==True:
             
-            print("EIN")
-            GPIO.output(PUL,GPIO.HIGH)
-            time.sleep(0.00001)
+            btmot["text"]= "Motor Aus"
+            GPIO.output(DIR,GPIO.HIGH)
+            
+            for x in range(10100):  # illegaler Zähler - eventuell falsches signal darum funktioniert schritmotor noicht
+                #eventuell Bibs verwenden / DC-Motor
+                
+                print("EIN")
+                GPIO.output(PUL,GPIO.HIGH)
+                time.sleep(0.00001)
+                GPIO.output(PUL,GPIO.LOW)
+                time.sleep(0.00001)
+                
+                if boolMotor == False:
+                    break
+        else:
+            
+            btmot["text"]= "Motor EIN"
             GPIO.output(PUL,GPIO.LOW)
-            time.sleep(0.00001)
-            
-            if boolMotor == False:
-                break
-    else:
+            print("Aus")
+
+
         
-        btmot["text"]= "Motor EIN"
-        GPIO.output(PUL,GPIO.LOW)
-        print("Aus")
-        
-        
+# Kühlgerät
+def kuehlung():
+    try:
+        # Setzt den Pin anfangs auf High
+        GPIO.output(motorPin, GPIO.HIGH)
+        time.sleep(2)  # Warte 2 Sekunden
+
+        while True:
+            # Setzt den Pin auf Low
+            GPIO.output(motorPin, GPIO.LOW)
+            time.sleep(0.1)  # Warte 100 ms
+            # Setzt den Pin auf High
+            GPIO.output(motorPin, GPIO.HIGH)
+            time.sleep(5)  # Warte 5 Sekunden
+
+    except KeyboardInterrupt:
+        # Programm beenden, wenn ein KeyboardInterrupt auftritt
+        GPIO.cleanup()  # Aufräumen
         
         
     
@@ -271,6 +305,11 @@ btnt.grid(row=0, column=0)
 ###Button UV-Lampe####
 btuv= Button(buttonFrame, text="UV-Lampe ein", bg = "#FFFFFF", width=15,command = UVLampe)
 btuv.grid(row=20, column=1)
+
+##button kühlung###
+###Button UV-Lampe####
+btuv= Button(buttonFrame, text="Kühlung ein", bg = "#FFFFFF", width=15,command = kuehlung)
+btuv.grid(row=30, column=1)
 
 
 root.mainloop()
