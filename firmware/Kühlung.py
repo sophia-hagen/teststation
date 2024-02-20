@@ -1,6 +1,6 @@
 import RPi.GPIO as GPIO
 import time
-
+#huhu
 # Pin-Nummern dem Broadcom SOC channel zuordnen
 GPIO.setmode(GPIO.BCM)
 
