@@ -30,9 +30,9 @@ import busio
 import adafruit_ltr390 
 from fastapi import FastAPI
 import adafruit_dht
-import Adafruit_BMP.BMP085 as BMP085
+#import Adafruit_BMP.BMP085 as BMP085
 import RPi.GPIO as GPIO
-import neopixel
+#import neopixel
 import time
 #--------------------------------------#
 
@@ -194,3 +194,24 @@ def motor():
         return{"Motor ausgeschalten"}
 #----------------------------------------------------------------------------------------------#
 
+#-------------------------------------------kühlung--------------------------------------------#
+@app.post("/kühlung")
+def kuehlung():
+    try:
+        # Setzt den Pin anfangs auf High
+        GPIO.output(motorPin, GPIO.HIGH)
+        return{"Kühlung eingeschalten - Stuffe 1"}
+        time.sleep(2)  # Warte 2 Sekunden
+
+        while True:
+            # Setzt den Pin auf Low
+            GPIO.output(motorPin, GPIO.LOW)
+            time.sleep(0.1)  # Warte 100 ms
+            # Setzt den Pin auf High
+            GPIO.output(motorPin, GPIO.HIGH)
+            time.sleep(5)  # Warte 5 Sekunden
+            return{"Kühlung eingeschalten - Stuffe 2"}
+
+    except KeyboardInterrupt:
+        # Programm beenden, wenn ein KeyboardInterrupt auftritt
+        GPIO.cleanup()  # Aufräumen
