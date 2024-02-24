@@ -30,7 +30,7 @@ import busio
 import adafruit_ltr390 
 from fastapi import FastAPI
 import adafruit_dht
-#import Adafruit_BMP.BMP085 as BMP085
+import bmp180
 import RPi.GPIO as GPIO
 #import neopixel
 import time
@@ -69,18 +69,23 @@ boolLED = False
 
 #---------Motor---------#
 boolMotor = False
-PUL=16
-DIR =12
+PUL=17
+DIR =13
 GPIO.setup(DIR, GPIO.OUT)
 GPIO.setup(PUL, GPIO.OUT)
 #--------------------------#
 
+#---------Kühlung---------#
+motorPin = 12
+GPIO.setup(DIR, GPIO.OUT)
+boolkühlung = False
+#--------------------------#
 
 
 #------------------------------------UV-Sensor-------------------------------------------------#
 @app.get("/uv")
 def uv():
-    i2c = busio.I2C(board.D3, board.D2)
+    i2c = board.I2C()
     ltr = adafruit_ltr390.LTR390(i2c)
     return {"UV":ltr.uvs, "Ambient Light":ltr.light , "UV Index":ltr.uvi, "LUX": ltr.lux}
 #----------------------------------------------------------------------------------------------#
@@ -90,10 +95,10 @@ def uv():
 #------------------------------------Temp-Sensor-1---------------------------------------------#
 @app.get("/temp1")
 def temp1():
-    dhtDevice1 = adafruit_dht.DHT22(board.D2)
+    dhtDevice1 = adafruit_dht.DHT22(board.D7)
     temp_c = dhtDevice1.temperature
     humidity = dhtDevice1.humidity
-    return{"Temperatur":temp_c , "Feuchtigkeit": humidity}
+    return{"Temperatur in °C":temp_c , "Feuchtigkeit in %": humidity}
 #----------------------------------------------------------------------------------------------#
 
 
@@ -112,12 +117,11 @@ def temp2():
 #------------------------------------Druck-Sensor---------------------------------------------#
 @app.get("/druck")
 def druck():
-    i2c = busio.I2C(board.SCL, board.SDA)
-    sensor = BMP085.BMP085(i2c, mode=0x00)
-    pressure = sensor.readPressure()
-    return{"Druck": pressure}
+    i2c = board.I2C()
+    bmp = bmp180.BMP180(i2c)
+    bmp.sea_level_pressure = 1013.25
+    return{f"Druck: {bmp.pressure:.1f} hPa", f"Meereshöhe: {bmp.altitude:.1f} Meter"} 
 #----------------------------------------------------------------------------------------------#
-
 
 
 #---------------------------------------UV-Lampe-----------------------------------------------#
@@ -197,21 +201,19 @@ def motor():
 #-------------------------------------------kühlung--------------------------------------------#
 @app.post("/kühlung")
 def kuehlung():
-    try:
-        # Setzt den Pin anfangs auf High
-        GPIO.output(motorPin, GPIO.HIGH)
-        return{"Kühlung eingeschalten - Stuffe 1"}
+    global boolkühlung
+    boolkühlung = not boolkühlung
+    if boolkühlung==True:
+
+        GPIO.output(motorPin,GPIO.HIGH)
+        return{"Kühlung eingeschalten - Stuffe 1"}	
         time.sleep(2)  # Warte 2 Sekunden
+     
 
-        while True:
-            # Setzt den Pin auf Low
-            GPIO.output(motorPin, GPIO.LOW)
-            time.sleep(0.1)  # Warte 100 ms
-            # Setzt den Pin auf High
-            GPIO.output(motorPin, GPIO.HIGH)
-            time.sleep(5)  # Warte 5 Sekunden
-            return{"Kühlung eingeschalten - Stuffe 2"}
-
-    except KeyboardInterrupt:
-        # Programm beenden, wenn ein KeyboardInterrupt auftritt
-        GPIO.cleanup()  # Aufräumen
+    else:
+        GPIO.output(motorPin,GPIO.LOW)
+        time.sleep(0.1)
+        GPIO.output(motorPin,GPIO.HIGH)
+        time.sleep(5)
+        return{"Kühlung eingeschalten - Stuffe 2"}
+#----------------------------------------------------------------------------------------------#
