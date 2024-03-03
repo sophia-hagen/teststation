@@ -82,6 +82,13 @@ GPIO.setup(PUL, GPIO.OUT)
 motorPin = 12
 GPIO.setup(DIR, GPIO.OUT)
 boolkühlung = False
+GPIO.setup(filterPin, GPIO.OUT)
+#--------------------------#
+
+#---------Lüftung---------#
+lueftungPin = 8
+GPIO.setup(lueftungPin, GPIO.OUT)
+boolLüftung = False
 #--------------------------#
 
 #--------------Temperatursensor---------------#
@@ -216,6 +223,7 @@ def kuehlung():
     if boolkühlung==True:
 
         GPIO.output(motorPin,GPIO.HIGH)
+        GPIO.output(filterPin,GPIO.HIGH)
         return{"Kühlung eingeschalten - Stuffe 1"}	
         time.sleep(2)  # Warte 2 Sekunden
      
@@ -224,9 +232,28 @@ def kuehlung():
         GPIO.output(motorPin,GPIO.LOW)
         time.sleep(0.1)
         GPIO.output(motorPin,GPIO.HIGH)
+        GPIO.output(filterPin,GPIO.HIGH)
         time.sleep(5)
         return{"Kühlung eingeschalten - Stuffe 2"}
 #----------------------------------------------------------------------------------------------#
 
+#---------------------------------------Kühlung Aus--------------------------------------------#
+@app.post("/kühlungaus")
+def kuehlungaus():
+    GPIO.output(motorPin,GPIO.LOW)
+    GPIO.output(filterPin,GPIO.LOW)
+    return{"Kühlung ausgeschalten"}
+#----------------------------------------------------------------------------------------------#
+
+
 #-------------------------------------------Lüftung--------------------------------------------#
-#@app.post("/lüftung")
+@app.post("/lüftung")
+def lueftung():
+    global boolLüftung
+    boolLüftung = not boolLüftung
+    if boolLüftung==True:
+        GPIO.output(lueftungPin,GPIO.HIGH)
+        return{"Lüftung eingeschalten"}
+    else:
+        GPIO.output(lueftungPin,GPIO.LOW)
+        return{"Lüftung ausgeschalten"}
