@@ -49,6 +49,7 @@ humidity=0
 #---------UV-Lampe---------#
 boolUV = False
 PinUV=12
+GPIO.setmode(GPIO.BCM)
 GPIO.setup(PinUV, GPIO.OUT)
 #--------------------------#
 
@@ -57,6 +58,7 @@ GPIO.setup(PinUV, GPIO.OUT)
 #---------Netzteil---------#
 boolNetz = False 
 SIG=15
+GPIO.setmode(GPIO.BCM)
 GPIO.setup(SIG, GPIO.OUT)
 #--------------------------#
 
@@ -69,8 +71,9 @@ boolLED = False
 
 #---------Motor---------#
 boolMotor = False
-PUL=17
-DIR =13
+PUL=13
+DIR =17
+GPIO.setmode(GPIO.BCM)
 GPIO.setup(DIR, GPIO.OUT)
 GPIO.setup(PUL, GPIO.OUT)
 #--------------------------#
@@ -81,13 +84,21 @@ GPIO.setup(DIR, GPIO.OUT)
 boolkühlung = False
 #--------------------------#
 
+#--------------Temperatursensor---------------#
+#GPIO.setup(D7, GPIO.OUT)
+#GPIO.setup(D8, GPIO.OUT)
+#---------------------------------------------#
+
 
 #------------------------------------UV-Sensor-------------------------------------------------#
 @app.get("/uv")
 def uv():
     i2c = board.I2C()
     ltr = adafruit_ltr390.LTR390(i2c)
-    return {"UV":ltr.uvs, "Ambient Light":ltr.light , "UV Index":ltr.uvi, "LUX": ltr.lux}
+
+    while True:
+        return("UV-Index:", ltr.uvi, "Umgebungslicht in Lux:", ltr.light)
+        time.sleep(1.0)
 #----------------------------------------------------------------------------------------------#
 
 
@@ -184,15 +195,14 @@ def motor():
 
         for x in range(10100): 
             
-            
-            GPIO.output(PUL,GPIO.HIGH)
-            time.sleep(0.00001)
             GPIO.output(PUL,GPIO.LOW)
-            time.sleep(0.00001)
-            return{"Motor ausgeschalten"}
+            time.sleep(0.5)
+            GPIO.output(PUL,GPIO.HIGH)
+            time.sleep(0.5)
+            return{"Motor eingeschalten"}
             
-            if boolMotor == False:
-                break
+            #if boolMotor == False:
+                #break
     else:
         GPIO.output(PUL,GPIO.LOW)
         return{"Motor ausgeschalten"}
@@ -217,3 +227,6 @@ def kuehlung():
         time.sleep(5)
         return{"Kühlung eingeschalten - Stuffe 2"}
 #----------------------------------------------------------------------------------------------#
+
+#-------------------------------------------Lüftung--------------------------------------------#
+#@app.post("/lüftung")
