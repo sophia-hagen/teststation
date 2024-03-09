@@ -257,3 +257,4 @@ def lueftung():
     else:
         GPIO.output(lueftungPin,GPIO.LOW)
         return{"Lüftung ausgeschalten"}
+#----------------------------------------------------------------------------------------------#
