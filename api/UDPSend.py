@@ -79,20 +79,150 @@ GPIO.setup(lueftungPin, GPIO.OUT)
 boolLüftung = False
 #--------------------------#
 
-#--------------Temperatursensor---------------#
-temppin1 = 7
-temppin2 = 8
-GPIO.setup(temppin1, GPIO.OUT)
-GPIO.setup(temppin2, GPIO.OUT)
-#---------------------------------------------#
+#------------UV-Sensor------------#
+def uv():
+    i2c = board.I2C()
+    ltr = adafruit_ltr390.LTR390(i2c)
+
+    while True:
+        return("UV-Index:", ltr.uvi, "Umgebungslicht in Lux:", ltr.light)
+        time.sleep(1.0)
+#------------------------------------#
+        
+#------------Temperatursensor 1------------#
+def temp1():
+    dhtDevice1 = adafruit_dht.DHT22(board.D26)
+    temp_c = dhtDevice1.temperature
+    humidity = dhtDevice1.humidity
+    return{"Temperatur in °C":temp_c , "Feuchtigkeit in %": humidity}
+#------------------------------------#
+
+#------------Temperatursensor 2------------#
+def temp2():
+    dhtDevice2 = adafruit_dht.DHT22(board.D24)
+    temp_c = dhtDevice2.temperature
+    humidity = dhtDevice2.humidity
+    return{"Temperatur in °C":temp_c, "Feuchtigkeit in %": humidity + "%"}
+#------------------------------------#
+
+#------------Drucksensor------------#
+def druck():
+    i2c = board.I2C()
+    bmp = bmp180.BMP180(i2c)
+    bmp.sea_level_pressure = 1013.25
+    return{f"Druck: {bmp.pressure:.1f} hPa", f"Meereshöhe: {bmp.altitude:.1f} Meter"} 
+#------------------------------------#
+
+#------------UV-Lampe------------#
+def uvlampe():
+    global boolUV
+    boolUV = not boolUV
+    if boolUV == True :
+        GPIO.output(PinUV,GPIO.HIGH)
+        return{"UV-Lampe eingeschalten"}
+    else:
+        GPIO.output(PinUV,GPIO.LOW)
+        return{"UV-Lampe ausgeschalten"}
+#------------------------------------#
+    
+#------------Netzteil------------#
+def netzteil():
+    global boolNetz
+    boolNetz = not boolNetz
+    if boolNetz == True :
+        GPIO.output(SIG,GPIO.HIGH)
+        return{"Netzteil ausgeschalten"}
+    else:
+        GPIO.output(SIG,GPIO.LOW)
+        return{"Netzteil eingeschalten"}
+#------------------------------------#
+
+#------------LED-Streifen------------#
+
+#------------------------------------#
+    
+#------------Motor------------#
+def motor():
+    global boolMotor
+    boolMotor = not boolMotor
+    if boolMotor==True:
+
+        GPIO.output(DIR,GPIO.HIGH)
+
+        for x in range(10100): 
+            
+            GPIO.output(PUL,GPIO.LOW)
+            time.sleep(0.5)
+            GPIO.output(PUL,GPIO.HIGH)
+            time.sleep(0.5)
+            return{"Motor eingeschalten"}
+            
+            #if boolMotor == False:
+                #break
+    else:
+        GPIO.output(PUL,GPIO.LOW)
+        return{"Motor ausgeschalten"}
+#------------------------------------#
+    
+#------------Kühlung------------#
+def kuehlung():
+    global boolkühlung
+    boolkühlung = not boolkühlung
+    if boolkühlung==True:
+
+        GPIO.output(motorPin,GPIO.HIGH)
+        GPIO.output(filterPin,GPIO.HIGH)
+        return{"Kühlung eingeschalten - Stuffe 1"}	
+        time.sleep(2)  # Warte 2 Sekunden
+     
+
+    else:
+        GPIO.output(motorPin,GPIO.LOW)
+        time.sleep(0.1)
+        GPIO.output(motorPin,GPIO.HIGH)
+        GPIO.output(filterPin,GPIO.HIGH)
+        time.sleep(5)
+        return{"Kühlung eingeschalten - Stuffe 2"}
+#------------------------------------#
+
+#---------------Kühlung AUS----------#
+def kuehlungaus():
+    GPIO.output(motorPin,GPIO.LOW)
+    GPIO.output(filterPin,GPIO.LOW)
+    return{"Kühlung ausgeschalten"}
+#-----------------------------------#
+
+#-------------------Lüftung-----------#
+def lueftung():
+    global boolLüftung
+    boolLüftung = not boolLüftung
+    if boolLüftung==True:
+        GPIO.output(lueftungPin,GPIO.HIGH)
+        return{"Lüftung eingeschalten"}
+    else:
+        GPIO.output(lueftungPin,GPIO.LOW)
+        return{"Lüftung ausgeschalten"}
+#----------------------------------------#
+
 
 
 try:
     while running:
        
+        Temperatur1 = temp1()
+        Temperatur2 = temp2()
+        UVsensor = uv()
+        Drucksensor = druck()
+        Uvlampe = uvlampe()
+        Motor = motor()
+        Kuehlung = kuehlung()
+        kuelungAUS = kuehlungaus()
+        Lueftung = lueftung()
+        Netzteil = netzteil()
+    
 	#do bitte die ganzen Funktionen für alle sensoren zum lesen der werte einbinden 
         
-        print("Temperature (TMP112):", data.tempTMP) #
+        print("Temperaturesensor 1:", data.temp_c) #
         print("Temperature (BME688):", data.tempBME)
         print("Humidity:", data.hum)
         print("Pressure:", data.press)
