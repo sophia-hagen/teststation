@@ -1,4 +1,4 @@
-from STS1_Sensors import Sensors
+#from STS1_Sensors import Sensors
 import smbus2
 import json
 import time
@@ -12,7 +12,6 @@ import bmp180
 import RPi.GPIO as GPIO
 #import neopixel
 import time
-#do musch no die Libraries hinzufügen die du bruchsch für die sensoren
 
 
 # UDP Configuration 
@@ -213,16 +212,15 @@ try:
         Temperatur2 = temp2()
         UVsensor = uv()
         Drucksensor = druck()
-        Uvlampe = uvlampe()
-        Motor = motor()
-        Kuehlung = kuehlung()
-        kuelungAUS = kuehlungaus()
-        Lueftung = lueftung()
-        Netzteil = netzteil()
+        #Uvlampe = uvlampe()
+        #Motor = motor()
+        #Kuehlung = kuehlung()
+        #kuelungAUS = kuehlungaus()
+        #Lueftung = lueftung()
+        #Netzteil = netzteil()
     
-	#do bitte die ganzen Funktionen für alle sensoren zum lesen der werte einbinden 
         
-        print("Temperaturesensor 1:", data.temp_c) #
+        print("Temperaturesensor 1:", temp_c) #
         print("Temperature (BME688):", data.tempBME)
         print("Humidity:", data.hum)
         print("Pressure:", data.press)
