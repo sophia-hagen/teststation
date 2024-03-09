@@ -80,21 +80,19 @@ GPIO.setup(PUL, GPIO.OUT)
 
 #---------Kühlung---------#
 motorPin = 12
+GPIO.setmode(GPIO.BCM)
 GPIO.setup(DIR, GPIO.OUT)
 boolkühlung = False
+filterPin = 29
 GPIO.setup(filterPin, GPIO.OUT)
 #--------------------------#
 
 #---------Lüftung---------#
-lueftungPin = 8
+lueftungPin = 19
+GPIO.setmode(GPIO.BCM)
 GPIO.setup(lueftungPin, GPIO.OUT)
 boolLüftung = False
 #--------------------------#
-
-#--------------Temperatursensor---------------#
-#GPIO.setup(D7, GPIO.OUT)
-#GPIO.setup(D8, GPIO.OUT)
-#---------------------------------------------#
 
 
 #------------------------------------UV-Sensor-------------------------------------------------#
@@ -113,7 +111,7 @@ def uv():
 #------------------------------------Temp-Sensor-1---------------------------------------------#
 @app.get("/temp1")
 def temp1():
-    dhtDevice1 = adafruit_dht.DHT22(board.D7)
+    dhtDevice1 = adafruit_dht.DHT22(board.D26)
     temp_c = dhtDevice1.temperature
     humidity = dhtDevice1.humidity
     return{"Temperatur in °C":temp_c , "Feuchtigkeit in %": humidity}
@@ -124,7 +122,7 @@ def temp1():
 #------------------------------------Temp-Sensor-2---------------------------------------------#
 @app.get("/temp2")
 def temp2():
-    dhtDevice2 = adafruit_dht.DHT22(board.D8)
+    dhtDevice2 = adafruit_dht.DHT22(board.D24)
     temp_c = dhtDevice2.temperature
     humidity = dhtDevice2.humidity
     return{"Temperatur in °C":temp_c, "Feuchtigkeit in %": humidity + "%"}
