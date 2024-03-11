@@ -34,6 +34,7 @@ import bmp180
 import RPi.GPIO as GPIO
 #import neopixel
 import time
+import threading
 #--------------------------------------#
 
 
@@ -187,7 +188,11 @@ def ledstreifen():
         return{"LED-Streifen eingeschalten"}
 #----------------------------------------------------------------------------------------------#
     
-
+#-------------------Threading Motor----------------------#
+@app.get("/thread")
+def ButMOT_click():
+        t2 = threading.Thread(target= motor)
+        t2.start()
 
 #---------------------------------------Motor------------------------------------------#
 @app.post("/motor")
