@@ -189,18 +189,20 @@ def ledstreifen():
 #----------------------------------------------------------------------------------------------#
     
 #-------------------Threading Motor----------------------#
-@app.get("/thread")
+@app.put("/thread")
 def ButMOT_click():
-        t2 = threading.Thread(target= motor)
+        t2 = threading.Thread(target= motorEin)
         t2.start()
 
-#---------------------------------------Motor------------------------------------------#
-@app.post("/motor")
-def motor():
-    global boolMotor
-    boolMotor = not boolMotor
-    if boolMotor==True:
 
+@app.post("/motorAus")
+def MotorAus():
+    GPIO.output(PUL,GPIO.LOW)
+    return{"Motor ausgeschalten"}
+
+#---------------------------------------Motor------------------------------------------#
+@app.post("/motorEin")
+def motorEin():
         GPIO.output(DIR,GPIO.HIGH)
 
         for x in range(10100): 
@@ -210,13 +212,12 @@ def motor():
             GPIO.output(PUL,GPIO.HIGH)
             time.sleep(0.5)
             return{"Motor eingeschalten"}
-            
-            #if boolMotor == False:
-                #break
-    else:
-        GPIO.output(PUL,GPIO.LOW)
-        return{"Motor ausgeschalten"}
+    
 #----------------------------------------------------------------------------------------------#
+    
+if __name__ == '__main__':
+    t1 = threading.Thread(target=motorEin)  ##threading motor  
+    t1.start()
 
 #-------------------------------------------kühlung--------------------------------------------#
 @app.post("/kühlung")
