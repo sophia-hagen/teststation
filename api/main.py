@@ -49,7 +49,7 @@ humidity=0
 
 #---------UV-Lampe---------#
 boolUV = False
-PinUV=12
+PinUV=18
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(PinUV, GPIO.OUT)
 #--------------------------#
