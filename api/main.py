@@ -84,7 +84,7 @@ motorPin = 12
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(DIR, GPIO.OUT)
 boolkühlung = False
-filterPin = 29
+filterPin = 20
 GPIO.setup(filterPin, GPIO.OUT)
 #--------------------------#
 
@@ -95,12 +95,19 @@ GPIO.setup(lueftungPin, GPIO.OUT)
 boolLüftung = False
 #--------------------------#
 
+#---------BMP180 Adresse---------#
+BMP180_ADDR = 0x76  # BMP180 address (alternate: 0x77)
+#--------------------------#
+
+#---------LTR380 Adresse---------#
+LTR390_ADDR = 0x29
+#--------------------------#
 
 #------------------------------------UV-Sensor-------------------------------------------------#
 @app.get("/uv")
 def uv():
     i2c = board.I2C()
-    ltr = adafruit_ltr390.LTR390(i2c)
+    ltr = adafruit_ltr390.LTR390(LTR390_ADDR, i2c)
 
     while True:
         return("UV-Index:", ltr.uvi, "Umgebungslicht in Lux:", ltr.light)
@@ -135,7 +142,7 @@ def temp2():
 @app.get("/druck")
 def druck():
     i2c = board.I2C()
-    bmp = bmp180.BMP180(i2c)
+    bmp = bmp180.BMP180(BMP180_ADDR, i2c)
     bmp.sea_level_pressure = 1013.25
     return{f"Druck: {bmp.pressure:.1f} hPa", f"Meereshöhe: {bmp.altitude:.1f} Meter"} 
 #----------------------------------------------------------------------------------------------#
