@@ -72,17 +72,17 @@ boolLED = False
 
 #---------Motor---------#
 boolMotor = False
-PUL=13
-DIR =17
+PUL=13 #PWM
+DIR =17 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(DIR, GPIO.OUT)
 GPIO.setup(PUL, GPIO.OUT)
 #--------------------------#
 
 #---------Kühlung---------#
-motorPin = 12
+kuehlungPin = 12
 GPIO.setmode(GPIO.BCM)
-GPIO.setup(DIR, GPIO.OUT)
+GPIO.setup(kuehlungPin, GPIO.OUT)
 boolkühlung = False
 filterPin = 20
 GPIO.setup(filterPin, GPIO.OUT)
@@ -233,16 +233,16 @@ def kuehlung():
     boolkühlung = not boolkühlung
     if boolkühlung==True:
 
-        GPIO.output(motorPin,GPIO.HIGH)
+        GPIO.output(kuehlungPin,GPIO.HIGH)
         GPIO.output(filterPin,GPIO.HIGH)
         return{"Kühlung eingeschalten - Stuffe 1"}	
         time.sleep(2)  # Warte 2 Sekunden
      
 
     else:
-        GPIO.output(motorPin,GPIO.LOW)
+        GPIO.output(kuehlungPin,GPIO.LOW)
         time.sleep(0.1)
-        GPIO.output(motorPin,GPIO.HIGH)
+        GPIO.output(kuehlungPin,GPIO.HIGH)
         GPIO.output(filterPin,GPIO.HIGH)
         time.sleep(5)
         return{"Kühlung eingeschalten - Stuffe 2"}
@@ -251,7 +251,7 @@ def kuehlung():
 #---------------------------------------Kühlung Aus--------------------------------------------#
 @app.post("/kühlungaus")
 def kuehlungaus():
-    GPIO.output(motorPin,GPIO.LOW)
+    GPIO.output(kuehlungPin,GPIO.LOW)
     GPIO.output(filterPin,GPIO.LOW)
     return{"Kühlung ausgeschalten"}
 #----------------------------------------------------------------------------------------------#
