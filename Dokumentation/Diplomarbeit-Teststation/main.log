@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.19)  5 APR 2024 13:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.19)  5 APR 2024 16:47
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1257,9 +1257,6 @@ LaTeX Warning: Label `fig:enter-label' multiply defined.
 LaTeX Warning: Label `fig:enter-label' multiply defined.
 
 
-LaTeX Warning: Label `fig:enter-label' multiply defined.
-
-
 LaTeX Warning: Label `fig:bild1' multiply defined.
 
 
@@ -1278,19 +1275,7 @@ LaTeX Warning: Label `fig:zwei_bilder' multiply defined.
 LaTeX Warning: Label `fig:enter-label' multiply defined.
 
 
-LaTeX Warning: Label `fig:bild1' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:bild1' multiply defined.
-
-
-LaTeX Warning: Label `fig:bild2' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:bild2' multiply defined.
-
-
-LaTeX Warning: Label `fig:zwei_bilder' multiply defined.
+LaTeX Warning: Label `fig:enter-label' multiply defined.
 
 
 LaTeX Warning: Label `fig:enter-label' multiply defined.
@@ -2179,11 +2164,11 @@ Package pdftex.def Info: image/Sophia.jpg  used on input line 88.
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 92.
 
-<image/Julius.jpeg, id=1027, 1483.5425pt x 2055.68pt>
-File: image/Julius.jpeg Graphic file (type jpg)
-<use image/Julius.jpeg>
-Package pdftex.def Info: image/Julius.jpeg  used on input line 101.
-(pdftex.def)             Requested size: 118.68582pt x 164.45776pt.
+<image/Julius.jpg, id=1027, 1021.56656pt x 1457.445pt>
+File: image/Julius.jpg Graphic file (type jpg)
+<use image/Julius.jpg>
+Package pdftex.def Info: image/Julius.jpg  used on input line 101.
+(pdftex.def)             Requested size: 112.37267pt x 160.31944pt.
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 105.
@@ -2200,7 +2185,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 110.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[15 <./image/Sophia.jpg> <./image/Julius.jpeg>]
+[15 <./image/Sophia.jpg> <./image/Julius.jpg>]
 <image/consti.jpg, id=1034, 1107.13625pt x 1606.0pt>
 File: image/consti.jpg Graphic file (type jpg)
 <use image/consti.jpg>
@@ -2586,12 +2571,12 @@ tell
 File: image/geöffnet.png Graphic file (type png)
 <use image/geöffnet.png>
 Package pdftex.def Info: image/geöffnet.png  used on input line 16.
-(pdftex.def)             Requested size: 182.09486pt x 203.52147pt.
+(pdftex.def)             Requested size: 136.57462pt x 152.64494pt.
 <image/geschlossen.png, id=1129, 203.8014pt x 201.8742pt>
 File: image/geschlossen.png Graphic file (type png)
 <use image/geschlossen.png>
 Package pdftex.def Info: image/geschlossen.png  used on input line 23.
-(pdftex.def)             Requested size: 204.85846pt x 202.92409pt.
+(pdftex.def)             Requested size: 159.33821pt x 157.83395pt.
 ))
 File: image/htlr_logo.png Graphic file (type png)
 <use image/htlr_logo.png>
@@ -2606,21 +2591,8 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 4.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[28 <./image/Schließer1.png> <./image/Schließer2.png>]
-File: image/htlr_logo.png Graphic file (type png)
-<use image/htlr_logo.png>
-Package pdftex.def Info: image/htlr_logo.png  used on input line 4.
-(pdftex.def)             Requested size: 63.58063pt x 29.59067pt.
-
-
-LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 4.
-
-File: image/htl_logo.jpg Graphic file (type jpg)
-<use image/htl_logo.jpg>
-Package pdftex.def Info: image/htl_logo.jpg  used on input line 4.
-(pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[29 <./image/geöffnet.png> <./image/geschlossen.png>] (gyroskop.tex
+[28 <./image/Schließer1.png> <./image/Schließer2.png> <./image/geöffnet.png>
+ <./image/geschlossen.png>] (gyroskop.tex
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 1.
@@ -2633,12 +2605,12 @@ LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 10.
 
-<image/gyroskop1.jpeg, id=1145, 158.84344pt x 211.54031pt>
+<image/gyroskop1.jpeg, id=1141, 158.84344pt x 211.54031pt>
 File: image/gyroskop1.jpeg Graphic file (type jpg)
 <use image/gyroskop1.jpeg>
 Package pdftex.def Info: image/gyroskop1.jpeg  used on input line 30.
 (pdftex.def)             Requested size: 182.09486pt x 242.52704pt.
-<image/gyroskop2.jpeg, id=1146, 167.12437pt x 222.07968pt>
+<image/gyroskop2.jpeg, id=1142, 167.12437pt x 222.07968pt>
 File: image/gyroskop2.jpeg Graphic file (type jpg)
 <use image/gyroskop2.jpeg>
 Package pdftex.def Info: image/gyroskop2.jpeg  used on input line 37.
@@ -2655,12 +2627,12 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 45.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[30]
+[29]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 46.
 
-<image/zusammengyros.jpg, id=1152, 449.42906pt x 164.86594pt>
+<image/zusammengyros.jpg, id=1148, 449.42906pt x 164.86594pt>
 File: image/zusammengyros.jpg Graphic file (type jpg)
 <use image/zusammengyros.jpg>
 Package pdftex.def Info: image/zusammengyros.jpg  used on input line 52.
@@ -2670,7 +2642,7 @@ Package pdftex.def Info: image/zusammengyros.jpg  used on input line 52.
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 1.
 
-<image/schrittmotor.png, id=1155, 138.2766pt x 144.54pt>
+<image/schrittmotor.png, id=1151, 138.2766pt x 144.54pt>
 File: image/schrittmotor.png Graphic file (type png)
 <use image/schrittmotor.png>
 Package pdftex.def Info: image/schrittmotor.png  used on input line 5.
@@ -2687,27 +2659,42 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 8.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[31 <./image/gyroskop1.jpeg> <./image/gyroskop2.jpeg> <./image/zusammengyros.jp
+[30 <./image/gyroskop1.jpeg> <./image/gyroskop2.jpeg> <./image/zusammengyros.jp
 g>]
-<image/motorgyros.jpg, id=1163, 143.883pt x 106.434pt>
+<image/motorgyros.jpg, id=1158, 143.883pt x 106.434pt>
 File: image/motorgyros.jpg Graphic file (type jpg)
 <use image/motorgyros.jpg>
 Package pdftex.def Info: image/motorgyros.jpg  used on input line 15.
 (pdftex.def)             Requested size: 158.27176pt x 117.07774pt.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \vspace
+            {2mm}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+) (Gyroskop/treiber.tex
 File: image/htlr_logo.png Graphic file (type png)
 <use image/htlr_logo.png>
-Package pdftex.def Info: image/htlr_logo.png  used on input line 21.
+Package pdftex.def Info: image/htlr_logo.png  used on input line 1.
 (pdftex.def)             Requested size: 63.58063pt x 29.59067pt.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 21.
+(Font)              using `OT1/cmss/bx/n' instead on input line 1.
 
 File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
-Package pdftex.def Info: image/htl_logo.jpg  used on input line 21.
+Package pdftex.def Info: image/htl_logo.jpg  used on input line 1.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[32 <./image/schrittmotor.png> <./image/motorgyros.jpg>]) (Gyroskop/treiber.tex
+[31 <./image/schrittmotor.png> <./image/motorgyros.jpg>]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 1.
@@ -2718,7 +2705,7 @@ Overfull \hbox (0.41022pt too wide) in paragraph at lines 16--17
 []Uberhitzung f[]ur ei-ne zu-verl[]assige 
  []
 
-<image/treiber.png, id=1177, 186.4566pt x 185.9748pt>
+<image/treiber.png, id=1173, 186.4566pt x 185.9748pt>
 File: image/treiber.png Graphic file (type png)
 <use image/treiber.png>
 Package pdftex.def Info: image/treiber.png  used on input line 21.
@@ -2737,12 +2724,12 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 1.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[33]
+[32]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 1.
 
-<image/Netzteil.png, id=1187, 187.4202pt x 134.4222pt>
+<image/Netzteil.png, id=1183, 187.4202pt x 134.4222pt>
 File: image/Netzteil.png Graphic file (type png)
 <use image/Netzteil.png>
 Package pdftex.def Info: image/Netzteil.png  used on input line 6.
@@ -2761,12 +2748,12 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 61.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[34 <./image/treiber.png> <./image/Netzteil.png>] (Relais.tex
+[33 <./image/treiber.png> <./image/Netzteil.png>] (Relais.tex
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 1.
 
-<image/relai.jpg.png, id=1198, 410.2828pt x 362.85562pt>
+<image/relai.jpg.png, id=1194, 410.2828pt x 362.85562pt>
 File: image/relai.jpg.png Graphic file (type png)
 <use image/relai.jpg.png>
 Package pdftex.def Info: image/relai.jpg.png  used on input line 2.
@@ -2870,7 +2857,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 6.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[35 <./image/relai.jpg.png>] (PCB.tex
+[34 <./image/relai.jpg.png>] (PCB.tex
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 1.
@@ -2879,7 +2866,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 6.
 
-<image/prt140117.png, id=1214, 268.00125pt x 78.2925pt>
+<image/prt140117.png, id=1210, 268.00125pt x 78.2925pt>
 File: image/prt140117.png Graphic file (type png)
 <use image/prt140117.png>
 Package pdftex.def Info: image/prt140117.png  used on input line 11.
@@ -2921,7 +2908,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 59.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[36 <./image/prt140117.png>]
+[35 <./image/prt140117.png>]
 File: image/htlr_logo.png Graphic file (type png)
 <use image/htlr_logo.png>
 Package pdftex.def Info: image/htlr_logo.png  used on input line 64.
@@ -2935,8 +2922,8 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 64.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[37]
-<pdf/RaspyBoard_Schematic.pdf, id=1240, 597.23125pt x 845.1575pt>
+[36]
+<pdf/RaspyBoard_Schematic.pdf, id=1235, 597.23125pt x 845.1575pt>
 File: pdf/RaspyBoard_Schematic.pdf Graphic file (type pdf)
 <use pdf/RaspyBoard_Schematic.pdf>
 Package pdftex.def Info: pdf/RaspyBoard_Schematic.pdf  used on input line 67.
@@ -2945,7 +2932,7 @@ File: pdf/RaspyBoard_Schematic.pdf Graphic file (type pdf)
 <use pdf/RaspyBoard_Schematic.pdf>
 Package pdftex.def Info: pdf/RaspyBoard_Schematic.pdf  used on input line 67.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-<pdf/RaspyBoard_Schematic.pdf, id=1243, page=1, 597.23125pt x 845.1575pt>
+<pdf/RaspyBoard_Schematic.pdf, id=1238, page=1, 597.23125pt x 845.1575pt>
 File: pdf/RaspyBoard_Schematic.pdf Graphic file (type pdf)
 <use pdf/RaspyBoard_Schematic.pdf, page 1>
 Package pdftex.def Info: pdf/RaspyBoard_Schematic.pdf , page1 used on input lin
@@ -2971,19 +2958,19 @@ File: pdf/RaspyBoard_Schematic.pdf Graphic file (type pdf)
 Package pdftex.def Info: pdf/RaspyBoard_Schematic.pdf , page1 used on input lin
 e 71.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [38
+ [37
 
  <./pdf/RaspyBoard_Schematic.pdf>]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 71.
 
-<image/layouttop.png, id=1258, 405.01312pt x 275.52937pt>
+<image/layouttop.png, id=1254, 405.01312pt x 275.52937pt>
 File: image/layouttop.png Graphic file (type png)
 <use image/layouttop.png>
 Package pdftex.def Info: image/layouttop.png  used on input line 76.
 (pdftex.def)             Requested size: 324.01093pt x 220.42378pt.
-<image/layoutbottom.png, id=1259, 390.96063pt x 261.97874pt>
+<image/layoutbottom.png, id=1255, 390.96063pt x 261.97874pt>
 File: image/layoutbottom.png Graphic file (type png)
 <use image/layoutbottom.png>
 Package pdftex.def Info: image/layoutbottom.png  used on input line 82.
@@ -3000,13 +2987,13 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 86.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[39 <./image/layouttop.png> <./image/layoutbottom.png>]
-<image/workp.png, id=1266, 413.04312pt x 285.065pt>
+[38 <./image/layouttop.png> <./image/layoutbottom.png>]
+<image/workp.png, id=1262, 413.04312pt x 285.065pt>
 File: image/workp.png Graphic file (type png)
 <use image/workp.png>
 Package pdftex.def Info: image/workp.png  used on input line 89.
 (pdftex.def)             Requested size: 330.43494pt x 228.0523pt.
-<image/worko.png, id=1267, 412.03937pt x 286.57062pt>
+<image/worko.png, id=1263, 412.03937pt x 286.57062pt>
 File: image/worko.png Graphic file (type png)
 <use image/worko.png>
 Package pdftex.def Info: image/worko.png  used on input line 95.
@@ -3024,14 +3011,14 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 100.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[40 <./image/workp.png> <./image/worko.png>]
-<image/Platine_unbestückt.jpg, id=1274, 673.51625pt x 973.6375pt>
+[39 <./image/workp.png> <./image/worko.png>]
+<image/Platine_unbestückt.jpg, id=1270, 673.51625pt x 973.6375pt>
 File: image/Platine_unbestückt.jpg Graphic file (type jpg)
 <use image/Platine_unbestückt.jpg>
 Package pdftex.def Info: image/Platine_unbestückt.jpg  used on input line 102.
 
 (pdftex.def)             Requested size: 181.8518pt x 262.88564pt.
-<image/platine_bestückt.jpg, id=1275, 1011.78pt x 1430.34375pt>
+<image/platine_bestückt.jpg, id=1271, 1011.78pt x 1430.34375pt>
 File: image/platine_bestückt.jpg Graphic file (type jpg)
 <use image/platine_bestückt.jpg>
 Package pdftex.def Info: image/platine_bestückt.jpg  used on input line 107.
@@ -3050,13 +3037,13 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 9.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[41 <./image/Platine_unbestückt.jpg> <./image/platine_bestückt.jpg>]
+[40 <./image/Platine_unbestückt.jpg> <./image/platine_bestückt.jpg>]
 (Sensoren.tex
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 1.
 
-<image/blocksensor.png, id=1282, 1667.22874pt x 1242.6425pt>
+<image/blocksensor.png, id=1278, 1667.22874pt x 1242.6425pt>
 File: image/blocksensor.png Graphic file (type png)
 <use image/blocksensor.png>
 Package pdftex.def Info: image/blocksensor.png  used on input line 5.
@@ -3078,7 +3065,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 9.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[42 <./image/blocksensor.png>] (Temperatursensor.tex
+[41 <./image/blocksensor.png>] (Temperatursensor.tex
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 1.
@@ -3087,7 +3074,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 4.
 
-<image/Gehäusetemp.png, id=1291, 245.91875pt x 309.65688pt>
+<image/Gehäusetemp.png, id=1287, 245.91875pt x 309.65688pt>
 File: image/Gehäusetemp.png Graphic file (type png)
 <use image/Gehäusetemp.png>
 Package pdftex.def Info: image/Gehäusetemp.png  used on input line 23.
@@ -3104,8 +3091,8 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 26.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[43 <./image/Gehäusetemp.png>]
-<image/Tempausgabe.png, id=1303, 106.89937pt x 50.68938pt>
+[42 <./image/Gehäusetemp.png>]
+<image/Tempausgabe.png, id=1298, 106.89937pt x 50.68938pt>
 File: image/Tempausgabe.png Graphic file (type png)
 <use image/Tempausgabe.png>
 Package pdftex.def Info: image/Tempausgabe.png  used on input line 35.
@@ -3115,7 +3102,7 @@ Package pdftex.def Info: image/Tempausgabe.png  used on input line 35.
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 1.
 
-<image/UVsensor.png, id=1308, 240.39813pt x 211.79124pt>
+<image/UVsensor.png, id=1303, 240.39813pt x 211.79124pt>
 File: image/UVsensor.png Graphic file (type png)
 <use image/UVsensor.png>
 Package pdftex.def Info: image/UVsensor.png  used on input line 21.
@@ -3174,13 +3161,13 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 43.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[44 <./image/Tempausgabe.png>]
-<image/UVsensor hell.png, id=1320, 147.04938pt x 93.34875pt>
+[43 <./image/Tempausgabe.png>]
+<image/UVsensor hell.png, id=1316, 147.04938pt x 93.34875pt>
 File: image/UVsensor hell.png Graphic file (type png)
 <use image/UVsensor hell.png>
 Package pdftex.def Info: image/UVsensor hell.png  used on input line 49.
 (pdftex.def)             Requested size: 204.85846pt x 130.04779pt.
-<image/uvsensor dunkel.png, id=1321, 149.55875pt x 89.83563pt>
+<image/uvsensor dunkel.png, id=1317, 149.55875pt x 89.83563pt>
 File: image/uvsensor dunkel.png Graphic file (type png)
 <use image/uvsensor dunkel.png>
 Package pdftex.def Info: image/uvsensor dunkel.png  used on input line 56.
@@ -3198,13 +3185,13 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 64.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[45 <./image/UVsensor.png> <./image/UVsensor hell.png> <./image/uvsensor dunkel
+[44 <./image/UVsensor.png> <./image/UVsensor hell.png> <./image/uvsensor dunkel
 .png>]) (Magnetsensor.tex
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 1.
 
-<image/magnetsensir.png, id=1335, 285.065pt x 155.07938pt>
+<image/magnetsensir.png, id=1331, 285.065pt x 155.07938pt>
 File: image/magnetsensir.png Graphic file (type png)
 <use image/magnetsensir.png>
 Package pdftex.def Info: image/magnetsensir.png  used on input line 6.
@@ -3221,12 +3208,12 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 18.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[46 <./image/magnetsensir.png>]
+[45 <./image/magnetsensir.png>]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 21.
 
-<image/zusammenmanet.png, id=1346, 472.26437pt x 344.78813pt>
+<image/zusammenmanet.png, id=1342, 472.26437pt x 344.78813pt>
 File: image/zusammenmanet.png Graphic file (type png)
 <use image/zusammenmanet.png>
 Package pdftex.def Info: image/zusammenmanet.png  used on input line 24.
@@ -3251,13 +3238,13 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 25.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[47 <./image/zusammenmanet.png>]
-<image/druckvergleich.png, id=1366, 335.75438pt x 54.2025pt>
+[46 <./image/zusammenmanet.png>]
+<image/druckvergleich.png, id=1362, 335.75438pt x 54.2025pt>
 File: image/druckvergleich.png Graphic file (type png)
 <use image/druckvergleich.png>
 Package pdftex.def Info: image/druckvergleich.png  used on input line 32.
 (pdftex.def)             Requested size: 318.66948pt x 51.44493pt.
-<image/druckausgabe.png, id=1367, 121.45375pt x 50.1875pt>
+<image/druckausgabe.png, id=1363, 121.45375pt x 50.1875pt>
 File: image/druckausgabe.png Graphic file (type png)
 <use image/druckausgabe.png>
 Package pdftex.def Info: image/druckausgabe.png  used on input line 39.
@@ -3276,7 +3263,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 11.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[48 <./image/druckvergleich.png> <./image/druckausgabe.png>]
+[47 <./image/druckvergleich.png> <./image/druckausgabe.png>]
 (Sensoren auf CubeSat/Sensoren auf dem Satellit.tex
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
@@ -3286,7 +3273,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 4.
 
-<image/blockschaltnildedu.png, id=1381, 335.07pt x 188.559pt>
+<image/blockschaltnildedu.png, id=1377, 335.07pt x 188.559pt>
 File: image/blockschaltnildedu.png Graphic file (type png)
 <use image/blockschaltnildedu.png>
 Package pdftex.def Info: image/blockschaltnildedu.png  used on input line 9.
@@ -3303,7 +3290,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 15.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[49 <./image/blockschaltnildedu.png>]
+[48 <./image/blockschaltnildedu.png>]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 16.
@@ -3328,7 +3315,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 38.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[50]
+[49]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 39.
@@ -3341,7 +3328,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 49.
 
-<image/bilduv.jpg, id=1407, 239.39438pt x 158.09062pt>
+<image/bilduv.jpg, id=1403, 239.39438pt x 158.09062pt>
 File: image/bilduv.jpg Graphic file (type jpg)
 <use image/bilduv.jpg>
 Package pdftex.def Info: image/bilduv.jpg  used on input line 54.
@@ -3358,7 +3345,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 58.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[51])
+[50])
 File: image/htlr_logo.png Graphic file (type png)
 <use image/htlr_logo.png>
 Package pdftex.def Info: image/htlr_logo.png  used on input line 14.
@@ -3372,7 +3359,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 14.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[52 <./image/bilduv.jpg>] (UVLampe.tex
+[51 <./image/bilduv.jpg>] (UVLampe.tex
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 1.
@@ -3383,14 +3370,14 @@ Underfull \hbox (badness 1430) in paragraph at lines 13--13
  Par-ty,GLOW,Fluoreszierende Ma-le- 
  []
 
-<image/uvlampe.png, id=1425, 628.59843pt x 514.17094pt>
+<image/uvlampe.png, id=1421, 628.59843pt x 514.17094pt>
 File: image/uvlampe.png Graphic file (type png)
 <use image/uvlampe.png>
 Package pdftex.def Info: image/uvlampe.png  used on input line 17.
 (pdftex.def)             Requested size: 144.57458pt x 118.25682pt.
 
 LaTeX Warning: Citation 'https://m.media-amazon.com/images/I/617AufdHaoL._AC_SL
-1500_.jpg' on page 53 undefined on input line 18.
+1500_.jpg' on page 52 undefined on input line 18.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
@@ -3408,7 +3395,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 20.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[53 <./image/uvlampe.png>])
+[52 <./image/uvlampe.png>])
 File: image/htlr_logo.png Graphic file (type png)
 <use image/htlr_logo.png>
 Package pdftex.def Info: image/htlr_logo.png  used on input line 17.
@@ -3422,12 +3409,12 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 17.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[54] (Magnetfeld.tex
+[53] (Magnetfeld.tex
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 1.
 
-<image/Magnet.png, id=1446, 336.50719pt x 328.97906pt>
+<image/Magnet.png, id=1442, 336.50719pt x 328.97906pt>
 File: image/Magnet.png Graphic file (type png)
 <use image/Magnet.png>
 Package pdftex.def Info: image/Magnet.png  used on input line 14.
@@ -3446,7 +3433,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 19.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[55 <./image/Magnet.png>] (Pneumatik/Pneumatik.tex
+[54 <./image/Magnet.png>] (Pneumatik/Pneumatik.tex
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 1.
@@ -3471,12 +3458,12 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 24.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[56]
+[55]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 25.
 
-<image/zusammenpneumatik.jpg, id=1464, 272.51813pt x 325.215pt>
+<image/zusammenpneumatik.jpg, id=1460, 272.51813pt x 325.215pt>
 File: image/zusammenpneumatik.jpg Graphic file (type jpg)
 <use image/zusammenpneumatik.jpg>
 Package pdftex.def Info: image/zusammenpneumatik.jpg  used on input line 29.
@@ -3491,114 +3478,103 @@ Overfull \hbox (21.05563pt too wide) in paragraph at lines 36--37
 em Ven-til steu-ern wir die R[]uttelplatte 
  []
 
-<image/ventil.jpeg, id=1467, 240.9pt x 154.32657pt>
+<image/ventil.jpeg, id=1463, 240.9pt x 154.32657pt>
 File: image/ventil.jpeg Graphic file (type jpg)
 <use image/ventil.jpeg>
 Package pdftex.def Info: image/ventil.jpeg  used on input line 40.
 (pdftex.def)             Requested size: 240.8994pt x 154.32617pt.
-File: image/htlr_logo.png Graphic file (type png)
-<use image/htlr_logo.png>
-Package pdftex.def Info: image/htlr_logo.png  used on input line 45.
-(pdftex.def)             Requested size: 63.58063pt x 29.59067pt.
-
-LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 45.
-
-File: image/htl_logo.jpg Graphic file (type jpg)
-<use image/htl_logo.jpg>
-Package pdftex.def Info: image/htl_logo.jpg  used on input line 45.
-(pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[57 <./image/zusammenpneumatik.jpg>]
-<image/zusammenschaltngventil.jpeg, id=1475, 455.45157pt x 222.8325pt>
+<image/zusammenschaltngventil.jpeg, id=1464, 1425.325pt x 837.1275pt>
 File: image/zusammenschaltngventil.jpeg Graphic file (type jpg)
 <use image/zusammenschaltngventil.jpeg>
 Package pdftex.def Info: image/zusammenschaltngventil.jpeg  used on input line 
 48.
-(pdftex.def)             Requested size: 500.99828pt x 245.1165pt.
+(pdftex.def)             Requested size: 427.6008pt x 251.14018pt.
+File: image/htlr_logo.png Graphic file (type png)
+<use image/htlr_logo.png>
+Package pdftex.def Info: image/htlr_logo.png  used on input line 51.
+(pdftex.def)             Requested size: 63.58063pt x 29.59067pt.
 
-Overfull \hbox (45.75417pt too wide) in paragraph at lines 48--49
- [][] 
- []
+LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
+(Font)              using `OT1/cmss/bx/n' instead on input line 51.
 
+File: image/htl_logo.jpg Graphic file (type jpg)
+<use image/htl_logo.jpg>
+Package pdftex.def Info: image/htl_logo.jpg  used on input line 51.
+(pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
+[56 <./image/zusammenpneumatik.jpg> <./image/ventil.jpeg>]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 53.
 
 File: image/htlr_logo.png Graphic file (type png)
 <use image/htlr_logo.png>
-Package pdftex.def Info: image/htlr_logo.png  used on input line 55.
+Package pdftex.def Info: image/htlr_logo.png  used on input line 57.
 (pdftex.def)             Requested size: 63.58063pt x 29.59067pt.
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 55.
+(Font)              using `OT1/cmss/bx/n' instead on input line 57.
 
 File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
-Package pdftex.def Info: image/htl_logo.jpg  used on input line 55.
+Package pdftex.def Info: image/htl_logo.jpg  used on input line 57.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[58 <./image/ventil.jpeg> <./image/zusammenschaltngventil.jpeg>]
-<image/vakuumejektor.jpeg, id=1486, 242.40562pt x 118.94438pt>
+[57 <./image/zusammenschaltngventil.jpeg>]
+<image/vakuumejektor.jpeg, id=1484, 242.40562pt x 118.94438pt>
 File: image/vakuumejektor.jpeg Graphic file (type jpg)
 <use image/vakuumejektor.jpeg>
 Package pdftex.def Info: image/vakuumejektor.jpeg  used on input line 63.
 (pdftex.def)             Requested size: 290.88527pt x 142.73253pt.
-<image/vakummejektorzusammen.jpeg, id=1489, 851.43094pt x 340.27126pt>
-File: image/vakummejektorzusammen.jpeg Graphic file (type jpg)
-<use image/vakummejektorzusammen.jpeg>
-Package pdftex.def Info: image/vakummejektorzusammen.jpeg  used on input line 7
-1.
-(pdftex.def)             Requested size: 425.71443pt x 170.13521pt.
-File: image/htlr_logo.png Graphic file (type png)
-<use image/htlr_logo.png>
-Package pdftex.def Info: image/htlr_logo.png  used on input line 75.
-(pdftex.def)             Requested size: 63.58063pt x 29.59067pt.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 75.
+(Font)              using `OT1/cmss/bx/n' instead on input line 71.
+
+File: image/htlr_logo.png Graphic file (type png)
+<use image/htlr_logo.png>
+Package pdftex.def Info: image/htlr_logo.png  used on input line 79.
+(pdftex.def)             Requested size: 63.58063pt x 29.59067pt.
+
+LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
+(Font)              using `OT1/cmss/bx/n' instead on input line 79.
 
 File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
-Package pdftex.def Info: image/htl_logo.jpg  used on input line 75.
+Package pdftex.def Info: image/htl_logo.jpg  used on input line 79.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[59 <./image/vakuumejektor.jpeg>]
-
-LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 76.
-
-<image/vibration.jpeg, id=1499, 303.38344pt x 196.48407pt>
+[58 <./image/vakuumejektor.jpeg>]
+<image/vibration.jpeg, id=1494, 303.38344pt x 196.48407pt>
 File: image/vibration.jpeg Graphic file (type jpg)
 <use image/vibration.jpeg>
-Package pdftex.def Info: image/vibration.jpeg  used on input line 87.
+Package pdftex.def Info: image/vibration.jpeg  used on input line 82.
 (pdftex.def)             Requested size: 303.38269pt x 196.48358pt.
-File: image/htlr_logo.png Graphic file (type png)
-<use image/htlr_logo.png>
-Package pdftex.def Info: image/htlr_logo.png  used on input line 91.
-(pdftex.def)             Requested size: 63.58063pt x 29.59067pt.
+
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 91.
+(Font)              using `OT1/cmss/bx/n' instead on input line 86.
 
-File: image/htl_logo.jpg Graphic file (type jpg)
-<use image/htl_logo.jpg>
-Package pdftex.def Info: image/htl_logo.jpg  used on input line 91.
-(pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[60 <./image/vakummejektorzusammen.jpeg>]
-
-LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 91.
-
-<image/rüttelplatte1.jpeg, id=1507, 208.52907pt x 277.78781pt>
+<image/rüttelplatte1.jpeg, id=1497, 208.52907pt x 277.78781pt>
 File: image/rüttelplatte1.jpeg Graphic file (type jpg)
 <use image/rüttelplatte1.jpeg>
-Package pdftex.def Info: image/rüttelplatte1.jpeg  used on input line 99.
+Package pdftex.def Info: image/rüttelplatte1.jpeg  used on input line 94.
 (pdftex.def)             Requested size: 182.09486pt x 242.58897pt.
-<image/rüttelplatte2.jpeg, id=1508, 240.9pt x 272.51813pt>
+<image/rüttelplatte2.jpeg, id=1498, 240.9pt x 272.51813pt>
 File: image/rüttelplatte2.jpeg Graphic file (type jpg)
 <use image/rüttelplatte2.jpeg>
-Package pdftex.def Info: image/rüttelplatte2.jpeg  used on input line 106.
+Package pdftex.def Info: image/rüttelplatte2.jpeg  used on input line 101.
 (pdftex.def)             Requested size: 213.96529pt x 242.05385pt.
-)
+File: image/htlr_logo.png Graphic file (type png)
+<use image/htlr_logo.png>
+Package pdftex.def Info: image/htlr_logo.png  used on input line 109.
+(pdftex.def)             Requested size: 63.58063pt x 29.59067pt.
+
+LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
+(Font)              using `OT1/cmss/bx/n' instead on input line 109.
+
+File: image/htl_logo.jpg Graphic file (type jpg)
+<use image/htl_logo.jpg>
+Package pdftex.def Info: image/htl_logo.jpg  used on input line 109.
+(pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
+[59 <./image/vibration.jpeg>])
 File: image/htlr_logo.png Graphic file (type png)
 <use image/htlr_logo.png>
 Package pdftex.def Info: image/htlr_logo.png  used on input line 22.
@@ -3612,54 +3588,18 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 22.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[61 <./image/vibration.jpeg> <./image/rüttelplatte1.jpeg> <./image/rüttelplat
-te2.jpeg>]
-File: image/htlr_logo.png Graphic file (type png)
-<use image/htlr_logo.png>
-Package pdftex.def Info: image/htlr_logo.png  used on input line 22.
-(pdftex.def)             Requested size: 63.58063pt x 29.59067pt.
-
-
-LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 22.
-
-File: image/htl_logo.jpg Graphic file (type jpg)
-<use image/htl_logo.jpg>
-Package pdftex.def Info: image/htl_logo.jpg  used on input line 22.
-(pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[62] (LED-Streifen.tex
+[60 <./image/rüttelplatte1.jpeg> <./image/rüttelplatte2.jpeg>]
+(LED-Streifen.tex
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 1.
 
-<image/schaltplanled.jpg, id=1521, 454.69875pt x 136.25906pt>
+<image/schaltplanled.jpg, id=1510, 454.69875pt x 136.25906pt>
 File: image/schaltplanled.jpg Graphic file (type jpg)
 <use image/schaltplanled.jpg>
 Package pdftex.def Info: image/schaltplanled.jpg  used on input line 8.
 (pdftex.def)             Requested size: 454.69763pt x 136.25871pt.
-<image/led1.jpg, id=1522, 106.1055pt x 85.41pt>
-File: image/led1.jpg Graphic file (type jpg)
-<use image/led1.jpg>
-Package pdftex.def Info: image/led1.jpg  used on input line 23.
-(pdftex.def)             Requested size: 236.72888pt x 190.5755pt.
-<image/led2.jpg, id=1523, 92.637pt x 85.0815pt>
-File: image/led2.jpg Graphic file (type jpg)
-<use image/led2.jpg>
-Package pdftex.def Info: image/led2.jpg  used on input line 30.
-(pdftex.def)             Requested size: 204.85846pt x 188.173pt.
-File: image/htlr_logo.png Graphic file (type png)
-<use image/htlr_logo.png>
-Package pdftex.def Info: image/htlr_logo.png  used on input line 37.
-(pdftex.def)             Requested size: 63.58063pt x 29.59067pt.
-
-LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 37.
-
-File: image/htl_logo.jpg Graphic file (type jpg)
-<use image/htl_logo.jpg>
-Package pdftex.def Info: image/htl_logo.jpg  used on input line 37.
-(pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[63 <./image/schaltplanled.jpg>])
+)
 File: image/htlr_logo.png Graphic file (type png)
 <use image/htlr_logo.png>
 Package pdftex.def Info: image/htlr_logo.png  used on input line 24.
@@ -3673,12 +3613,12 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 24.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[64 <./image/led1.jpg> <./image/led2.jpg>] (CubeSat.tex
+[61 <./image/schaltplanled.jpg>] (CubeSat.tex
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 1.
 
-<image/3dcube.png, id=1534, 303.2055pt x 226.9935pt>
+<image/3dcube.png, id=1517, 303.2055pt x 226.9935pt>
 File: image/3dcube.png Graphic file (type png)
 <use image/3dcube.png>
 Package pdftex.def Info: image/3dcube.png  used on input line 4.
@@ -3713,7 +3653,7 @@ Underfull \hbox (badness 10000) detected at line 6
 |\OT1/cmss/m/n/12 CubeSat-Modell zeich-net sich durch sei-ne De-
  []
 
-<image/Druckvorbereitung.png, id=1535, 397.8614pt x 210.03468pt>
+<image/Druckvorbereitung.png, id=1518, 397.8614pt x 210.03468pt>
 File: image/Druckvorbereitung.png Graphic file (type png)
 <use image/Druckvorbereitung.png>
 Package pdftex.def Info: image/Druckvorbereitung.png  used on input line 10.
@@ -3730,13 +3670,13 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 14.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[65 <./image/3dcube.png> <./image/Druckvorbereitung.png>]
+[62 <./image/3dcube.png> <./image/Druckvorbereitung.png>]
 Overfull \hbox (5.0031pt too wide) in paragraph at lines 16--17
 \OT1/cmss/m/n/12 Da sechs Sei-ten mit dem 3D-Drucker ge-druckt wer-den m[]ussen
  und ma-xi-mal zwei Tei-le gleich- 
  []
 
-<image/ausdruck.png, id=1544, 251.43938pt x 258.9675pt>
+<image/ausdruck.png, id=1527, 251.43938pt x 258.9675pt>
 File: image/ausdruck.png Graphic file (type png)
 <use image/ausdruck.png>
 Package pdftex.def Info: image/ausdruck.png  used on input line 18.
@@ -3751,7 +3691,7 @@ Underfull \hbox (badness 10000) detected at line 20
 |\OT1/cmss/m/n/12 sind, muss der Cu-be-Sat noch zu-sam-men-ge-schraubt
  []
 
-<image/metalplatte.jpg, id=1545, 266.49562pt x 207.77625pt>
+<image/metalplatte.jpg, id=1528, 266.49562pt x 207.77625pt>
 File: image/metalplatte.jpg Graphic file (type jpg)
 <use image/metalplatte.jpg>
 Package pdftex.def Info: image/metalplatte.jpg  used on input line 26.
@@ -3776,7 +3716,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 47.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[66 <./image/ausdruck.png> <./image/metalplatte.jpg>]
+[63 <./image/ausdruck.png> <./image/metalplatte.jpg>]
 Overfull \hbox (6.57388pt too wide) in paragraph at lines 47--48
 []\OT1/cmss/m/n/12 Um ei-ne op-ti-ma-le Haf-tung zu er-zie-len, wur-de die Me-t
 all-plat-te mit dem Epoxid-kle-ber sorgf[]altig 
@@ -3788,7 +3728,7 @@ Overfull \hbox (23.57236pt too wide) in paragraph at lines 47--48
 Plat-te w[]ahrend des Aush[]arteprozesses 
  []
 
-<image/fertigercube.jpg, id=1553, 213.04594pt x 265.74281pt>
+<image/fertigercube.jpg, id=1536, 213.04594pt x 265.74281pt>
 File: image/fertigercube.jpg Graphic file (type jpg)
 <use image/fertigercube.jpg>
 Package pdftex.def Info: image/fertigercube.jpg  used on input line 53.
@@ -3807,7 +3747,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 27.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[67 <./image/fertigercube.jpg>] (Halterung.tex
+[64 <./image/fertigercube.jpg>] (Halterung.tex
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 1.
@@ -3816,12 +3756,12 @@ LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 5.
 
-<image/boden.jpg, id=1561, 455.45157pt x 342.5297pt>
+<image/boden.jpg, id=1543, 455.45157pt x 342.5297pt>
 File: image/boden.jpg Graphic file (type jpg)
 <use image/boden.jpg>
 Package pdftex.def Info: image/boden.jpg  used on input line 8.
 (pdftex.def)             Requested size: 227.72522pt x 171.26442pt.
-<image/zusätzlichehalterung.jpg, id=1562, 230.2785pt x 165.564pt>
+<image/zusätzlichehalterung.jpg, id=1544, 230.2785pt x 165.564pt>
 File: image/zusätzlichehalterung.jpg Graphic file (type jpg)
 <use image/zusätzlichehalterung.jpg>
 Package pdftex.def Info: image/zusätzlichehalterung.jpg  used on input line 19
@@ -3839,8 +3779,8 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 24.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[68 <./image/boden.jpg>]
-<image/fertiger boden.jpg, id=1568, 388.45125pt x 362.85562pt>
+[65 <./image/boden.jpg>]
+<image/fertiger boden.jpg, id=1550, 388.45125pt x 362.85562pt>
 File: image/fertiger boden.jpg Graphic file (type jpg)
 <use image/fertiger boden.jpg>
 Package pdftex.def Info: image/fertiger boden.jpg  used on input line 27.
@@ -3850,7 +3790,7 @@ Package pdftex.def Info: image/fertiger boden.jpg  used on input line 27.
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 34.
 
-<image/deckel.png, id=1569, 376.02985pt x 266.49562pt>
+<image/deckel.png, id=1551, 376.02985pt x 266.49562pt>
 File: image/deckel.png Graphic file (type png)
 <use image/deckel.png>
 Package pdftex.def Info: image/deckel.png  used on input line 37.
@@ -3867,7 +3807,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 42.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[69 <./image/fertiger boden.jpg> <./image/zusätzlichehalterung.jpg>]
+[66 <./image/fertiger boden.jpg> <./image/zusätzlichehalterung.jpg>]
 File: image/htlr_logo.png Graphic file (type png)
 <use image/htlr_logo.png>
 Package pdftex.def Info: image/htlr_logo.png  used on input line 51.
@@ -3881,69 +3821,56 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 51.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[70 <./image/deckel.png>]
+[67 <./image/deckel.png>]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 52.
 
-<image/druckvorbereitungboden.png, id=1582, 383.93437pt x 223.20891pt>
+<image/druckvorbereitungboden.png, id=1565, 383.93437pt x 223.20891pt>
 File: image/druckvorbereitungboden.png Graphic file (type png)
 <use image/druckvorbereitungboden.png>
-Package pdftex.def Info: image/druckvorbereitungboden.png  used on input line 6
-1.
+Package pdftex.def Info: image/druckvorbereitungboden.png  used on input line 5
+5.
 (pdftex.def)             Requested size: 268.75221pt x 156.24515pt.
-<image/cubeinhalterung.jpg, id=1583, 294.993pt x 263.7855pt>
+<image/cubeinhalterung.jpg, id=1566, 294.993pt x 263.7855pt>
 File: image/cubeinhalterung.jpg Graphic file (type jpg)
 <use image/cubeinhalterung.jpg>
-Package pdftex.def Info: image/cubeinhalterung.jpg  used on input line 70.
+Package pdftex.def Info: image/cubeinhalterung.jpg  used on input line 64.
 (pdftex.def)             Requested size: 206.49368pt x 184.64859pt.
-File: image/htlr_logo.png Graphic file (type png)
-<use image/htlr_logo.png>
-Package pdftex.def Info: image/htlr_logo.png  used on input line 75.
-(pdftex.def)             Requested size: 63.58063pt x 29.59067pt.
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 75.
 
-File: image/htl_logo.jpg Graphic file (type jpg)
-<use image/htl_logo.jpg>
-Package pdftex.def Info: image/htl_logo.jpg  used on input line 75.
-(pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[71 <./image/druckvorbereitungboden.png>]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 81.
+(Font)              using `OT1/cmss/bx/n' instead on input line 75.
 
-
-LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 81.
-
-)
+) (Lüftung.tex
 File: image/htlr_logo.png Graphic file (type png)
 <use image/htlr_logo.png>
-Package pdftex.def Info: image/htlr_logo.png  used on input line 29.
+Package pdftex.def Info: image/htlr_logo.png  used on input line 1.
 (pdftex.def)             Requested size: 63.58063pt x 29.59067pt.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 29.
+(Font)              using `OT1/cmss/bx/n' instead on input line 1.
 
 File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
-Package pdftex.def Info: image/htl_logo.jpg  used on input line 29.
+Package pdftex.def Info: image/htl_logo.jpg  used on input line 1.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[72 <./image/cubeinhalterung.jpg>] (Lüftung.tex
+[68 <./image/druckvorbereitungboden.png> <./image/cubeinhalterung.jpg>]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 1.
 
-<image/arduino lüftung.png, id=1596, 509.5035pt x 224.3655pt>
+<image/arduino lüftung.png, id=1574, 509.5035pt x 224.3655pt>
 File: image/arduino lüftung.png Graphic file (type png)
 <use image/arduino lüftung.png>
 Package pdftex.def Info: image/arduino lüftung.png  used on input line 4.
 (pdftex.def)             Requested size: 356.65001pt x 157.05476pt.
 
-LaTeX Warning: Citation 'SchaltungLüfter' on page 73 undefined on input line 5
+LaTeX Warning: Citation 'SchaltungLüfter' on page 69 undefined on input line 5
 .
 
 
@@ -3968,14 +3895,14 @@ LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 22.
 
-<image/pinbelegung transistor.png, id=1600, 293.095pt x 178.6675pt>
+<image/pinbelegung transistor.png, id=1578, 293.095pt x 178.6675pt>
 File: image/pinbelegung transistor.png Graphic file (type png)
 <use image/pinbelegung transistor.png>
 Package pdftex.def Info: image/pinbelegung transistor.png  used on input line 3
 6.
 (pdftex.def)             Requested size: 293.09427pt x 178.66705pt.
 
-LaTeX Warning: Citation 'BC547Bild' on page 73 undefined on input line 37.
+LaTeX Warning: Citation 'BC547Bild' on page 69 undefined on input line 37.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
@@ -3983,44 +3910,45 @@ LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 
 File: image/htlr_logo.png Graphic file (type png)
 <use image/htlr_logo.png>
-Package pdftex.def Info: image/htlr_logo.png  used on input line 40.
+Package pdftex.def Info: image/htlr_logo.png  used on input line 39.
 (pdftex.def)             Requested size: 63.58063pt x 29.59067pt.
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 40.
+(Font)              using `OT1/cmss/bx/n' instead on input line 39.
 
 File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
-Package pdftex.def Info: image/htl_logo.jpg  used on input line 40.
+Package pdftex.def Info: image/htl_logo.jpg  used on input line 39.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[73 <./image/arduino lüftung.png>]
+[69 <./image/arduino lüftung.png>]
+File: image/htlr_logo.png Graphic file (type png)
+<use image/htlr_logo.png>
+Package pdftex.def Info: image/htlr_logo.png  used on input line 42.
+(pdftex.def)             Requested size: 63.58063pt x 29.59067pt.
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
+(Font)              using `OT1/cmss/bx/n' instead on input line 42.
+
+File: image/htl_logo.jpg Graphic file (type jpg)
+<use image/htl_logo.jpg>
+Package pdftex.def Info: image/htl_logo.jpg  used on input line 42.
+(pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
+[70 <./image/pinbelegung transistor.png>]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 43.
 
-<image/lüfterstreifen.png, id=1613, 455.07515pt x 175.78172pt>
+<image/lüfterstreifen.png, id=1598, 455.07515pt x 175.78172pt>
 File: image/lüfterstreifen.png Graphic file (type png)
 <use image/lüfterstreifen.png>
 Package pdftex.def Info: image/lüfterstreifen.png  used on input line 46.
 (pdftex.def)             Requested size: 318.55043pt x 123.04636pt.
-File: image/htlr_logo.png Graphic file (type png)
-<use image/htlr_logo.png>
-Package pdftex.def Info: image/htlr_logo.png  used on input line 52.
-(pdftex.def)             Requested size: 63.58063pt x 29.59067pt.
-
-LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 52.
-
-File: image/htl_logo.jpg Graphic file (type jpg)
-<use image/htl_logo.jpg>
-Package pdftex.def Info: image/htl_logo.jpg  used on input line 52.
-(pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[74 <./image/pinbelegung transistor.png> <./image/lüfterstreifen.png>]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 53.
 
-<image/befestigunglüfter.jpg, id=1623, 249.003pt x 332.442pt>
+<image/befestigunglüfter.jpg, id=1599, 249.003pt x 332.442pt>
 File: image/befestigunglüfter.jpg Graphic file (type jpg)
 <use image/befestigunglüfter.jpg>
 Package pdftex.def Info: image/befestigunglüfter.jpg  used on input line 54.
@@ -4051,18 +3979,19 @@ Underfull \hbox (badness 10000) detected at line 60
 )
 File: image/htlr_logo.png Graphic file (type png)
 <use image/htlr_logo.png>
-Package pdftex.def Info: image/htlr_logo.png  used on input line 31.
+Package pdftex.def Info: image/htlr_logo.png  used on input line 30.
 (pdftex.def)             Requested size: 63.58063pt x 29.59067pt.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 31.
+(Font)              using `OT1/cmss/bx/n' instead on input line 30.
 
 File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
-Package pdftex.def Info: image/htl_logo.jpg  used on input line 31.
+Package pdftex.def Info: image/htl_logo.jpg  used on input line 30.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[75 <./image/befestigunglüfter.jpg>] (Kühlung.tex
+[71 <./image/lüfterstreifen.png> <./image/befestigunglüfter.jpg>]
+(Kühlung.tex
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 1.
@@ -4071,7 +4000,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 3.
 
-<image/kühlgerät.jpg, id=1629, 288.3272pt x 307.1475pt>
+<image/kühlgerät.jpg, id=1607, 288.3272pt x 307.1475pt>
 File: image/kühlgerät.jpg Graphic file (type jpg)
 <use image/kühlgerät.jpg>
 Package pdftex.def Info: image/kühlgerät.jpg  used on input line 4.
@@ -4111,140 +4040,145 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 19.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[76 <./image/kühlgerät.jpg>]
-<image/auseinanderkühlung.jpg, id=1638, 262.143pt x 259.1865pt>
+[72 <./image/kühlgerät.jpg>]
+<image/auseinanderkühlung.jpg, id=1616, 262.143pt x 259.1865pt>
 File: image/auseinanderkühlung.jpg Graphic file (type jpg)
 <use image/auseinanderkühlung.jpg>
 Package pdftex.def Info: image/auseinanderkühlung.jpg  used on input line 26.
 (pdftex.def)             Requested size: 209.71468pt x 207.34947pt.
+<image/schalter.png, id=1617, 128.35454pt x 89.20828pt>
+File: image/schalter.png Graphic file (type png)
+<use image/schalter.png>
+Package pdftex.def Info: image/schalter.png  used on input line 35.
+(pdftex.def)             Requested size: 128.35422pt x 89.20804pt.
 File: image/htlr_logo.png Graphic file (type png)
 <use image/htlr_logo.png>
-Package pdftex.def Info: image/htlr_logo.png  used on input line 33.
+Package pdftex.def Info: image/htlr_logo.png  used on input line 40.
 (pdftex.def)             Requested size: 63.58063pt x 29.59067pt.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 33.
+(Font)              using `OT1/cmss/bx/n' instead on input line 40.
 
 File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
-Package pdftex.def Info: image/htl_logo.jpg  used on input line 33.
+Package pdftex.def Info: image/htl_logo.jpg  used on input line 40.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[77 <./image/auseinanderkühlung.jpg>]
+[73 <./image/auseinanderkühlung.jpg> <./image/schalter.png>]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 34.
+(Font)              using `OT1/cmss/bx/n' instead on input line 41.
 
-<image/verkabelnkühlung.jpg, id=1644, 230.9355pt x 285.138pt>
+<image/verkabelnkühlung.jpg, id=1626, 230.9355pt x 285.138pt>
 File: image/verkabelnkühlung.jpg Graphic file (type jpg)
 <use image/verkabelnkühlung.jpg>
-Package pdftex.def Info: image/verkabelnkühlung.jpg  used on input line 35.
+Package pdftex.def Info: image/verkabelnkühlung.jpg  used on input line 42.
 (pdftex.def)             Requested size: 184.74863pt x 228.1107pt.
 
-Underfull \hbox (badness 10000) detected at line 37
+Underfull \hbox (badness 10000) detected at line 44
 |[]\OT1/cmss/m/n/12 Der Tas-ter wird nun ver-drah-tet. Je-weils ei-ne Ver-bin-
  []
 
 
-Underfull \hbox (badness 10000) detected at line 37
+Underfull \hbox (badness 10000) detected at line 44
 |\OT1/cmss/m/n/12 dung be-steht vom An-schluss 1 zum An-schluss 2 und
  []
 
 
-Underfull \hbox (badness 10000) detected at line 37
+Underfull \hbox (badness 10000) detected at line 44
 |\OT1/cmss/m/n/12 von An-schluss 3 zum An-schluss 4. Vom An-schluss
  []
 
 
-Underfull \hbox (badness 10000) detected at line 37
+Underfull \hbox (badness 10000) detected at line 44
 |\OT1/cmss/m/n/12 2 f[]uhrt ei-ne Ver-bin-dung []uber den Wi-der-stand zum
  []
 
 
-Underfull \hbox (badness 10000) detected at line 39
+Underfull \hbox (badness 10000) detected at line 46
 |[]\OT1/cmss/m/n/12 Der gleiche Vorgang muss auch f[]ur den 2. Schalter
  []
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 44.
+(Font)              using `OT1/cmss/bx/n' instead on input line 51.
 
-<image/streifenrasterkühl.png, id=1645, 516.42938pt x 188.20313pt>
+<image/streifenrasterkühl.png, id=1627, 516.42938pt x 188.20313pt>
 File: image/streifenrasterkühl.png Graphic file (type png)
 <use image/streifenrasterkühl.png>
-Package pdftex.def Info: image/streifenrasterkühl.png  used on input line 47.
+Package pdftex.def Info: image/streifenrasterkühl.png  used on input line 54.
 (pdftex.def)             Requested size: 464.78215pt x 169.38123pt.
 
-Overfull \hbox (9.53804pt too wide) in paragraph at lines 47--48
+Overfull \hbox (9.53804pt too wide) in paragraph at lines 54--55
  [][] 
  []
 
-<image/gehäusestreifen.png, id=1646, 285.31593pt x 216.4336pt>
+<image/gehäusestreifen.png, id=1628, 285.31593pt x 216.4336pt>
 File: image/gehäusestreifen.png Graphic file (type png)
 <use image/gehäusestreifen.png>
-Package pdftex.def Info: image/gehäusestreifen.png  used on input line 54.
+Package pdftex.def Info: image/gehäusestreifen.png  used on input line 61.
 (pdftex.def)             Requested size: 228.25305pt x 173.1471pt.
 File: image/htlr_logo.png Graphic file (type png)
 <use image/htlr_logo.png>
-Package pdftex.def Info: image/htlr_logo.png  used on input line 58.
+Package pdftex.def Info: image/htlr_logo.png  used on input line 65.
 (pdftex.def)             Requested size: 63.58063pt x 29.59067pt.
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 58.
+(Font)              using `OT1/cmss/bx/n' instead on input line 65.
 
 File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
-Package pdftex.def Info: image/htl_logo.jpg  used on input line 58.
+Package pdftex.def Info: image/htl_logo.jpg  used on input line 65.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[78 <./image/verkabelnkühlung.jpg> <./image/streifenrasterkühl.png>]
-<image/streifenanbringen.jpg, id=1654, 257.544pt x 343.2825pt>
+[74 <./image/verkabelnkühlung.jpg> <./image/streifenrasterkühl.png>]
+<image/streifenanbringen.jpg, id=1636, 257.544pt x 343.2825pt>
 File: image/streifenanbringen.jpg Graphic file (type jpg)
 <use image/streifenanbringen.jpg>
-Package pdftex.def Info: image/streifenanbringen.jpg  used on input line 62.
+Package pdftex.def Info: image/streifenanbringen.jpg  used on input line 69.
 (pdftex.def)             Requested size: 180.27956pt x 240.2961pt.
 File: image/htlr_logo.png Graphic file (type png)
 <use image/htlr_logo.png>
-Package pdftex.def Info: image/htlr_logo.png  used on input line 67.
+Package pdftex.def Info: image/htlr_logo.png  used on input line 74.
 (pdftex.def)             Requested size: 63.58063pt x 29.59067pt.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 67.
+(Font)              using `OT1/cmss/bx/n' instead on input line 74.
 
 File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
-Package pdftex.def Info: image/htl_logo.jpg  used on input line 67.
+Package pdftex.def Info: image/htl_logo.jpg  used on input line 74.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[79 <./image/gehäusestreifen.png> <./image/streifenanbringen.jpg>]
+[75 <./image/gehäusestreifen.png> <./image/streifenanbringen.jpg>]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 68.
+(Font)              using `OT1/cmss/bx/n' instead on input line 75.
 
-<image/kühlung1.png, id=1663, 259.1865pt x 249.003pt>
+<image/kühlung1.png, id=1644, 259.1865pt x 249.003pt>
 File: image/kühlung1.png Graphic file (type png)
 <use image/kühlung1.png>
-Package pdftex.def Info: image/kühlung1.png  used on input line 81.
+Package pdftex.def Info: image/kühlung1.png  used on input line 88.
 (pdftex.def)             Requested size: 207.34947pt x 199.20267pt.
-<image/kühlung2.png, id=1664, 182.93344pt x 250.68657pt>
+<image/kühlung2.png, id=1645, 182.93344pt x 250.68657pt>
 File: image/kühlung2.png Graphic file (type png)
 <use image/kühlung2.png>
-Package pdftex.def Info: image/kühlung2.png  used on input line 88.
+Package pdftex.def Info: image/kühlung2.png  used on input line 95.
 (pdftex.def)             Requested size: 201.22739pt x 275.75606pt.
 )
 File: image/htlr_logo.png Graphic file (type png)
 <use image/htlr_logo.png>
-Package pdftex.def Info: image/htlr_logo.png  used on input line 33.
+Package pdftex.def Info: image/htlr_logo.png  used on input line 32.
 (pdftex.def)             Requested size: 63.58063pt x 29.59067pt.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 33.
+(Font)              using `OT1/cmss/bx/n' instead on input line 32.
 
 File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
-Package pdftex.def Info: image/htl_logo.jpg  used on input line 33.
+Package pdftex.def Info: image/htl_logo.jpg  used on input line 32.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[80 <./image/kühlung1.png> <./image/kühlung2.png>] (Notaus.tex
+[76 <./image/kühlung1.png> <./image/kühlung2.png>] (Notaus.tex
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 1.
@@ -4265,7 +4199,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 12.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[81]
+[77]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 12.
@@ -4276,7 +4210,7 @@ Overfull \hbox (49.76366pt too wide) in paragraph at lines 13--14
 on in Be-trieb zu neh-me, wird ein Schl[]usselschalter 
  []
 
-<image/schlüsselschalter.jpg, id=1676, 455.45157pt x 197.98969pt>
+<image/schlüsselschalter.jpg, id=1657, 455.45157pt x 197.98969pt>
 File: image/schlüsselschalter.jpg Graphic file (type jpg)
 <use image/schlüsselschalter.jpg>
 Package pdftex.def Info: image/schlüsselschalter.jpg  used on input line 17.
@@ -4286,7 +4220,7 @@ Package pdftex.def Info: image/schlüsselschalter.jpg  used on input line 17.
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 1.
 
-<image/Zusammenschaltung-Endschalter.png, id=1677, 294.3798pt x 192.2382pt>
+<image/Zusammenschaltung-Endschalter.png, id=1658, 294.3798pt x 192.2382pt>
 File: image/Zusammenschaltung-Endschalter.png Graphic file (type png)
 <use image/Zusammenschaltung-Endschalter.png>
 Package pdftex.def Info: image/Zusammenschaltung-Endschalter.png  used on input
@@ -4304,7 +4238,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 13.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[82 <./image/schlüsselschalter.jpg>])))
+[78 <./image/schlüsselschalter.jpg>])))
 File: image/htlr_logo.png Graphic file (type png)
 <use image/htlr_logo.png>
 Package pdftex.def Info: image/htlr_logo.png  used on input line 52.
@@ -4318,7 +4252,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 52.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[83 <./image/Zusammenschaltung-Endschalter.png>] (Software.tex
+[79 <./image/Zusammenschaltung-Endschalter.png>] (Software.tex
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 1.
@@ -4356,7 +4290,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 3.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[84] (Testprogramm.tex
+[80] (Testprogramm.tex
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 2.
@@ -4389,7 +4323,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 20.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[85]
+[81]
 \openout4 = `main.pyg'.
 
 
@@ -4418,7 +4352,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 56.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[86]
+[82]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 57.
@@ -4450,7 +4384,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 99.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[87]
+[83]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 100.
@@ -4473,7 +4407,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 123.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[88]
+[84]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 124.
@@ -4500,7 +4434,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 141.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[89]
+[85]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 142.
@@ -4523,7 +4457,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 171.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[90]
+[86]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 173.
@@ -4555,7 +4489,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 202.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[91]
+[87]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 203.
@@ -4590,7 +4524,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 250.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[92]
+[88]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 250.
@@ -4622,7 +4556,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 321.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[93]
+[89]
 File: image/htlr_logo.png Graphic file (type png)
 <use image/htlr_logo.png>
 Package pdftex.def Info: image/htlr_logo.png  used on input line 321.
@@ -4636,7 +4570,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 321.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[94]
+[90]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 322.
@@ -4659,12 +4593,12 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 5.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[95] (consti.tex
+[91] (consti.tex
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 1.
 
-<image/cm3+.png, id=1759, 363.3575pt x 203.76125pt>
+<image/cm3+.png, id=1741, 363.3575pt x 203.76125pt>
 File: image/cm3+.png Graphic file (type png)
 <use image/cm3+.png>
 Package pdftex.def Info: image/cm3+.png  used on input line 9.
@@ -4695,8 +4629,8 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 18.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[96 <./image/cm3+.png>]
-<image/sendeverfahren.png, id=1772, 235.88126pt x 150.5625pt>
+[92 <./image/cm3+.png>]
+<image/sendeverfahren.png, id=1754, 235.88126pt x 150.5625pt>
 File: image/sendeverfahren.png Graphic file (type png)
 <use image/sendeverfahren.png>
 Package pdftex.def Info: image/sendeverfahren.png  used on input line 21.
@@ -4724,7 +4658,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 33.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[97 <./image/sendeverfahren.png>]
+[93 <./image/sendeverfahren.png>]
 File: image/htlr_logo.png Graphic file (type png)
 <use image/htlr_logo.png>
 Package pdftex.def Info: image/htlr_logo.png  used on input line 62.
@@ -4738,7 +4672,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 62.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[98]
+[94]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 63.
@@ -4765,7 +4699,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 78.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[99]
+[95]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 79.
@@ -4793,7 +4727,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 116.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[100]
+[96]
 \openout4 = `main.pyg'.
 
 
@@ -4827,7 +4761,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 155.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[101]
+[97]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 160.
@@ -4861,7 +4795,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 196.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[102]
+[98]
 \openout4 = `main.pyg'.
 
 
@@ -4890,17 +4824,17 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 221.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[103]
+[99]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 240.
 
-<image/tabellen.png, id=1824, 455.45157pt x 115.93312pt>
+<image/tabellen.png, id=1805, 455.45157pt x 115.93312pt>
 File: image/tabellen.png Graphic file (type png)
 <use image/tabellen.png>
 Package pdftex.def Info: image/tabellen.png  used on input line 245.
 (pdftex.def)             Requested size: 455.45045pt x 115.93283pt.
-<image/darstellung.png, id=1825, 455.45157pt x 96.36pt>
+<image/darstellung.png, id=1806, 455.45157pt x 96.36pt>
 File: image/darstellung.png Graphic file (type png)
 <use image/darstellung.png>
 Package pdftex.def Info: image/darstellung.png  used on input line 251.
@@ -4917,7 +4851,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 254.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[104 <./image/tabellen.png>]
+[100 <./image/tabellen.png>]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 255.
@@ -4945,7 +4879,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 290.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[105 <./image/darstellung.png>]
+[101 <./image/darstellung.png>]
 \openout4 = `main.pyg'.
 
 
@@ -4964,7 +4898,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 308.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[106]
+[102]
 \openout4 = `main.pyg'.
 
 
@@ -4988,7 +4922,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 333.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[107]
+[103]
 \openout4 = `main.pyg'.
 
 
@@ -5007,7 +4941,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 368.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[108]
+[104]
 \openout4 = `main.pyg'.
 
 
@@ -5026,7 +4960,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 392.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[109]
+[105]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 393.
@@ -5037,7 +4971,7 @@ Overfull \hbox (49.66437pt too wide) in paragraph at lines 396--397
 /n/12 ti . com / lit / an / slva704 / slva704 . pdf ? ts = 1712280198725 & 
  []
 
-<image/constibild.jpg, id=1864, 455.301pt x 197.1pt>
+<image/constibild.jpg, id=1845, 455.301pt x 197.1pt>
 File: image/constibild.jpg Graphic file (type jpg)
 <use image/constibild.jpg>
 Package pdftex.def Info: image/constibild.jpg  used on input line 399.
@@ -5063,7 +4997,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 412.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[110 <./image/constibild.jpg>]
+[106 <./image/constibild.jpg>]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 414.
@@ -5091,7 +5025,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 458.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[111]))
+[107]))
 File: image/htlr_logo.png Graphic file (type png)
 <use image/htlr_logo.png>
 Package pdftex.def Info: image/htlr_logo.png  used on input line 54.
@@ -5105,7 +5039,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 54.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[112] (Steuerung.tex
+[108] (Steuerung.tex
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 1.
@@ -5121,7 +5055,7 @@ Overfull \hbox (2.62674pt too wide) in paragraph at lines 2--3
  Be-triebs-sys-te-men und der Un-terst[]utzung 
  []
 
-<image/raspi.png, id=1890, 260.6538pt x 169.1118pt>
+<image/raspi.png, id=1871, 260.6538pt x 169.1118pt>
 File: image/raspi.png Graphic file (type png)
 <use image/raspi.png>
 Package pdftex.def Info: image/raspi.png  used on input line 8.
@@ -5152,17 +5086,17 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 4.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[113 <./image/raspi.png>] (implementation Raspberry Pi.tex
+[109 <./image/raspi.png>] (implementation Raspberry Pi.tex
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 1.
 
-<image/terminal.png, id=1900, 674.52pt x 424.58624pt>
+<image/terminal.png, id=1882, 674.52pt x 424.58624pt>
 File: image/terminal.png Graphic file (type png)
 <use image/terminal.png>
 Package pdftex.def Info: image/terminal.png  used on input line 8.
 (pdftex.def)             Requested size: 204.85846pt x 128.95116pt.
-<image/pixeloberfläche.jpg, id=1901, 752.8125pt x 423.5825pt>
+<image/pixeloberfläche.jpg, id=1883, 752.8125pt x 423.5825pt>
 File: image/pixeloberfläche.jpg Graphic file (type jpg)
 <use image/pixeloberfläche.jpg>
 Package pdftex.def Info: image/pixeloberfläche.jpg  used on input line 15.
@@ -5185,7 +5119,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 44.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[114 <./image/terminal.png> <./image/pixeloberfläche.jpg>]
+[110 <./image/terminal.png> <./image/pixeloberfläche.jpg>]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 44.
@@ -5196,7 +5130,7 @@ Overfull \hbox (2.35176pt too wide) in paragraph at lines 45--47
 en die einen Remote-Zugriff erm[]oglichen. 
  []
 
-<image/Erweiterungen.png, id=1918, 167.62625pt x 102.3825pt>
+<image/Erweiterungen.png, id=1900, 167.62625pt x 102.3825pt>
 File: image/Erweiterungen.png Graphic file (type png)
 <use image/Erweiterungen.png>
 Package pdftex.def Info: image/Erweiterungen.png  used on input line 55.
@@ -5226,7 +5160,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 59.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[115 <./image/Erweiterungen.png>])
+[111 <./image/Erweiterungen.png>])
 File: image/htlr_logo.png Graphic file (type png)
 <use image/htlr_logo.png>
 Package pdftex.def Info: image/htlr_logo.png  used on input line 7.
@@ -5240,7 +5174,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 7.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[116] (API.tex
+[112] (API.tex
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 1.
@@ -5261,13 +5195,13 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 26.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[117]
+[113]
 \openout4 = `main.pyg'.
 
 
 (_minted-main/219D30764565DC2EED7042ECFBDAE7A6CF33289265490CC72470AF6FAFE9A294.
 pygtex)
-<image/fastapi.png, id=1945, 141.02687pt x 320.69812pt>
+<image/fastapi.png, id=1926, 141.02687pt x 320.69812pt>
 File: image/fastapi.png Graphic file (type png)
 <use image/fastapi.png>
 Package pdftex.def Info: image/fastapi.png  used on input line 53.
@@ -5285,7 +5219,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 58.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[118]
+[114]
 File: image/htlr_logo.png Graphic file (type png)
 <use image/htlr_logo.png>
 Package pdftex.def Info: image/htlr_logo.png  used on input line 60.
@@ -5299,7 +5233,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 60.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[119 <./image/fastapi.png>]
+[115 <./image/fastapi.png>]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 60.
@@ -5331,7 +5265,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 95.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[120]
+[116]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 97.
@@ -5357,18 +5291,18 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 129.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[121]
+[117]
 \openout4 = `main.pyg'.
 
 
 (_minted-main/F1DF311052E0AB398F95A26F97C3811DCF33289265490CC72470AF6FAFE9A294.
 pygtex)
-<image/uvlampe ein.png, id=1973, 116.93687pt x 51.69313pt>
+<image/uvlampe ein.png, id=1954, 116.93687pt x 51.69313pt>
 File: image/uvlampe ein.png Graphic file (type png)
 <use image/uvlampe ein.png>
 Package pdftex.def Info: image/uvlampe ein.png  used on input line 152.
 (pdftex.def)             Requested size: 182.09486pt x 80.50685pt.
-<image/UVLampe aus.png, id=1974, 97.86563pt x 51.19125pt>
+<image/UVLampe aus.png, id=1955, 97.86563pt x 51.19125pt>
 File: image/UVLampe aus.png Graphic file (type png)
 <use image/UVLampe aus.png>
 Package pdftex.def Info: image/UVLampe aus.png  used on input line 159.
@@ -5392,7 +5326,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 9.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[122 <./image/uvlampe ein.png> <./image/UVLampe aus.png>] (Webapplikation.tex
+[118 <./image/uvlampe ein.png> <./image/UVLampe aus.png>] (Webapplikation.tex
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 2.
@@ -5417,7 +5351,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 23.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[123]
+[119]
 \openout4 = `main.pyg'.
 
 
@@ -5454,7 +5388,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 61.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[124]
+[120]
 Overfull \hbox (1.85393pt too wide) in paragraph at lines 62--63
 []\OT1/cmss/m/n/12 Zu Be-ginn wer-den al-le not-wen-di-gen Bi-blio-the-ken im-p
 or-tiert. Dar-un-ter die Bi-blio-the-ken []Dash` 
@@ -5478,7 +5412,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 76.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[125]
+[121]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 77.
@@ -5506,7 +5440,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 118.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[126]
+[122]
 \openout4 = `main.pyg'.
 
 
@@ -5528,7 +5462,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 142.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[127]
+[123]
 \openout4 = `main.pyg'.
 
 
@@ -5555,7 +5489,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 184.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[128]
+[124]
 \openout4 = `main.pyg'.
 
 
@@ -5584,7 +5518,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 229.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[129]
+[125]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 231.
@@ -5607,7 +5541,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 249.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[130]
+[126]
 \openout4 = `main.pyg'.
 
 
@@ -5643,12 +5577,12 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 288.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[131]
+[127]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 289.
 
-<image/korreation.png, id=2043, 273.02pt x 161.60374pt>
+<image/korreation.png, id=2025, 273.02pt x 161.60374pt>
 File: image/korreation.png Graphic file (type png)
 <use image/korreation.png>
 Package pdftex.def Info: image/korreation.png  used on input line 299.
@@ -5665,7 +5599,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 305.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[132 <./image/korreation.png>]
+[128 <./image/korreation.png>]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 306.
@@ -5684,7 +5618,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 56.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[133] (testen/Testen.tex
+[129] (testen/Testen.tex
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 1.
@@ -5713,7 +5647,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 16.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[134]
+[130]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 18.
@@ -5738,7 +5672,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 33.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[135]
+[131]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 39.
@@ -5755,7 +5689,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 42.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[136]
+[132]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 46.
@@ -5790,7 +5724,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 63.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[137]
+[133]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 64.
@@ -5827,7 +5761,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 87.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[138]
+[134]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 88.
@@ -5844,7 +5778,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 101.
 
-<image/tempmess1.png, id=2089, 389.95688pt x 222.8325pt>
+<image/tempmess1.png, id=2071, 389.95688pt x 222.8325pt>
 File: image/tempmess1.png Graphic file (type png)
 <use image/tempmess1.png>
 Package pdftex.def Info: image/tempmess1.png  used on input line 106.
@@ -5861,8 +5795,8 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 111.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[139]
-<image/temp2mess.png, id=2096, 383.18156pt x 217.5628pt>
+[135]
+<image/temp2mess.png, id=2077, 383.18156pt x 217.5628pt>
 File: image/temp2mess.png Graphic file (type png)
 <use image/temp2mess.png>
 Package pdftex.def Info: image/temp2mess.png  used on input line 115.
@@ -5885,12 +5819,12 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 121.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[140 <./image/tempmess1.png> <./image/temp2mess.png>]
+[136 <./image/tempmess1.png> <./image/temp2mess.png>]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 122.
 
-<image/feuchtigkeit.png, id=2105, 381.67593pt x 259.7203pt>
+<image/feuchtigkeit.png, id=2086, 381.67593pt x 259.7203pt>
 File: image/feuchtigkeit.png Graphic file (type png)
 <use image/feuchtigkeit.png>
 Package pdftex.def Info: image/feuchtigkeit.png  used on input line 127.
@@ -5899,7 +5833,7 @@ Package pdftex.def Info: image/feuchtigkeit.png  used on input line 127.
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 134.
 
-<image/druck.png, id=2106, 423.08063pt x 261.22594pt>
+<image/druck.png, id=2087, 423.08063pt x 261.22594pt>
 File: image/druck.png Graphic file (type png)
 <use image/druck.png>
 Package pdftex.def Info: image/druck.png  used on input line 139.
@@ -5916,8 +5850,8 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 144.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[141 <./image/feuchtigkeit.png>]
-<image/formel.png, id=2113, 204.01219pt x 60.97781pt>
+[137 <./image/feuchtigkeit.png>]
+<image/formel.png, id=2094, 204.01219pt x 60.97781pt>
 File: image/formel.png Graphic file (type png)
 <use image/formel.png>
 Package pdftex.def Info: image/formel.png  used on input line 150.
@@ -5935,13 +5869,13 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 161.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[142 <./image/druck.png> <./image/formel.png>]
+[138 <./image/druck.png> <./image/formel.png>]
 Overfull \hbox (7.79759pt too wide) in paragraph at lines 162--163
 \OT1/cmss/m/n/12 durch-gef[]uhrt. Als re-la-ti-ver Luft-druck wird der Luft-dru
 ck am Mee-res-s-pie-gel ver-wen-det (1013.25 
  []
 
-<image/berechnung.png, id=2122, 344.03531pt x 98.61844pt>
+<image/berechnung.png, id=2103, 344.03531pt x 98.61844pt>
 File: image/berechnung.png Graphic file (type png)
 <use image/berechnung.png>
 Package pdftex.def Info: image/berechnung.png  used on input line 166.
@@ -5950,7 +5884,7 @@ Package pdftex.def Info: image/berechnung.png  used on input line 166.
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 173.
 
-<image/uvamessung.png, id=2124, 455.45157pt x 288.3272pt>
+<image/uvamessung.png, id=2105, 455.45157pt x 288.3272pt>
 File: image/uvamessung.png Graphic file (type png)
 <use image/uvamessung.png>
 Package pdftex.def Info: image/uvamessung.png  used on input line 178.
@@ -5967,12 +5901,12 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 183.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[143 <./image/berechnung.png>]
+[139 <./image/berechnung.png>]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 185.
 
-<image/messgyros.png, id=2131, 396.7322pt x 261.22594pt>
+<image/messgyros.png, id=2113, 396.7322pt x 261.22594pt>
 File: image/messgyros.png Graphic file (type png)
 <use image/messgyros.png>
 Package pdftex.def Info: image/messgyros.png  used on input line 190.
@@ -5989,7 +5923,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 195.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[144 <./image/uvamessung.png>])
+[140 <./image/uvamessung.png>])
 File: image/htlr_logo.png Graphic file (type png)
 <use image/htlr_logo.png>
 Package pdftex.def Info: image/htlr_logo.png  used on input line 59.
@@ -6003,7 +5937,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 59.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[145 <./image/messgyros.png>] (Dokumentation.tex
+[141 <./image/messgyros.png>] (Dokumentation.tex
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 1.
@@ -6096,7 +6030,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 50.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[146]
+[142]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 50.
@@ -6165,7 +6099,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 94.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[147]
+[143]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 95.
@@ -6208,7 +6142,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 62.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[148] (Projektmanagment/Projektmanagement.tex
+[144] (Projektmanagment/Projektmanagement.tex
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 1.
@@ -6238,8 +6172,8 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 16.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[149]
-<image/QRCode.png, id=2213, 301.125pt x 301.125pt>
+[145]
+<image/QRCode.png, id=2195, 301.125pt x 301.125pt>
 File: image/QRCode.png Graphic file (type png)
 <use image/QRCode.png>
 Package pdftex.def Info: image/QRCode.png  used on input line 20.
@@ -6258,7 +6192,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 5.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[150 <./image/QRCode.png>] (Projektmanagment/Einteilung.tex
+[146 <./image/QRCode.png>] (Projektmanagment/Einteilung.tex
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 1.
@@ -6349,7 +6283,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 55.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[151]
+[147]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 61.
@@ -6362,7 +6296,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 61.
 
-<image/graf.png, id=2226, 362.007pt x 217.467pt>
+<image/graf.png, id=2207, 362.007pt x 217.467pt>
 File: image/graf.png Graphic file (type png)
 <use image/graf.png>
 Package pdftex.def Info: image/graf.png  used on input line 79.
@@ -6381,7 +6315,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 64.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[152 <./image/graf.png>] (probleme.tex
+[148 <./image/graf.png>] (probleme.tex
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 1.
@@ -6404,7 +6338,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 66.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[153]
+[149]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 69.
@@ -6413,38 +6347,39 @@ LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 70.
 
-(main.lof [154]
+(main.lof [150]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 42.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 64.
+(Font)              using `OT1/cmss/bx/n' instead on input line 62.
 
 Missing character: There is no � in font cmssbx10!
 Missing character: There is no � in font cmssbx10!
+
+LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
+(Font)              using `OT1/cmss/bx/n' instead on input line 63.
+
 File: image/htlr_logo.png Graphic file (type png)
 <use image/htlr_logo.png>
-Package pdftex.def Info: image/htlr_logo.png  used on input line 65.
+Package pdftex.def Info: image/htlr_logo.png  used on input line 64.
 (pdftex.def)             Requested size: 63.58063pt x 29.59067pt.
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 65.
+(Font)              using `OT1/cmss/bx/n' instead on input line 64.
 
 File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
-Package pdftex.def Info: image/htl_logo.jpg  used on input line 65.
+Package pdftex.def Info: image/htl_logo.jpg  used on input line 64.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[155]
-
-LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 65.
-
+[151]
 File: image/htlr_logo.png Graphic file (type png)
 <use image/htlr_logo.png>
 Package pdftex.def Info: image/htlr_logo.png  used on input line 97.
 (pdftex.def)             Requested size: 63.58063pt x 29.59067pt.
+
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 97.
@@ -6453,7 +6388,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 97.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[156])
+[152])
 \tf@lof=\write8
 \openout8 = `main.lof'.
 
@@ -6462,7 +6397,7 @@ Package pdftex.def Info: image/htl_logo.jpg  used on input line 97.
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 71.
 
-(main.lot [157])
+(main.lot [153])
 \tf@lot=\write9
 \openout9 = `main.lot'.
 
@@ -6493,7 +6428,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 72.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[158]
+[154]
 Overfull \hbox (57.69751pt too wide) in paragraph at lines 73--73
 \OT1/cmtt/m/n/12 SvBhB6EiwAwYdCAbZ7Ol -[] FbjLjSRpjVmrhAa5qN7 -[] wLTtEN4oU8bHX
 USue7ac6Dxl5tBoCSloQAvD _ 
@@ -6517,7 +6452,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 72.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[159]
+[155]
 Overfull \hbox (13.6061pt too wide) in paragraph at lines 73--73
 \OT1/cmss/m/sl/12 K[]uche, Haus-halt & Woh-nen\OT1/cmss/m/n/12 . \OT1/cmr/m/sc/
 12 url\OT1/cmss/m/n/12 : []$\OT1/cmtt/m/n/12 https : / / www . amazon . de / Em
@@ -6543,7 +6478,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 72.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[160]
+[156]
 Overfull \hbox (3.56949pt too wide) in paragraph at lines 73--73
 []\OT1/cmss/m/sl/12 lcd-sudo-su.png (PNG-Grafik, 672 \TS1/cmss/m/it/12 � \OT1/c
 mss/m/sl/12 423 Pi-xel)\OT1/cmss/m/n/12 . \OT1/cmr/m/sc/12 url\OT1/cmss/m/n/12 
@@ -6575,7 +6510,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 72.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[161]
+[157]
 Overfull \hbox (0.56721pt too wide) in paragraph at lines 73--73
 []\OT1/cmss/m/sl/12 Raspberry Pi 4 Mo-dell B 4 GB RAM, Cortex-A72 64 Bit Wi-FI 
 Blue-tooth: Ama-zon.de: 
@@ -6626,7 +6561,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 72.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[162]
+[158]
 Overfull \hbox (21.41943pt too wide) in paragraph at lines 73--73
 []\OT1/cmss/m/sl/12 Verbinder 40x40 \OMS/cmss/m/it/12 j \OT1/cmss/m/sl/12 Ro-bo
 -tu-nits Ver-bin-dungs-tech-nik Ras-ter 40\OT1/cmss/m/n/12 . \OT1/cmr/m/sc/12 u
@@ -6659,7 +6594,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 72.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[163]
+[159]
 File: image/htlr_logo.png Graphic file (type png)
 <use image/htlr_logo.png>
 Package pdftex.def Info: image/htlr_logo.png  used on input line 73.
@@ -6673,7 +6608,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 73.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[164] (Anhang.tex
+[160] (Anhang.tex
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 1.
@@ -6691,7 +6626,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\autocite' on input line 3.
 
-<image/logosolidworks.jpg, id=2642, 112.16907pt x 112.92188pt>
+<image/logosolidworks.jpg, id=2622, 112.16907pt x 112.92188pt>
 File: image/logosolidworks.jpg Graphic file (type jpg)
 <use image/logosolidworks.jpg>
 Package pdftex.def Info: image/logosolidworks.jpg  used on input line 4.
@@ -6778,7 +6713,7 @@ gun-gen si-mu-lie-ren und Kol-li-sio-nen
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 11.
 
-<image/eagle.png, id=2645, 26.59938pt x 26.59938pt>
+<image/eagle.png, id=2625, 26.59938pt x 26.59938pt>
 File: image/eagle.png Graphic file (type png)
 <use image/eagle.png>
 Package pdftex.def Info: image/eagle.png  used on input line 12.
@@ -6833,7 +6768,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 3.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[165 <./image/logosolidworks.jpg> <./image/eagle.png>]
+[161 <./image/logosolidworks.jpg> <./image/eagle.png>]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 4.
@@ -6843,7 +6778,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 1.
 
-<image/thonny.jpg, id=2655, 168.63pt x 168.63pt>
+<image/thonny.jpg, id=2635, 168.63pt x 168.63pt>
 File: image/thonny.jpg Graphic file (type jpg)
 <use image/thonny.jpg>
 Package pdftex.def Info: image/thonny.jpg  used on input line 2.
@@ -6887,7 +6822,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\autocite' on input line 1.
 
-<image/logovscode.png, id=2662, 770.88pt x 770.88pt>
+<image/logovscode.png, id=2642, 770.88pt x 770.88pt>
 File: image/logovscode.png Graphic file (type png)
 <use image/logovscode.png>
 Package pdftex.def Info: image/logovscode.png  used on input line 2.
@@ -6946,7 +6881,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 5.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[166 <./image/thonny.jpg> <./image/logovscode.png>]
+[162 <./image/thonny.jpg> <./image/logovscode.png>]
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 6.
@@ -6992,7 +6927,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 18.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[167]
+[163]
 Overfull \hbox (15.05612pt too wide) in paragraph at lines 18--19
 [][]$\OT1/cmtt/m/n/12 https : / / www . analog . com / media / en / technical-[
 ]documentation / data-[]sheets / adxl345 . 
@@ -7048,7 +6983,7 @@ File: image/htl_logo.jpg Graphic file (type jpg)
 <use image/htl_logo.jpg>
 Package pdftex.def Info: image/htl_logo.jpg  used on input line 75.
 (pdftex.def)             Requested size: 68.3154pt x 29.59067pt.
-[168] (main.aux)
+[164] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
@@ -7077,10 +7012,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32155 strings out of 474423
- 611765 string characters out of 5751533
+ 32136 strings out of 474423
+ 616388 string characters out of 5751533
  1955496 words of memory out of 5000000
- 53032 multiletter control sequences out of 15000+600000
+ 53018 multiletter control sequences out of 15000+600000
  572527 words of font info for 90 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  82i,17n,98p,1891b,3735s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -7162,9 +7097,9 @@ ype1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmssi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/
 cm/cmssi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.p
 fb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (168 pages, 11899090 bytes).
+Output written on main.pdf (164 pages, 11935474 bytes).
 PDF statistics:
- 2966 PDF objects out of 2984 (max. 8388607)
- 677 named destinations out of 1000 (max. 500000)
- 1991 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2946 PDF objects out of 2984 (max. 8388607)
+ 672 named destinations out of 1000 (max. 500000)
+ 1981 words of extra memory for PDF output out of 10000 (max. 10000000)
 
