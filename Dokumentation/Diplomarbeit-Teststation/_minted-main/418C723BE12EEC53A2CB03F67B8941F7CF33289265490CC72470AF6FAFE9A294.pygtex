@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{n}{dcc}\PYG{o}{.}\PYG{n}{Graph}\PYG{p}{(}\PYG{n}{figure}\PYG{o}{=}\PYG{n}{generate\PYGZus{}figure}\PYG{p}{(}\PYG{n}{filtered\PYGZus{}df}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}Timestamp\PYGZsq{}}\PYG{p}{,}
+    \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}Gyroscope X\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}Gyroscope Y\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}Gyroscope Z\PYGZsq{}}\PYG{p}{],} \PYG{l+s+s1}{\PYGZsq{}Gyroscope\PYGZsq{}}\PYG{p}{)),}
+\end{Verbatim}

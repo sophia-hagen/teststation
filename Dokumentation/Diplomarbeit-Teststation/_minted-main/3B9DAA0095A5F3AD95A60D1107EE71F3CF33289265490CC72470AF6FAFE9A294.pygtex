@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{k+kn}{from} \PYG{n+nn}{tkinter} \PYG{k+kn}{import} \PYG{o}{*}
+    \PYG{k+kn}{import} \PYG{n+nn}{RPi.GPIO} \PYG{k}{as} \PYG{n+nn}{GPIO}
+\end{Verbatim}

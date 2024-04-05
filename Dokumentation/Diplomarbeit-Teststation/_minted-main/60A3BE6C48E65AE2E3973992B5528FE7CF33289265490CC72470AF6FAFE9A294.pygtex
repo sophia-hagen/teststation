@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{c+c1}{\PYGZsh{}Initialisierung:}
+    \PYG{n}{PUL}\PYG{o}{=} \PYG{l+m+mi}{17}
+    \PYG{n}{EN}\PYG{o}{=}\PYG{l+m+mi}{13}
+    \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{setmode}\PYG{p}{(}\PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{BCM}\PYG{p}{)}
+    \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{setup}\PYG{p}{(}\PYG{n}{PUL}\PYG{p}{,} \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{OUT}\PYG{p}{)}
+    \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{setup}\PYG{p}{(}\PYG{n}{EN}\PYG{p}{,} \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{OUT}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{}PWM Signal:}
+    \PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{10000000}\PYG{p}{):}
+        \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{output}\PYG{p}{(}\PYG{n}{PUL}\PYG{p}{,}\PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{HIGH}\PYG{p}{)}
+        \PYG{n}{time}\PYG{o}{.}\PYG{n}{sleep}\PYG{p}{(}\PYG{l+m+mf}{0.0005}\PYG{p}{)}
+        \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{output}\PYG{p}{(}\PYG{n}{PUL}\PYG{p}{,}\PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{LOW}\PYG{p}{)}
+        \PYG{n}{time}\PYG{o}{.}\PYG{n}{sleep}\PYG{p}{(}\PYG{l+m+mf}{0.0005}\PYG{p}{)}
+
+\end{Verbatim}

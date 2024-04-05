@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{c+c1}{\PYGZsh{}Fenster Erstellen}
+    \PYG{n}{root} \PYG{o}{=} \PYG{n}{Tk}\PYG{p}{()}
+    \PYG{n}{root}\PYG{o}{.}\PYG{n}{wm\PYGZus{}title}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Controll Unit\PYGZdq{}}\PYG{p}{)}
+    \PYG{n}{root}\PYG{o}{.}\PYG{n}{config}\PYG{p}{(}\PYG{n}{background} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}\PYGZsh{}FFFFFF\PYGZdq{}}\PYG{p}{)}
+
+    \PYG{n}{rightFrame} \PYG{o}{=} \PYG{n}{Frame}\PYG{p}{(}\PYG{n}{root}\PYG{p}{,} \PYG{n}{width}\PYG{o}{=}\PYG{l+m+mi}{500}\PYG{p}{,} \PYG{n}{height} \PYG{o}{=}\PYG{l+m+mi}{800}\PYG{p}{)}
+    \PYG{n}{rightFrame}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{n}{row}\PYG{o}{=}\PYG{l+m+mi}{100}\PYG{p}{,} \PYG{n}{column} \PYG{o}{=}\PYG{l+m+mi}{200}\PYG{p}{,} \PYG{n}{padx}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{pady}\PYG{o}{=}\PYG{l+m+mi}{3}\PYG{p}{)}
+\end{Verbatim}

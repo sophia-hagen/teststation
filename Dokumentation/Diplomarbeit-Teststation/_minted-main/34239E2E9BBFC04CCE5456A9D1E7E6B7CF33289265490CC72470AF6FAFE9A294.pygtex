@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+		\PYG{c+c1}{\PYGZsh{}Erstellen eines CSV writer Objekts}
+		\PYG{n}{writer} \PYG{o}{=} \PYG{n}{csv}\PYG{o}{.}\PYG{n}{writer}\PYG{p}{(}\PYG{n}{file}\PYG{p}{)}
+		
+\end{Verbatim}

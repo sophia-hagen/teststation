@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+   html.Div([ \PYGZsh{}Switch for UV\PYGZhy{}Lamp
+        html.Div(\PYGZsq{}UV\PYGZhy{}Lamp\PYGZsq{}, className=\PYGZsq{}switch\PYGZhy{}text\PYGZsq{}),
+        dcc.Checklist(
+            id=\PYGZsq{}switch\PYGZhy{}uvlamp\PYGZsq{},
+            options=[\PYGZob{}\PYGZsq{}label\PYGZsq{}: \PYGZsq{}\PYGZsq{}, \PYGZsq{}value\PYGZsq{}: \PYGZsq{}U\PYGZsq{}\PYGZcb{}],
+            value=[],
+            inputClassName=\PYGZsq{}switch\PYGZhy{}input\PYGZsq{},
+            labelClassName=\PYGZsq{}switch\PYGZhy{}label\PYGZsq{}
+        )
+    ],className=\PYGZsq{}switch\PYGZhy{}wrapper\PYGZsq{}),
+\end{Verbatim}

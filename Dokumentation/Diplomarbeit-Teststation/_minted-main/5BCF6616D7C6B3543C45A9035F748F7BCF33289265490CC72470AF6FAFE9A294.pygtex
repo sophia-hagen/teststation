@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{n}{SS}\PYG{o}{=}\PYG{l+m+mi}{6}
+    \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{setmode}\PYG{p}{(}\PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{BCM}\PYG{p}{)}
+    \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{setup}\PYG{p}{(}\PYG{n}{SS}\PYG{p}{,} \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{OUT}\PYG{p}{)}
+
+    \PYG{k}{if}\PYG{p}{(}\PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{input}\PYG{p}{(}\PYG{n}{SS}\PYG{p}{)} \PYG{o}{==} \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{LOW}\PYG{p}{)):}
+        \PYG{k}{continue}
+    \PYG{k}{else}\PYG{p}{:}
+\end{Verbatim}

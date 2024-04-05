@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+		\PYG{k}{if} \PYG{n}{file\PYGZus{}empty}\PYG{p}{:}
+		\PYG{c+c1}{\PYGZsh{}Falls die CSV Datei noch leer ist}
+		\PYG{n}{writer}\PYG{o}{.}\PYG{n}{writerow}\PYG{p}{(}\PYG{n}{headers}\PYG{p}{)}
+		\PYG{c+c1}{\PYGZsh{}Headers als in erste Reihe einfügen}
+\end{Verbatim}

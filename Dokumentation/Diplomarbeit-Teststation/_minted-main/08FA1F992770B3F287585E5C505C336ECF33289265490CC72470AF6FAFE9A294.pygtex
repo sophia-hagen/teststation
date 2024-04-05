@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{c+c1}{\PYGZsh{}Einbinden der Bibliothek}
+    \PYG{k+kn}{import} \PYG{n+nn}{adafruit\PYGZus{}ltr390}
+
+    \PYG{c+c1}{\PYGZsh{}I2C\PYGZhy{}Schnittstelle initialisieren}
+    \PYG{n}{i2c} \PYG{o}{=} \PYG{n}{board}\PYG{o}{.}\PYG{n}{I2C}\PYG{p}{()}
+
+    \PYG{c+c1}{\PYGZsh{}Definition des Sensors und Übergabe des I2C\PYGZhy{}Schnittstelle}
+    \PYG{n}{ltr} \PYG{o}{=} \PYG{n}{adafruit\PYGZus{}ltr390}\PYG{o}{.}\PYG{n}{LTR390}\PYG{p}{(}\PYG{n}{i2c}\PYG{p}{)}
+
+    \PYG{k}{while} \PYG{k+kc}{True}\PYG{p}{:}
+        \PYG{c+c1}{\PYGZsh{}Ausgabe der gemessenen Werte}
+
+        \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}UV\PYGZhy{}Index:\PYGZdq{}}\PYG{p}{,} \PYG{n}{ltr}\PYG{o}{.}\PYG{n}{uvi}\PYG{p}{,}
+              \PYG{l+s+s2}{\PYGZdq{}Umgebungslicht in Lux:\PYGZdq{}}\PYG{p}{,} \PYG{n}{ltr}\PYG{o}{.}\PYG{n}{light}\PYG{p}{)}
+
+\end{Verbatim}

@@ -1,0 +1,22 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+		\PYG{k}{try}\PYG{p}{:}
+		\PYG{c+c1}{\PYGZsh{}Daten in einen String konveriten}
+		\PYG{n}{decoded\PYGZus{}data} \PYG{o}{=} \PYG{n}{data}\PYG{o}{.}\PYG{n}{decode}\PYG{p}{()}
+		\PYG{c+c1}{\PYGZsh{}Daten für die Verarbeitung}
+		\PYG{o+ow}{in} \PYG{n}{ein} \PYG{n}{JSON}\PYG{o}{\PYGZhy{}}\PYG{n}{Objekt} \PYG{n}{umwandeln}
+		\PYG{n}{sensor\PYGZus{}data} \PYG{o}{=} \PYG{n}{json}\PYG{o}{.}\PYG{n}{loads}\PYG{p}{(}\PYG{n}{decoded\PYGZus{}data}\PYG{p}{)}
+		\PYG{c+c1}{\PYGZsh{}Ausgabe der dekodierten Daten}
+		\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}Decoded Data: }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{sensor\PYGZus{}data}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+		\PYG{c+c1}{\PYGZsh{}Erzeugung eines Zeitstempels}
+		\PYG{n}{current\PYGZus{}time} \PYG{o}{=}
+		\PYG{n}{datetime}\PYG{o}{.}\PYG{n}{now}\PYG{p}{()}\PYG{o}{.}\PYG{n}{strftime}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}\PYGZpc{}Y\PYGZhy{}\PYGZpc{}m\PYGZhy{}}\PYG{l+s+si}{\PYGZpc{}d}\PYG{l+s+s2}{ \PYGZpc{}H:\PYGZpc{}M:\PYGZpc{}S\PYGZdq{}}\PYG{p}{)}
+		
+		\PYG{c+c1}{\PYGZsh{} Für jeden Zeitstempel werden die Sensordaten eingefügt}
+		\PYG{n}{writer}\PYG{o}{.}\PYG{n}{writerow}\PYG{p}{([}\PYG{n}{current\PYGZus{}time}\PYG{p}{]} \PYG{o}{+}
+		\PYG{p}{[}\PYG{n}{sensor\PYGZus{}data}\PYG{o}{.}\PYG{n}{get}\PYG{p}{(}\PYG{n}{key}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}\PYGZsq{}}\PYG{p}{)} \PYG{k}{for} \PYG{n}{key}
+		\PYG{o+ow}{in} \PYG{n}{headers}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{:]])}
+		\PYG{c+c1}{\PYGZsh{}Buffer der Datei löschen,}
+		\PYG{n}{damit} \PYG{n}{Daten} \PYG{n}{sofort} \PYG{n}{geschrieben} \PYG{n}{werden}
+		\PYG{n}{file}\PYG{o}{.}\PYG{n}{flush}\PYG{p}{()}
+		
+\end{Verbatim}

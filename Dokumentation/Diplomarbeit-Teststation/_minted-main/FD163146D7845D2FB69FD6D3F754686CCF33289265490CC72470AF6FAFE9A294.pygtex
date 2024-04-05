@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+  \PYG{c+c1}{\PYGZsh{} Callback um die Graphen, basierend auf die Zeit, zu aktualisieren}
+\PYG{n+nd}{@app}\PYG{o}{.}\PYG{n}{callback}\PYG{p}{(}
+    \PYG{n}{Output}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}stored\PYGZhy{}time\PYGZhy{}range\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}data\PYGZsq{}}\PYG{p}{),} \PYG{c+c1}{\PYGZsh{}Ausgang gespeichert}
+    \PYG{p}{[}\PYG{n}{Input}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}time\PYGZhy{}range\PYGZhy{}selector\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}start\PYGZus{}date\PYGZsq{}}\PYG{p}{),} \PYG{c+c1}{\PYGZsh{}Eingang: Startdatum}
+     \PYG{n}{Input}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}time\PYGZhy{}range\PYGZhy{}selector\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}end\PYGZus{}date\PYGZsq{}}\PYG{p}{)],} \PYG{c+c1}{\PYGZsh{}Ausgang: Enddatum}
+    \PYG{n}{prevent\PYGZus{}initial\PYGZus{}call}\PYG{o}{=}\PYG{k+kc}{True} \PYG{c+c1}{\PYGZsh{}nicht beim ersten Mal laden}
+\PYG{p}{)}
+\end{Verbatim}

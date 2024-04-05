@@ -1,0 +1,62 @@
+\subsection{Gyroskop}\label{sec:gyroskop}
+In der Teststation sollen Tests durchgeführt werden, bei denen sich der Satellit rotiert. Der Satellit sollte sich in alle Richtungen drehen können, denn nur so können die Gyro Sensoren komplett und genau getestet werden. Da sich der Satellit später im All willkürlich rotiert, bringt eine konstante Rotation um nur eine Achse nichts. Aus diesem Grund wird ein sogenanntes Gyroskop oder auch Kreiselinstrument verwendet. Ein Gyroskop kann ein Objekt gleichzeitig in alle Richtungen (x,y,z) drehen. Es besteht aus 3 Ringen, der äußerste Ring wird mit einem Stepper Motor um die X-Achse in Bewegung gesetzt, der Mittlere Ring dreht sich dann mit dem Eigengewicht um die Y-Achse und der innerste Ring ist in unserer Anwendung der Satellit. \\ 
+\vspace{3mm}
+Um die Ringe in einer Höhe von 30cm zu halten, braucht es 2 Halterungen. Diese Halterungen werden aus Flachstangen, die eine Stärke von 8mm und einer Breite von 20mm haben, geschweißt. Dazu sind folgende Flachstange notwendig. \\
+\vspace{3mm}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{ | c | c | } 
+  \hline
+   \textbf{Bezeichnung} & \textbf{Stückzahl}\\ 
+  \hline
+   Flachstange 5cm & 4\\ 
+  \hline
+   Flachstange 20cm & 2 \\ 
+  \hline
+  Flachstange 25cm & 4 \\ 
+  \hline
+  Flachstange 10cm & 2 \\ 
+  \hline
+  Flachstange 30cm & 2 \\ 
+  \hline
+\end{tabular}
+    \caption{Stückliste Halterung Gyroskop}
+\end{table}
+\vspace{3mm}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{image/gyroskop1.jpeg}
+        
+        \label{fig:bild1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.4\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{image/gyroskop2.jpeg}
+        
+        \label{fig:bild2}
+    \end{subfigure}
+    \caption{Halterung Gyroskop}
+    \label{fig:zwei_bilder}
+\end{figure}
+\vspace{3mm}
+
+\textbf{Komplette Zusammenschaltung Gyroskop}\\
+\vspace{3mm}
+Das Relais steuert das Netzteil, welches die Spannung für den Treiber liefert. Der Treiber bekommt Signale vom Raspberry Pi und steuert mit denen die Wicklungen vom Motor. \\
+\vspace{3mm}
+\begin{figure}[H]
+    \centering
+    \includegraphics{image/zusammengyros.jpg}
+    \caption{Zusammenschaltung Gyroskop}
+    \label{fig:enter-label}
+\end{figure}
+
+
+\input{Gyroskop/motor}
+\input{Gyroskop/treiber}
+\input{Gyroskop/Netzteil}
+\newpage
+\input{Relais}

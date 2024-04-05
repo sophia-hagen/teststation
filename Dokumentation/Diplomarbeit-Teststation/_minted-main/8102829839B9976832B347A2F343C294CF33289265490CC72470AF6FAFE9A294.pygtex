@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+		\PYG{c+c1}{\PYGZsh{} I2C Bus initialisieren}
+		\PYG{n}{bus} \PYG{o}{=} \PYG{n}{smbus2}\PYG{o}{.}\PYG{n}{SMBus}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{)}
+		
+		\PYG{c+c1}{\PYGZsh{} Instanz der Sensorklasse erstellen}
+		\PYG{n}{sensors} \PYG{o}{=} \PYG{n}{Sensors}\PYG{p}{(}\PYG{n}{bus}\PYG{p}{)}
+		
+\end{Verbatim}

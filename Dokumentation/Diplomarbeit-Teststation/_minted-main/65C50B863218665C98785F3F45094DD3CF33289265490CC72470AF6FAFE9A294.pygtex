@@ -1,0 +1,37 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{c+c1}{\PYGZsh{}boolUV als globale Variable deklarieren}
+    \PYG{k}{global} \PYG{n}{boolKühlung}
+    \PYG{c+c1}{\PYGZsh{}wechseln des bool Zustandes}
+    \PYG{n}{boolKühlung} \PYG{o}{=} \PYG{o+ow}{not} \PYG{n}{boolKühlung}
+
+    \PYG{k}{if} \PYG{n}{boolKühlung} \PYG{o}{==} \PYG{k+kc}{True} \PYG{p}{:}
+        \PYG{c+c1}{\PYGZsh{}Pin auf High setzten (Kühlung wird eingeschalten)}
+        \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{output}\PYG{p}{(}\PYG{n}{KuehlungPin}\PYG{p}{,} \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{HIGH}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{}Text auf Button ändern}
+        \PYG{n}{btuv}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}text\PYGZdq{}}\PYG{p}{]}\PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}Kühlung Stufe 2\PYGZdq{}}
+        \PYG{c+c1}{\PYGZsh{}Filter Pin auf High setzen}
+        \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{output}\PYG{p}{(}\PYG{n}{filterPin}\PYG{p}{,} \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{HIGH}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{}Ausgabe in der Konsole}
+        \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Kühlung eingeschalten \PYGZhy{} Stufe 1\PYGZdq{}}\PYG{p}{)}
+
+        \PYG{k}{else}\PYG{p}{:}
+        \PYG{c+c1}{\PYGZsh{}Pin auf Low setzten (Kühlung kurz ausgeschalten)}
+        \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{output}\PYG{p}{(}\PYG{n}{KuehlungPin}\PYG{p}{,} \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{LOW}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{} Pausiert das Programm kurz für 0.1 Sekunden.}
+        \PYG{n}{time}\PYG{o}{.}\PYG{n}{sleep}\PYG{p}{(}\PYG{l+m+mf}{0.1}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{}Pin auf High setzten (Kühlung wird eingeschalten)}
+        \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{output}\PYG{p}{(}\PYG{n}{KuehlungPin}\PYG{p}{,} \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{HIGH}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{}Filter Pin auf High setzen}
+        \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{output}\PYG{p}{(}\PYG{n}{filterPin}\PYG{p}{,} \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{HIGH}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{}Text auf Button ändern}
+        \PYG{n}{btuv}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}text\PYGZdq{}}\PYG{p}{]}\PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}Kühlung Stufe 1\PYGZdq{}}
+        \PYG{c+c1}{\PYGZsh{}Ausgabe in der Konsole}
+        \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Kühlung eingeschalten \PYGZhy{} Stufe 2\PYGZdq{}}\PYG{p}{)}
+
+		\PYG{c+c1}{\PYGZsh{}Kühlung Pin und Filter Pin auf Low setzen}
+		\PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{output}\PYG{p}{(}\PYG{n}{KuehlungPin}\PYG{p}{,} \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{LOW}\PYG{p}{)}
+		\PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{output}\PYG{p}{(}\PYG{n}{filterPin}\PYG{p}{,} \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{LOW}\PYG{p}{)}
+		
+		\PYG{c+c1}{\PYGZsh{}Ausgabe in der Konsole}
+		\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Kühlung ausgeschalten\PYGZdq{}}\PYG{p}{)}
+\end{Verbatim}

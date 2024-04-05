@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{n+nd}{@app}\PYG{o}{.}\PYG{n}{callback}\PYG{p}{(}
+     \PYG{c+c1}{\PYGZsh{}Ausgang: alle Eigenschaften des \PYGZsq{}graphs\PYGZhy{}container\PYGZsq{}}
+    \PYG{n}{Output}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}graphs\PYGZhy{}container\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}children\PYGZsq{}}\PYG{p}{),}
+    \PYG{p}{[}\PYG{n}{Input}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}update\PYGZhy{}interval\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}n\PYGZus{}intervals\PYGZsq{}}\PYG{p}{)],} \PYG{c+c1}{\PYGZsh{}Eingang: Timer}
+    \PYG{p}{[}\PYG{n}{State}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}stored\PYGZhy{}time\PYGZhy{}range\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}data\PYGZsq{}}\PYG{p}{),} \PYG{c+c1}{\PYGZsh{}States der Schalter}
+     \PYG{n}{State}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}switch\PYGZhy{}poweradapter\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}value\PYGZsq{}}\PYG{p}{),}
+     \PYG{n}{State}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}switch\PYGZhy{}fans\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}value\PYGZsq{}}\PYG{p}{),}
+     \PYG{n}{State}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}switch\PYGZhy{}motor\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}value\PYGZsq{}}\PYG{p}{),}
+     \PYG{n}{State}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}switch\PYGZhy{}cooler\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}value\PYGZsq{}}\PYG{p}{),}
+     \PYG{n}{State}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}switch\PYGZhy{}leds\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}value\PYGZsq{}}\PYG{p}{),}
+     \PYG{n}{State}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}switch\PYGZhy{}uvlamp\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}value\PYGZsq{}}\PYG{p}{)]}
+
+\end{Verbatim}

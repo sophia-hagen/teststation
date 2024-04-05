@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+		\PYG{c+c1}{\PYGZsh{} UDP setup}
+		\PYG{n}{udp\PYGZus{}ip} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}0.0.0.0\PYGZdq{}}
+		\PYG{c+c1}{\PYGZsh{}Jede IP\PYGZhy{}Adresse auf dem Port zuhören}
+		\PYG{n}{udp\PYGZus{}port} \PYG{o}{=} \PYG{l+m+mi}{50687}
+		\PYG{c+c1}{\PYGZsh{}Port muss gleich wie auf dem Raspi sein}
+		\PYG{n}{sock} \PYG{o}{=} \PYG{n}{socket}\PYG{o}{.}\PYG{n}{socket}\PYG{p}{(}\PYG{n}{socket}\PYG{o}{.}\PYG{n}{AF\PYGZus{}INET}\PYG{p}{,} \PYG{n}{socket}\PYG{o}{.}\PYG{n}{SOCK\PYGZus{}DGRAM}\PYG{p}{)}
+		\PYG{c+c1}{\PYGZsh{}Code zeile   wurde in Kap 2.4.1 erklärt}
+		\PYG{n}{sock}\PYG{o}{.}\PYG{n}{bind}\PYG{p}{((}\PYG{n}{udp\PYGZus{}ip}\PYG{p}{,} \PYG{n}{udp\PYGZus{}port}\PYG{p}{))}
+		\PYG{c+c1}{\PYGZsh{}IP und Port dem Socket zuweisen}
+		
+		
+\end{Verbatim}

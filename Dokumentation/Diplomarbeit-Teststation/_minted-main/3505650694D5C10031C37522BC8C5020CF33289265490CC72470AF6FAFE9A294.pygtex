@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+		\PYG{c+c1}{\PYGZsh{}Button erstellen:}
+		\PYG{n}{btmot} \PYG{o}{=} \PYG{n}{Button}\PYG{p}{(}\PYG{n}{buttonFrame}\PYG{p}{,} \PYG{n}{text}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}Exit\PYGZdq{}}\PYG{p}{,} \PYG{n}{bg} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}\PYGZsh{}FF0000\PYGZdq{}}\PYG{p}{,}
+		\PYG{n}{width}\PYG{o}{=}\PYG{l+m+mi}{15}\PYG{p}{,}\PYG{n}{command}\PYG{o}{=}\PYG{n}{exitProgram}\PYG{p}{)}
+		\PYG{n}{btmot}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{n}{row}\PYG{o}{=}\PYG{l+m+mi}{50}\PYG{p}{,} \PYG{n}{column}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{padx}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{n}{pady}\PYG{o}{=}\PYG{l+m+mi}{5}\PYG{p}{)}
+		
+		\PYG{c+c1}{\PYGZsh{}Button Funktion:}
+		\PYG{c+c1}{\PYGZsh{}Wird der Button gedrückt, wird folgende}
+		\PYG{c+c1}{\PYGZsh{}Funktion gestartet:}
+		\PYG{k}{def} \PYG{n+nf}{btmot}\PYG{p}{():}
+			\PYG{c+c1}{\PYGZsh{}Funktion…}
+\end{Verbatim}

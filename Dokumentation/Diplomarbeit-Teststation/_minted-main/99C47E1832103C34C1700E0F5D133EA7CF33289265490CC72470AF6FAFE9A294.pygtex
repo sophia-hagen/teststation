@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+		\PYG{k}{global} \PYG{n}{boolLED}
+		\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{boolLED}\PYG{p}{)}
+		\PYG{n}{boolLED} \PYG{o}{=} \PYG{o+ow}{not} \PYG{n}{boolLED}
+		\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{boolLED}\PYG{p}{)}
+		\PYG{n}{pixels} \PYG{o}{=} \PYG{n}{neopixel}\PYG{o}{.}\PYG{n}{NeoPixel}\PYG{p}{(}\PYG{n}{board}\PYG{o}{.}\PYG{n}{D21}\PYG{p}{,} \PYG{l+m+mi}{40}\PYG{p}{,} \PYG{n}{brightness} \PYG{o}{=}\PYG{l+m+mi}{5}\PYG{p}{)}
+		\PYG{n}{pixels}\PYG{o}{.}\PYG{n}{fill}\PYG{p}{((}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{))}
+		\PYG{k}{if} \PYG{n}{boolLED} \PYG{o}{==} \PYG{k+kc}{True} \PYG{p}{:}
+		\PYG{n}{pixels}\PYG{o}{.}\PYG{n}{fill}\PYG{p}{((}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{255}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{))}
+		\PYG{n}{btled}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}text\PYGZdq{}}\PYG{p}{]}\PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}LEDs aus\PYGZdq{}}
+		\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{boolLED}\PYG{p}{)}
+		\PYG{k}{else}\PYG{p}{:}
+		\PYG{n}{pixels}\PYG{o}{.}\PYG{n}{fill}\PYG{p}{((}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{))}
+		\PYG{n}{btled}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}text\PYGZdq{}}\PYG{p}{]}\PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}LEDs ein\PYGZdq{}}
+		\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{boolLED}\PYG{p}{)}
+\end{Verbatim}

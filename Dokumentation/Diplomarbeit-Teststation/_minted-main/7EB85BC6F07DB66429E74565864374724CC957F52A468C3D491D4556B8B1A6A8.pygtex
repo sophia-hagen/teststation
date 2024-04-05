@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+   dcc.DatePickerRange(
+        id=\PYGZsq{}time\PYGZhy{}range\PYGZhy{}selector\PYGZsq{},
+        start\PYGZus{}date\PYGZus{}placeholder\PYGZus{}text=\PYGZdq{}Start Date\PYGZdq{},
+        end\PYGZus{}date\PYGZus{}placeholder\PYGZus{}text=\PYGZdq{}End Date\PYGZdq{},
+        calendar\PYGZus{}orientation=\PYGZsq{}horizontal\PYGZsq{},
+    ),
+\end{Verbatim}

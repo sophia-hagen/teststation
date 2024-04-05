@@ -1,0 +1,22 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{c+c1}{\PYGZsh{}boolUV als globale Variable deklarieren}
+    \PYG{k}{global} \PYG{n}{boolLüfter}
+    \PYG{c+c1}{\PYGZsh{}wechseln des bool Zustandes}
+    \PYG{n}{boolLüfter} \PYG{o}{=} \PYG{o+ow}{not} \PYG{n}{boolLüfter}
+
+    \PYG{k}{if} \PYG{n}{boolLüfter} \PYG{o}{==} \PYG{k+kc}{True} \PYG{p}{:}
+        \PYG{c+c1}{\PYGZsh{}Pin auf High setzten (Lüfter wird eingeschalten)}
+       \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{output}\PYG{p}{(}\PYG{n}{lueftungPin}\PYG{p}{,} \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{HIGH}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{}Text auf Button ändern}
+        \PYG{n}{btuv}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}text\PYGZdq{}}\PYG{p}{]}\PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}Lüfter aus\PYGZdq{}}
+        \PYG{c+c1}{\PYGZsh{}Lüfter ein wird ausgegeben}
+        \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Lüftung eingeschalten\PYGZdq{}}\PYG{p}{)}
+
+    \PYG{k}{else}\PYG{p}{:}
+        \PYG{c+c1}{\PYGZsh{}Pin auf Low setzten (Lüfter wird ausgeschalten)}
+        \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{output}\PYG{p}{(}\PYG{n}{lueftungPin}\PYG{p}{,} \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{LOW}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{}Text auf Button ändern}
+        \PYG{n}{btuv}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}text\PYGZdq{}}\PYG{p}{]}\PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}Lüfter ein\PYGZdq{}}
+        \PYG{c+c1}{\PYGZsh{}Lüfter aus wird ausgegeben}
+        \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Lüftung ausgeschalten\PYGZdq{}}\PYG{p}{)}
+\end{Verbatim}

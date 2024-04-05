@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	\PYG{c+c1}{\PYGZsh{} Definition der Headers}
+	\PYG{n}{headers} \PYG{o}{=}
+	\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}Timestamp\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}Temperature (TMP112)\PYGZdq{}}\PYG{p}{,}
+	\PYG{l+s+s2}{\PYGZdq{}Temperature (BME688)\PYGZdq{}}\PYG{p}{,}
+	\PYG{l+s+s2}{\PYGZdq{}Humidity\PYGZdq{}}\PYG{p}{,}
+	\PYG{l+s+s2}{\PYGZdq{}Pressure\PYGZdq{}}\PYG{p}{,}
+	\PYG{l+s+s2}{\PYGZdq{}Gas Resistance\PYGZdq{}}\PYG{p}{,}
+	\PYG{l+s+s2}{\PYGZdq{}Acceleration X\PYGZdq{}}\PYG{p}{,}
+	\PYG{l+s+s2}{\PYGZdq{}Acceleration Y\PYGZdq{}}\PYG{p}{,}
+	\PYG{l+s+s2}{\PYGZdq{}Acceleration Z\PYGZdq{}}\PYG{p}{,}
+	\PYG{l+s+s2}{\PYGZdq{}Gyroscope X\PYGZdq{}}\PYG{p}{,}
+	\PYG{l+s+s2}{\PYGZdq{}Gyroscope Y\PYGZdq{}}\PYG{p}{,}
+	\PYG{l+s+s2}{\PYGZdq{}Gyroscope Z\PYGZdq{}}\PYG{p}{,}
+	\PYG{l+s+s2}{\PYGZdq{}UVA\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}UVA Index\PYGZdq{}}\PYG{p}{]}	
+\end{Verbatim}
