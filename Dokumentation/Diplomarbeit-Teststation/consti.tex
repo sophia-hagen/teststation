@@ -2,7 +2,7 @@
 \SecAuth{\nameCZ}
 In Bezug auf die Teststation sollen alle Daten der Sensorik extern über ein drahtloses Verfahren auf einem Laptop/PC empfangen werden, da eine serielle Verbindung durch das Gyroskop in der Teststation viele Komplikationen mit sich bringt. Die Möglichkeiten für solch einen drahtlosen Empfang sind TCP, UDP oder Bluetooth. \\
 \vspace{3mm}
-Da der CM3+ im Cubesat kein WLAN/Bluetooth-Modul aufweist, muss ein externes Modul über die USB2.0 Schnittstelle am Raspberry PI angeschlossen werden. Ein sogenannter „Dongle“ (USB/Wifi-Bluetooth Modul) wird hierbei verwendet. Da keine normale USB-Buchse am CM3+ angebracht ist (siehe Abb. 88), muss der Dongle mit dem CM3+ durch eine andere Möglichkeit verbunden werden. Das Erstellen einer Buchse für die Verbindung des Dongles wäre hier von Vorteil. \\
+Da der CM3+ im Cubesat kein WLAN/Bluetooth-Modul aufweist, muss ein externes Modul über die USB2.0 Schnittstelle am Raspberry PI angeschlossen werden. Ein sogenannter „Dongle“ (USB/Wifi-Bluetooth Modul) wird hierbei verwendet. Da keine normale USB-Buchse am CM3+ angebracht ist (siehe Abb. 90), muss der Dongle mit dem CM3+ durch eine andere Möglichkeit verbunden werden. Das Erstellen einer Buchse für die Verbindung des Dongles wäre hier von Vorteil. \\
 \vspace{3mm}
 \begin{figure}[H]
 	\centering
@@ -14,7 +14,7 @@ Da der CM3+ im Cubesat kein WLAN/Bluetooth-Modul aufweist, muss ein externes Mod
 Da für die Simulation des Cubesats ein Raspberry PI 4 benutzt wurde, konnte zuerst das WIFI-Modul auf dem Einplatinencomputer verwendet werden. Für die Kommunikationsmethode wurde dafür das UDP-Protokoll genutzt, welches eine schnelle Datenübertragung sicherstellt. UDP\autocite{UDP} dient als minimales Netzwerkprotokoll, das sich für das Versenden von Datenpaketen über das Internet eignet. UDP verwendet keine Handshakes, um eine Verbindung zwischen zwei Endgeräten herzustellen. Dies bedeutet, dass Daten ohne vorherige Kommunikation gesendet werden. Das Protokoll führt zu einer schnelleren Übertragung als TCP, ist jedoch beim Datentransfer unzuverlässiger.
 
 \subsubsection{TCP}
-TCP\autocite{TCP} (transmission control protocol) bietet auch eine gute Übertragungsmöglichkeit, da es mit der Hilfe von dem „Handshake-Vereinbarung“ (siehe Abb. 89) eine fehlerfreie Übertragung des Pakets garantiert. Durch die längere Sendezeit des TCP-Protokolls eignet sich das Protokoll für eine zeitkritische Aufnahme von Daten, wie bei der Teststation vorhanden, nicht.\\
+TCP\autocite{TCP} (transmission control protocol) bietet auch eine gute Übertragungsmöglichkeit, da es mit der Hilfe von dem „Handshake-Vereinbarung“ (siehe Abb. 91) eine fehlerfreie Übertragung des Pakets garantiert. Durch die längere Sendezeit des TCP-Protokolls eignet sich das Protokoll für eine zeitkritische Aufnahme von Daten, wie bei der Teststation vorhanden, nicht.\\
 \vspace{3mm}
 \begin{figure}[H]
 	\centering
@@ -238,7 +238,7 @@ Nachdem die Daten angekommen sind, werden sie noch im Terminal als Kontrolle dar
 \vspace{3mm}
 
 \subsubsection{Schreiben der Daten in eine CSV-Datei}\label{csv}
-Nachdem die Daten am Empfänger angekommen sind, werden sie in eine CSV-Datei geschrieben. Eine CSV-Datei ist eine Textdatei, die Daten in Form einer Tabelle speichert. Jede Zeile in der CSV-Datei entspricht einer Zeile in einer Tabelle. Die einzelnen Werte (Zellen) in dieser Zeile sind durch Kommas getrennt (Abb. 90-91).  CSV eignet sich gut für den Datenaustausch zwischen Programmen. Dies ist besonders vorteilhaft, da hier separate Programme für das Einlesen und  das Visualisieren von Daten verwendet werden.
+Nachdem die Daten am Empfänger angekommen sind, werden sie in eine CSV-Datei geschrieben. Eine CSV-Datei ist eine Textdatei, die Daten in Form einer Tabelle speichert. Jede Zeile in der CSV-Datei entspricht einer Zeile in einer Tabelle. Die einzelnen Werte (Zellen) in dieser Zeile sind durch Kommas getrennt (Abb. 92-93).  CSV eignet sich gut für den Datenaustausch zwischen Programmen. Dies ist besonders vorteilhaft, da hier separate Programme für das Einlesen und  das Visualisieren von Daten verwendet werden.
 \vspace{3mm}
 \begin{figure}[H]
 	\centering
@@ -303,7 +303,7 @@ Anschließend wird in einem „try“-Block, welcher für das Abfragen von Ausna
 	\end{minted}
 \end{figure}
 Die erste Zeile dieses Codeabschnitts öffnet die angegebene Datei, welche sich am Pfad ‚csv\_file¬\_path‘ befindet. Der Modus bestimmt, wie die Daten eingelesen werden sollen. Der Modus ‚a‘ gibt an, dass neu einkommende Daten an das Ende der Datei angehängt werden, ohne schon eingeschriebene Inhalte zu überschreiben. Der Modus ‚a‘ kann aber auch verwendet werden, um eine noch nicht existierende Datei zu erstellen. \\
-\vspace{3mm}
+\newpage
 Der Parameter „ newline=‘ ‘ “ wird verwendet, um sicherzustellen, dass die Zeilenumbrüche korrekt gehandhabt werden. Dies ist besonders wichtig, falls die Datei zwischen mehreren Betriebssystemen geteilt wird. Das oben geöffnete Dateiobjekt ‚open ()‘ wird der Variable ‚file‘ zugewiesen, die innerhalb des „with“ Blocks verwendet wird.\\
 \vspace{3mm}
 ‚file.tell()‘ gibt die aktuelle Position in der CSV-Datei zurück. Hier wird durch, „file.tell() == 0“ abgefragt, ob die CSV Datei leer ist.\\
@@ -393,7 +393,7 @@ Durch dieses Programm können nun alle empfangenen Daten in eine CSV-Datei in be
 \subsubsection{Sensorik mittels I²C-Interface lesen}\label{i2C}
 Alle Sensorik, welche sich auf dem EDU befindet, wird mit I2C angesteuert und gelesen. Dies ermöglicht eine effiziente Kommunikation und Datenübertragung zwischen den Sensoren auf dem HAT und dem Raspberry PI. Nach der Realisation verschiedener Python Skripten, die zur Auslesung von den Werten der Sensorik dienten, wurde eine Bibliothek der TU-Wien, Namens „STS1\_Sensors.py“ verwendet, was diesen Prozess vereinfachte.\\
 \vspace{3mm}
-Eine allgemeine Information ist unter „\url{ti.com/lit/an/slva704/slva704.pdf?ts=1712280198725&ref_url=https%253A%252F%252Fwww.google.com%252F}“ zu finden.\\
+Eine allgemeine Information ist unter „\url{https://www.ti.com/lit/an/slva704/slva704.pdf?ts=1712280198725&ref_url=https%253A%252F%252Fwww.google.com%252F}“ zu finden.\\
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=1.1]{image/constibild.jpg}

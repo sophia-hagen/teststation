@@ -130,10 +130,11 @@
 \contentsline {subsection}{\numberline {12.1}Testroutine}{130}{subsection.12.1}%
 \contentsline {subsubsection}{\numberline {12.1.1}Rotationstest}{130}{subsubsection.12.1.1}%
 \contentsline {subsubsection}{\numberline {12.1.2}Vibrationstest}{130}{subsubsection.12.1.2}%
-\contentsline {subsubsection}{\numberline {12.1.3}Test im Vakuum}{131}{subsubsection.12.1.3}%
+\contentsline {subsubsection}{\numberline {12.1.3}Test im Vakuum}{130}{subsubsection.12.1.3}%
 \contentsline {subsubsection}{\numberline {12.1.4}Einsatz von Sensoren}{131}{subsubsection.12.1.4}%
 \contentsline {subsubsection}{\numberline {12.1.5}UV-Lampe}{131}{subsubsection.12.1.5}%
-\contentsline {subsubsection}{\numberline {12.1.6}Fazit der Tests}{132}{subsubsection.12.1.6}%
+\contentsline {subsubsection}{\numberline {12.1.6}Kühlung}{132}{subsubsection.12.1.6}%
+\contentsline {subsubsection}{\numberline {12.1.7}Fazit der Tests}{132}{subsubsection.12.1.7}%
 \contentsline {subsection}{\numberline {12.2}Messungen}{133}{subsection.12.2}%
 \contentsline {subsubsection}{\numberline {12.2.1}Erklärung der Daten}{133}{subsubsection.12.2.1}%
 \contentsline {subsubsection}{\numberline {12.2.2}Temperatur }{133}{subsubsection.12.2.2}%
