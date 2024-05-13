@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2023-08-01" view-index="0" gantt-divider-location="392" resource-divider-location="300" version="3.2.3247" locale="de_DE">
+    <description/>
+    <view zooming-state="default:8" id="gantt-chart">
+        <field id="tpd3" name="Vorgang" width="213" order="0"/>
+        <field id="tpd4" name="Anfang" width="82" order="1"/>
+        <field id="tpd5" name="Ende" width="82" order="2"/>
+        <option id="filter.completedTasks" value="false"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Ressource" width="191" order="0"/>
+        <field id="1" name="Rolle" width="90" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Offizeller Start" color="#8cb6ce" meeting="true" start="2023-08-24" duration="0" complete="0" thirdDate="2023-09-25" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Treffen in den Sommerferien:
+- Arbeitseinteilung festlegen
+]]>
+            </notes>
+        </task>
+        <task id="1" name="Recherche" color="#8cb6ce" meeting="false" start="2023-08-24" duration="18" complete="0" thirdDate="2023-08-24" thirdDate-constraint="0" expand="true"/>
+        <task id="2" name="erste offizielle HWE Stunde" color="#8cb6ce" meeting="true" start="2023-09-19" duration="0" complete="0" thirdDate="2023-08-21" thirdDate-constraint="0" expand="true"/>
+        <task id="4" name="Recherche" color="#8cb6ce" meeting="false" start="2023-09-19" duration="9" complete="0" thirdDate="2023-08-21" thirdDate-constraint="0" expand="true"/>
+        <task id="3" name="Einreichung Antrag" color="#8cb6ce" meeting="true" start="2023-09-29" duration="0" complete="0" thirdDate="2023-08-21" thirdDate-constraint="0" expand="true"/>
+        <task id="5" name="Gehäuse" color="#8cb6ce" meeting="false" start="2023-09-19" duration="35" complete="0" thirdDate="2023-09-19" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[- konstruieren des Gehäuses in Solidworks 
+- Gehäuse aufbauen
+- Verbesserungen vornehmen 
+]]>
+            </notes>
+        </task>
+        <task id="7" name="Fertiges Gehäuse" color="#8cb6ce" meeting="true" start="2023-11-06" duration="0" complete="0" thirdDate="2023-11-06" thirdDate-constraint="0" expand="true"/>
+        <task id="6" name="Inhalt Gehäuse" color="#8cb6ce" meeting="false" start="2023-09-19" duration="75" complete="0" thirdDate="2023-08-21" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[- Halterung für CubSat
+- UV Lampe
+- Vakuum 
+- kühlen und heizen im inneren des Gehäuses]]>
+            </notes>
+        </task>
+        <task id="8" name="Software CubSat" color="#8cb6ce" meeting="false" start="2023-09-19" duration="75" complete="0" thirdDate="2023-09-19" thirdDate-constraint="0" expand="true"/>
+        <task id="9" name="Motor für die Rotation des Cubs" color="#8cb6ce" meeting="false" start="2023-09-19" duration="84" complete="0" thirdDate="2023-09-19" thirdDate-constraint="0" expand="true"/>
+        <task id="11" name="Board &amp; Sensoren" color="#8cb6ce" meeting="false" start="2023-09-19" duration="84" complete="0" thirdDate="2023-09-19" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Board fällt weg - da alles am Raspy angeschlossen werden kann. ]]>
+            </notes>
+        </task>
+        <task id="15" name="fertiges Gehäuse (Hardware)" color="#8cb6ce" meeting="true" start="2024-01-15" duration="0" complete="0" thirdDate="2024-01-15" thirdDate-constraint="0" expand="true"/>
+        <task id="10" name="Datenauslesung &amp; Display" color="#8cb6ce" meeting="false" start="2023-09-19" duration="98" complete="0" thirdDate="2023-09-19" thirdDate-constraint="0" expand="true"/>
+        <task id="16" name="fertiges Teststation" color="#8cb6ce" meeting="true" start="2024-02-01" duration="0" complete="0" thirdDate="2024-02-01" thirdDate-constraint="0" expand="true"/>
+        <task id="12" name="Limits testen" color="#8cb6ce" meeting="false" start="2024-02-01" duration="10" complete="0" thirdDate="2024-02-01" thirdDate-constraint="0" expand="true"/>
+        <task id="14" name="Verbesserungen vornehmen" color="#8cb6ce" meeting="false" start="2024-02-14" duration="24" complete="0" thirdDate="2024-02-14" thirdDate-constraint="0" expand="true"/>
+        <task id="13" name="Abgabe Diplomarbeit" color="#8cb6ce" meeting="true" start="2024-03-20" duration="0" complete="0" thirdDate="2024-03-01" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Sophia Hagen" function="Default:1" contacts="" phone=""/>
+        <resource id="3" name="Sebastian Bellai" function="Default:0" contacts="" phone=""/>
+        <resource id="1" name="Julius Scherrer" function="Default:0" contacts="" phone=""/>
+        <resource id="2" name="Constantin Zumtobel" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="0" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="1" resource-id="0" function="Default:1" responsible="true" load="20.0"/>
+        <allocation task-id="4" resource-id="0" function="Default:1" responsible="true" load="20.0"/>
+        <allocation task-id="3" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="0" function="Default:1" responsible="true" load="20.0"/>
+        <allocation task-id="7" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="6" resource-id="0" function="Default:1" responsible="true" load="20.0"/>
+        <allocation task-id="11" resource-id="0" function="Default:1" responsible="true" load="20.0"/>
+        <allocation task-id="15" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="16" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="14" resource-id="0" function="Default:1" responsible="true" load="20.0"/>
+        <allocation task-id="13" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="0" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="3" function="Default:0" responsible="false" load="20.0"/>
+        <allocation task-id="4" resource-id="3" function="Default:0" responsible="false" load="20.0"/>
+        <allocation task-id="6" resource-id="3" function="Default:0" responsible="false" load="20.0"/>
+        <allocation task-id="15" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="16" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="12" resource-id="3" function="Default:0" responsible="true" load="20.0"/>
+        <allocation task-id="14" resource-id="3" function="Default:0" responsible="false" load="20.0"/>
+        <allocation task-id="13" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="0" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="1" function="Default:0" responsible="false" load="20.0"/>
+        <allocation task-id="4" resource-id="1" function="Default:0" responsible="false" load="20.0"/>
+        <allocation task-id="5" resource-id="1" function="Default:0" responsible="false" load="20.0"/>
+        <allocation task-id="7" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="9" resource-id="1" function="Default:0" responsible="true" load="20.0"/>
+        <allocation task-id="15" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="16" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="14" resource-id="1" function="Default:0" responsible="false" load="20.0"/>
+        <allocation task-id="13" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="2" function="Default:0" responsible="false" load="20.0"/>
+        <allocation task-id="4" resource-id="2" function="Default:0" responsible="false" load="20.0"/>
+        <allocation task-id="0" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="8" resource-id="2" function="Default:0" responsible="true" load="20.0"/>
+        <allocation task-id="10" resource-id="2" function="Default:0" responsible="true" load="20.0"/>
+        <allocation task-id="16" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="14" resource-id="2" function="Default:0" responsible="false" load="20.0"/>
+        <allocation task-id="13" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous>
+        <previous-tasks name="Basisplan Teststation">
+            <previous-task id="0" start="2023-08-24" duration="0" meeting="true" super="false"/>
+            <previous-task id="1" start="2023-08-24" duration="18" meeting="false" super="false"/>
+            <previous-task id="2" start="2023-09-19" duration="0" meeting="true" super="false"/>
+            <previous-task id="4" start="2023-09-19" duration="9" meeting="false" super="false"/>
+            <previous-task id="3" start="2023-09-29" duration="0" meeting="true" super="false"/>
+            <previous-task id="5" start="2023-09-19" duration="35" meeting="false" super="false"/>
+            <previous-task id="7" start="2023-11-06" duration="0" meeting="true" super="false"/>
+            <previous-task id="6" start="2023-09-19" duration="75" meeting="false" super="false"/>
+            <previous-task id="8" start="2023-09-19" duration="75" meeting="false" super="false"/>
+            <previous-task id="9" start="2023-09-19" duration="84" meeting="false" super="false"/>
+            <previous-task id="11" start="2023-09-19" duration="84" meeting="false" super="false"/>
+            <previous-task id="15" start="2024-01-15" duration="0" meeting="true" super="false"/>
+            <previous-task id="10" start="2023-09-19" duration="98" meeting="false" super="false"/>
+            <previous-task id="16" start="2024-02-01" duration="0" meeting="true" super="false"/>
+            <previous-task id="12" start="2024-02-01" duration="10" meeting="false" super="false"/>
+            <previous-task id="14" start="2024-02-14" duration="11" meeting="false" super="false"/>
+            <previous-task id="13" start="2024-03-01" duration="0" meeting="true" super="false"/>
+        </previous-tasks>
+    </previous>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>

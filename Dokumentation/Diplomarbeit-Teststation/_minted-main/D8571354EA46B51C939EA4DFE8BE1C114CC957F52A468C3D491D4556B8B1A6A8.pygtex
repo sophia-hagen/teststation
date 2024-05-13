@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+  if isinstance(y\PYGZus{}column, list):
+  \PYGZsh{} Check if multiple y\PYGZus{}columns are provided for multiple traces
+   fig = px.line(dataframe, x=x\PYGZus{}column, y=y\PYGZus{}column, title=title)
+  else:
+   fig = px.line(dataframe, x=x\PYGZus{}column, y=y\PYGZus{}column, title=title,
+   labels=\PYGZob{}y\PYGZus{}column: y\PYGZus{}column\PYGZcb{})
+\end{Verbatim}

@@ -10,6 +10,8 @@ import sys
 ###Thread###
 import threading 
 
+import tkinter as tk
+import os
 ## AM2302 ##
 import time
 import board
@@ -23,223 +25,240 @@ from tkinter import messagebox as mbox
 
 from time import sleep
 
-###Variablne###
-boolLED = False
-boolNetz = False 
-temp_c=0
-boolMotor = False
-boolUV = False
+if 'DISPLAY' in os.environ:
+    root = tk.Tk()
+    ###Variablne###
+    boolLED = False
+    boolNetz = False 
+    temp_c=0
+    boolMotor = False
+    boolUV = False
 
-###Relay Netzteil###
-NC= 14
-SIG=15
-GPIO.setmode(GPIO.BCM)
-GPIO.setup(NC, GPIO.OUT)
-GPIO.setup(SIG, GPIO.OUT)
+    ###Relay Netzteil###
+    NC= 14
+    SIG=15
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setup(NC, GPIO.OUT)
+    GPIO.setup(SIG, GPIO.OUT)
 
-#motor
-PUL=16
-DIR =12
-GPIO.setmode(GPIO.BCM)
-GPIO.setup(DIR, GPIO.OUT)
-GPIO.setup(PUL, GPIO.OUT)
+    #motor
+    PUL=16
+    DIR =12
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setup(DIR, GPIO.OUT)
+    GPIO.setup(PUL, GPIO.OUT)
 
-###Motor####
+    ###Endschalter
+
+    END1=22	
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setup(END1, GPIO.OUT)
+
+    END2=27
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setup(END2, GPIO.OUT)
+
+    ###Motor####
+
+    #Kühlung
+
+    # Pin 11 (GPIO17) als Ausgang initialisieren
+    motorPin = 17
+    GPIO.setup(motorPin, GPIO.OUT)
 
 
+    ###Fenster erstellen###
+    root = Tk()
+    root.wm_title("Controll Unit")
+    root.config(background = "#FFFFFF")
 
-###Fenster erstellen###
-root = Tk()
-root.wm_title("Controll Unit")
-root.config(background = "#FFFFFF")
+    rightFrame = Frame(root, width=500, height =800)
+    rightFrame.grid(row=100, column =200, padx=0, pady=3)
 
-rightFrame = Frame(root, width=500, height =800)
-rightFrame.grid(row=100, column =200, padx=0, pady=3)
+    ###Waning Fenster Netzteil muss ein sein###
 
-###Waning Fenster Netzteil muss ein sein###
+    ## init sensor device ##
+    dhtDevice1 = adafruit_dht.DHT22(board.D2)
+    dhtDevice2 = adafruit_dht.DHT22(board.D3)
 
-## init sensor device ##
-dhtDevice1 = adafruit_dht.DHT22(board.D2)
-dhtDevice2 = adafruit_dht.DHT22(board.D3)
+    ###Relay UV-Lampe###
+    PinUV=12
+    VersorgUV=4
+    GNDUV=18
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setup(GNDUV, GPIO.OUT)
+    GPIO.setup(PinUV, GPIO.OUT)
 
-###Relay UV-Lampe###
-PinUV=12
-VersorgUV=4
-GNDUV=18
-GPIO.setmode(GPIO.BCM)
-GPIO.setup(GNDUV, GPIO.OUT)
-GPIO.setup(PinUV, GPIO.OUT)
+    ##Temperatursensoren
 
-##Temperatursensoren
-
-##Temperatursensor oben 
-def REFRTMP1():
-    while TRUE:
-        try:
-            temp_c = dhtDevice1.temperature
-            humidity = dhtDevice1.humidity
-            tmplab1 = Label(buttonFrame,text="Temperatur: {:.1f} °C ".format(temp_c),bg = "#FFFFFF")
-            tmplab1.grid(row=0, column=1)
-            humlab1 = Label(buttonFrame,text="Feuchtigkeit: {} %".format(humidity),bg = "#FFFFFF")
-            humlab1.grid(row=10, column=1)
-        except RuntimeError as error:
-            print(error.args[0])                                                                                                                                 
+    ##Temperatursensor oben 
+    def REFRTMP1():
+        while TRUE:
+            try:
+                temp_c = dhtDevice1.temperature
+                humidity = dhtDevice1.humidity
+                tmplab1 = Label(buttonFrame,text="Temperatur: {:.1f} °C ".format(temp_c),bg = "#FFFFFF")
+                tmplab1.grid(row=0, column=1)
+                humlab1 = Label(buttonFrame,text="Feuchtigkeit: {} %".format(humidity),bg = "#FFFFFF")
+                humlab1.grid(row=10, column=1)
+            except RuntimeError as error:
+                print(error.args[0])                                                                                                                                 
+                time.sleep(2.0)
+                continue
+            except Exception as error:
+                dhtDevice1.exit()
+                raise error
             time.sleep(2.0)
-            continue
-        except Exception as error:
-            dhtDevice1.exit()
-            raise error
-        time.sleep(2.0)
 
-##Temperatursensor unten 
-def REFRTMP2():
-    while TRUE:
-        try:
-            temp_c = dhtDevice2.temperature
-            humidity = dhtDevice2.humidity
-            tmplab2 = Label(buttonFrame,text="Temperatur: {:.1f} °C ".format(temp_c),bg = "#FFFFFF")
-            tmplab2.grid(row=0, column=2)
-            humlab2 = Label(buttonFrame,text="Feuchtigkeit: {} %".format(humidity),bg = "#FFFFFF")
-            humlab2.grid(row=10, column=2)
-        except RuntimeError as error:
-            print(error.args[0])                                                                                                                                 
+    ##Temperatursensor unten 
+    def REFRTMP2():
+        while TRUE:
+            try:
+                temp_c = dhtDevice2.temperature
+                humidity = dhtDevice2.humidity
+                tmplab2 = Label(buttonFrame,text="Temperatur: {:.1f} °C ".format(temp_c),bg = "#FFFFFF")
+                tmplab2.grid(row=0, column=2)
+                humlab2 = Label(buttonFrame,text="Feuchtigkeit: {} %".format(humidity),bg = "#FFFFFF")
+                humlab2.grid(row=10, column=2)
+            except RuntimeError as error:
+                print(error.args[0])                                                                                                                                 
+                time.sleep(2.0)
+                continue
+            except Exception as error:
+                dhtDevice2.exit()
+                raise error
             time.sleep(2.0)
-            continue
-        except Exception as error:
-            dhtDevice2.exit()
-            raise error
-        time.sleep(2.0)
         
-###UV Lampe#####
-def UVLampe():
+    ###UV Lampe#####
+    def UVLampe():
     
-    global boolUV
+        global boolUV
     
-    print(boolUV)
-    boolUV = not boolUV
-    print(boolUV)
+        print(boolUV)
+        boolUV = not boolUV
+        print(boolUV)
     
-    if boolUV == True :
+        if boolUV == True :
         
-        GPIO.output(PinUV,GPIO.HIGH)
-        btuv["text"]= "UV-Lampe aus"
-        print("ein")
+            GPIO.output(PinUV,GPIO.HIGH)
+            btuv["text"]= "UV-Lampe aus"
+            print("ein")
         
-    else:
+        else:
         
-        GPIO.output(PinUV,GPIO.LOW)
-        btuv["text"]= "UV-Lampe ein"
-        print("aus")
+            GPIO.output(PinUV,GPIO.LOW)
+            btuv["text"]= "UV-Lampe ein"
+            print("aus")
         
 
 
-###Netzteil ein aus #####
-def Netzteil():
+    ###Netzteil ein aus #####
+    def Netzteil():
     
-    global boolNetz
-    print(boolNetz)
-    boolNetz = not boolNetz
-    print(boolNetz)
-    
-    if boolNetz == True :
-        
-        GPIO.output(SIG,GPIO.HIGH)
-        btnt["text"]= "Netzgerät aus"
+        global boolNetz
         print(boolNetz)
-        
-    else:
-        GPIO.output(SIG,GPIO.LOW)
-        btnt["text"]= "Netzgerät ein"
+        boolNetz = not boolNetz
         print(boolNetz)
+    
+        if boolNetz == True :
+        
+            GPIO.output(SIG,GPIO.HIGH)
+            btnt["text"]= "Netzgerät aus"
+            print(boolNetz)
+        
+        else:
+            GPIO.output(SIG,GPIO.LOW)
+            btnt["text"]= "Netzgerät ein"
+            print(boolNetz)
         
 
-###LED Streifen ein aus
-def LED():
+    ###LED Streifen ein aus
+    def LED():
     
-    global boolLED
+        global boolLED
     
-    print(boolLED)
-    boolLED = not boolLED
-    print(boolLED)
-    
-    pixels = neopixel.NeoPixel(board.D21, 40, brightness =5)
-    pixels.fill((0,0,0))
-    
-    if boolLED == True :
-        
-        pixels.fill((0,255,0))
-        btled["text"]= "Leuchten aus"
         print(boolLED)
-        
-    else:
-        
+        boolLED = not boolLED
+        print(boolLED)
+    
+        pixels = neopixel.NeoPixel(board.D21, 40, brightness =5)
         pixels.fill((0,0,0))
-        btled["text"]= "Leuchten ein"
-        print(boolLED)
+    
+        if boolLED == True :
+        
+            pixels.fill((0,255,0))
+            btled["text"]= "Leuchten aus"
+            print(boolLED)
+        
+        else:
+        
+            pixels.fill((0,0,0))
+            btled["text"]= "Leuchten ein"
+            print(boolLED)
         
 
 
 
-### Exit ###  
-def exitProgram():
-    print("Exit Button pressed")
-    root.destroy()
-    pixels = neopixel.NeoPixel(board.D21, 40, brightness =5)
-    pixels.fill((0,0,0))
-    GPIO.cleanup()
+    ### Exit ###  
+    def exitProgram():
+        print("Exit Button pressed")
+        root.destroy()
+        pixels = neopixel.NeoPixel(board.D21, 40, brightness =5)
+        pixels.fill((0,0,0))
+        GPIO.cleanup()
     
     
-def ButMOT_click():
-    t2 = threading.Thread(target= MOTstart)
-    t2.start()
+    def ButMOT_click():
+        t2 = threading.Thread(target= MOTstart)
+        t2.start()
     
-###Motor ein aus###
-def MOTstart():
-    
-    global boolMotor
-    
-    print("W")
-    print(boolMotor)
-    
-    boolMotor = not boolMotor  #setzt immer zum gegenteil, 
-    print(boolMotor)
-    
-    
-    if boolMotor==True:
+    ###Motor ein aus###
+    def MOTstart():
+        #while (GPIO.input(END1) == GPIO.LOW) and (GPIO.input(END2) == GPIO.LOW):
+        global boolMotor
         
-        btmot["text"]= "Motor Aus"
-        GPIO.output(DIR,GPIO.HIGH)
+        print("W")
+        print(boolMotor)
         
-        for x in range(10100):  # illegaler Zähler - eventuell falsches signal darum funktioniert schritmotor noicht
-            #eventuell Bibs verwenden / DC-Motor
+        boolMotor = not boolMotor  #setzt immer zum gegenteil, 
+        print(boolMotor)
+        
+        
+        if boolMotor==True:
             
-            print("EIN")
-            GPIO.output(PUL,GPIO.HIGH)
-            time.sleep(0.00001)
+            btmot["text"]= "Motor Aus"
+            GPIO.output(DIR,GPIO.HIGH)
+            
+            for x in range(10100):  # illegaler Zähler - eventuell falsches signal darum funktioniert schritmotor noicht
+                #eventuell Bibs verwenden / DC-Motor
+                
+                print("EIN")
+                GPIO.output(PUL,GPIO.LOW)
+                time.sleep(0.00001)
+                GPIO.output(PUL,GPIO.HIGH)
+                time.sleep(0.00001)
+                
+                if boolMotor == False:
+                    break
+        else:
+            
+            btmot["text"]= "Motor EIN"
             GPIO.output(PUL,GPIO.LOW)
-            time.sleep(0.00001)
-            
-            if boolMotor == False:
-                break
-    else:
-        
-        btmot["text"]= "Motor EIN"
-        GPIO.output(PUL,GPIO.LOW)
-        print("Aus")
-        
-        
-        
+            print("Aus")
+
+
         
     
-if __name__ == "__main__":
     
-    t1 = threading.Thread(target=REFRTMP1)  ##threading Temperatursensor oben 
+    if __name__ == "__main__":
     
-    t1.start()
+        t1 = threading.Thread(target=REFRTMP1)  ##threading Temperatursensor oben 
     
-    t3 = threading.Thread(target=REFRTMP2)  ##threading Temperatursensor unten 
+        t1.start()
     
-    t3.start()
+        t3 = threading.Thread(target=REFRTMP2)  ##threading Temperatursensor unten 
+    
+        t3.start()
 
                           
     
@@ -248,29 +267,37 @@ if __name__ == "__main__":
 
 
 ###Gui Fenster ####
-buttonFrame = Frame(rightFrame)
-buttonFrame.grid(row=0, column=0, padx=50,pady=3) 
+    buttonFrame = Frame(rightFrame)
+    buttonFrame.grid(row=0, column=0, padx=50,pady=3) 
 
 ###LED Streifen ein aus####
-btled = Button(buttonFrame,text="Leuchten ein", bg = "#FFFFFF", width=15,command = LED)
-btled.grid(row=10,column=0, padx=10,pady=3)
+    btled = Button(buttonFrame,text="Leuchten ein", bg = "#FFFFFF", width=15,command = LED)
+    btled.grid(row=10,column=0, padx=10,pady=3)
 
 ###Motor ein aus####
-btmot = Button(buttonFrame,text="Motor ein", bg = "#FFFFFF", width=15, command=ButMOT_click)
-btmot.grid(row=20,column=0, padx=10,pady=3)
+    btmot = Button(buttonFrame,text="Motor ein", bg = "#FFFFFF", width=15, command=ButMOT_click)
+    btmot.grid(row=20,column=0, padx=10,pady=3)
 
 
 ###Button Exit ####
-btexit = Button(buttonFrame, text="Exit", bg = "#FF0000", width=15,command=exitProgram)
-btexit.grid(row=50, column=1, padx=0,pady=5)
+    btexit = Button(buttonFrame, text="Exit", bg = "#FF0000", width=15,command=exitProgram)
+    btexit.grid(row=50, column=1, padx=0,pady=5)
 
 ###Button Netzteil ein aus####
-btnt= Button(buttonFrame, text="Netzteil ein", bg = "#FFFFFF", width=15,command = Netzteil)
-btnt.grid(row=0, column=0)
+    btnt= Button(buttonFrame, text="Netzteil ein", bg = "#FFFFFF", width=15,command = Netzteil)
+    btnt.grid(row=0, column=0)
 
 ###Button UV-Lampe####
-btuv= Button(buttonFrame, text="UV-Lampe ein", bg = "#FFFFFF", width=15,command = UVLampe)
-btuv.grid(row=20, column=1)
+    btuv= Button(buttonFrame, text="UV-Lampe ein", bg = "#FFFFFF", width=15,command = UVLampe)
+    btuv.grid(row=20, column=1)
+
+##button kühlung###
+###Button UV-Lampe####
+    btuv= Button(buttonFrame, text="Kühlung ein", bg = "#FFFFFF", width=15,command = kuehlung)
+    btuv.grid(row=30, column=1)
 
 
-root.mainloop()
+    root.mainloop()
+
+else:
+    print("No display available")

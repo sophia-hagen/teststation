@@ -1,0 +1,177 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {1}Eidesstattliche Erklärung}{2}{section.1}%
+\contentsline {section}{\numberline {2}Diplomarbeit Dokumentation}{9}{section.2}%
+\contentsline {section}{\numberline {3}Zusammenfassung}{9}{section.3}%
+\contentsline {section}{\numberline {4}Diploma Thesis Documentation}{10}{section.4}%
+\contentsline {section}{\numberline {5}Abstract}{10}{section.5}%
+\contentsline {section}{\numberline {6}Danksagung}{11}{section.6}%
+\contentsline {section}{\numberline {7}Pflichtenheft}{12}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Einleitung}{12}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}Projektname}{12}{subsubsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.2}Motivation}{12}{subsection.7.2}%
+\contentsline {subsubsection}{\numberline {7.2.1}Ausgangslage}{12}{subsubsection.7.2.1}%
+\contentsline {subsubsection}{\numberline {7.2.2}Zielsetzung}{12}{subsubsection.7.2.2}%
+\contentsline {subsubsection}{\numberline {7.2.3}Ziele \textit {Must-Have}}{14}{subsubsection.7.2.3}%
+\contentsline {subsubsection}{\numberline {7.2.4}Optionale Ziele \textit {Nice-to-Have}}{14}{subsubsection.7.2.4}%
+\contentsline {subsection}{\numberline {7.3} Meilensteine}{14}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4} Team}{15}{subsection.7.4}%
+\contentsline {subsubsection}{\numberline {7.4.1}Teammitglieder}{15}{subsubsection.7.4.1}%
+\contentsline {subsubsection}{\numberline {7.4.2} Betreungslehrer}{17}{subsubsection.7.4.2}%
+\contentsline {section}{\numberline {8}Abkürzungen}{18}{section.8}%
+\contentsline {section}{\numberline {9}Hardware}{20}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Gehäuse}{20}{subsection.9.1}%
+\contentsline {subsubsection}{\numberline {9.1.1}Holzplatte}{22}{subsubsection.9.1.1}%
+\contentsline {subsubsection}{\numberline {9.1.2}PVC-Platten}{24}{subsubsection.9.1.2}%
+\contentsline {subsubsection}{\numberline {9.1.3}Tür}{24}{subsubsection.9.1.3}%
+\contentsline {subsubsection}{\numberline {9.1.4}Dichtungsrahmen}{26}{subsubsection.9.1.4}%
+\contentsline {subsubsection}{\numberline {9.1.5}Schließer}{28}{subsubsection.9.1.5}%
+\contentsline {subsection}{\numberline {9.2}Gyroskop}{29}{subsection.9.2}%
+\contentsline {subsubsection}{\numberline {9.2.1}Motor}{31}{subsubsection.9.2.1}%
+\contentsline {subsubsection}{\numberline {9.2.2}Motor-Treiber}{32}{subsubsection.9.2.2}%
+\contentsline {subsubsection}{\numberline {9.2.3}Netzteil}{33}{subsubsection.9.2.3}%
+\contentsline {subsubsection}{\numberline {9.2.4}Relais}{34}{subsubsection.9.2.4}%
+\contentsline {subsection}{\numberline {9.3}Leiterplatte}{35}{subsection.9.3}%
+\contentsline {subsubsection}{\numberline {9.3.1}Schaltplan}{35}{subsubsection.9.3.1}%
+\contentsline {subsubsection}{\numberline {9.3.2}PCB}{38}{subsubsection.9.3.2}%
+\contentsline {subsection}{\numberline {9.4}Sensoren in der Testkammer}{41}{subsection.9.4}%
+\contentsline {subsubsection}{\numberline {9.4.1}Temperatursensor}{42}{subsubsection.9.4.1}%
+\contentsline {subsubsection}{\numberline {9.4.2}UV-Sensor}{43}{subsubsection.9.4.2}%
+\contentsline {subsubsection}{\numberline {9.4.3}Magnetsensor}{45}{subsubsection.9.4.3}%
+\contentsline {subsubsection}{\numberline {9.4.4}Drucksensor}{46}{subsubsection.9.4.4}%
+\contentsline {subsection}{\numberline {9.5}Sensoren auf dem Satellit}{48}{subsection.9.5}%
+\contentsline {subsubsection}{\numberline {9.5.1}EDU}{48}{subsubsection.9.5.1}%
+\contentsline {subsubsection}{\numberline {9.5.2}Sensorik des EDUs}{49}{subsubsection.9.5.2}%
+\contentsline {subsubsection}{\numberline {9.5.3}Temperatursensor}{49}{subsubsection.9.5.3}%
+\contentsline {subsubsection}{\numberline {9.5.4}Magnetfeldsensor/Gyroskop}{50}{subsubsection.9.5.4}%
+\contentsline {subsubsection}{\numberline {9.5.5}Beschleunigungssensor}{50}{subsubsection.9.5.5}%
+\contentsline {subsubsection}{\numberline {9.5.6}UV-Sensor}{50}{subsubsection.9.5.6}%
+\contentsline {subsubsection}{\numberline {9.5.7}Dosimeter}{50}{subsubsection.9.5.7}%
+\contentsline {subsection}{\numberline {9.6}UV-Lampe}{52}{subsection.9.6}%
+\contentsline {subsection}{\numberline {9.7}Magnetfeld}{54}{subsection.9.7}%
+\contentsline {subsection}{\numberline {9.8}Pneumatik}{55}{subsection.9.8}%
+\contentsline {subsubsection}{\numberline {9.8.1}Ventil}{56}{subsubsection.9.8.1}%
+\contentsline {subsubsection}{\numberline {9.8.2}Vakuum Ejektor}{57}{subsubsection.9.8.2}%
+\contentsline {subsubsection}{\numberline {9.8.3}Druckluft Kugel Vibrator}{58}{subsubsection.9.8.3}%
+\contentsline {subsubsection}{\numberline {9.8.4}Rüttelplatte}{59}{subsubsection.9.8.4}%
+\contentsline {subsection}{\numberline {9.9}LED-Streifen}{61}{subsection.9.9}%
+\contentsline {subsection}{\numberline {9.10}CubeSat}{62}{subsection.9.10}%
+\contentsline {subsection}{\numberline {9.11}Halterung}{65}{subsection.9.11}%
+\contentsline {subsubsection}{\numberline {9.11.1}Boden}{65}{subsubsection.9.11.1}%
+\contentsline {subsubsection}{\numberline {9.11.2}Deckel}{67}{subsubsection.9.11.2}%
+\contentsline {subsubsection}{\numberline {9.11.3}3D-Druck der Halterung}{68}{subsubsection.9.11.3}%
+\contentsline {subsection}{\numberline {9.12}Lüftung}{69}{subsection.9.12}%
+\contentsline {subsubsection}{\numberline {9.12.1}Pinbelegung des BC547}{70}{subsubsection.9.12.1}%
+\contentsline {subsubsection}{\numberline {9.12.2}Aufbau Lüfter}{71}{subsubsection.9.12.2}%
+\contentsline {subsubsection}{\numberline {9.12.3}Befestigung}{71}{subsubsection.9.12.3}%
+\contentsline {subsection}{\numberline {9.13}Kühlung}{72}{subsection.9.13}%
+\contentsline {subsubsection}{\numberline {9.13.1}Verkabelung des Kühlgerät}{72}{subsubsection.9.13.1}%
+\contentsline {subsubsection}{\numberline {9.13.2}Verdrahtung der Taster}{74}{subsubsection.9.13.2}%
+\contentsline {subsubsection}{\numberline {9.13.3}Aufbau mittels Streifenrasterplatine}{74}{subsubsection.9.13.3}%
+\contentsline {subsubsection}{\numberline {9.13.4}Befestigung des Kühlgeräts an der Teststation}{76}{subsubsection.9.13.4}%
+\contentsline {subsection}{\numberline {9.14}Sicherheit}{77}{subsection.9.14}%
+\contentsline {subsubsection}{\numberline {9.14.1}Notausschalter}{77}{subsubsection.9.14.1}%
+\contentsline {subsubsection}{\numberline {9.14.2}Schlüsselschalter}{78}{subsubsection.9.14.2}%
+\contentsline {subsubsection}{\numberline {9.14.3}Endschalter}{78}{subsubsection.9.14.3}%
+\contentsline {section}{\numberline {10}Software}{80}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Tasterabfrage}{80}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Testprogramm}{81}{subsection.10.2}%
+\contentsline {subsubsection}{\numberline {10.2.1}GUI}{81}{subsubsection.10.2.1}%
+\contentsline {subsubsection}{\numberline {10.2.2}Button}{83}{subsubsection.10.2.2}%
+\contentsline {subsubsection}{\numberline {10.2.3}Temperatursensor}{83}{subsubsection.10.2.3}%
+\contentsline {subsubsection}{\numberline {10.2.4}UV-Sensor}{84}{subsubsection.10.2.4}%
+\contentsline {subsubsection}{\numberline {10.2.5}Drucksensor}{85}{subsubsection.10.2.5}%
+\contentsline {subsubsection}{\numberline {10.2.6}UV-Lampe}{86}{subsubsection.10.2.6}%
+\contentsline {subsubsection}{\numberline {10.2.7}Motor}{87}{subsubsection.10.2.7}%
+\contentsline {subsubsection}{\numberline {10.2.8}Netzteil}{87}{subsubsection.10.2.8}%
+\contentsline {subsubsection}{\numberline {10.2.9}LED-Streifen}{88}{subsubsection.10.2.9}%
+\contentsline {subsubsection}{\numberline {10.2.10}Schlüsselschalter}{88}{subsubsection.10.2.10}%
+\contentsline {subsubsection}{\numberline {10.2.11}Notausschalter}{89}{subsubsection.10.2.11}%
+\contentsline {subsubsection}{\numberline {10.2.12}Endschalter}{89}{subsubsection.10.2.12}%
+\contentsline {subsubsection}{\numberline {10.2.13}Kühlung}{89}{subsubsection.10.2.13}%
+\contentsline {subsubsection}{\numberline {10.2.14}Lüfter}{91}{subsubsection.10.2.14}%
+\contentsline {subsection}{\numberline {10.3}Verbindungsmöglichkeit }{92}{subsection.10.3}%
+\contentsline {subsubsection}{\numberline {10.3.1}UDP}{92}{subsubsection.10.3.1}%
+\contentsline {subsubsection}{\numberline {10.3.2}TCP}{93}{subsubsection.10.3.2}%
+\contentsline {subsubsection}{\numberline {10.3.3}Serielle Verbindungsmöglichkeit}{93}{subsubsection.10.3.3}%
+\contentsline {subsection}{\numberline {10.4}Übertragungsmethode }{95}{subsection.10.4}%
+\contentsline {subsubsection}{\numberline {10.4.1}Senderoutine }{95}{subsubsection.10.4.1}%
+\contentsline {subsubsection}{\numberline {10.4.2}Programm SensorOut.py}{96}{subsubsection.10.4.2}%
+\contentsline {subsection}{\numberline {10.5}Empfangsroutine }{98}{subsection.10.5}%
+\contentsline {subsubsection}{\numberline {10.5.1}Schreiben der Daten in eine CSV-Datei}{100}{subsubsection.10.5.1}%
+\contentsline {subsubsection}{\numberline {10.5.2}CSV-Datei Programm}{101}{subsubsection.10.5.2}%
+\contentsline {subsubsection}{\numberline {10.5.3}Sensorik mittels I²C-Interface lesen}{106}{subsubsection.10.5.3}%
+\contentsline {subsection}{\numberline {10.6}Bibliothek „STS1\_Sensors.py “}{106}{subsection.10.6}%
+\contentsline {subsection}{\numberline {10.7}Auslesen der Sensorik mittels „STS1\_Sensors.py“}{107}{subsection.10.7}%
+\contentsline {section}{\numberline {11}Steuerung}{109}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Raspberry Pi }{109}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Grafische Oberfläche Raspberry Pi }{110}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}Remote-Zugriff}{111}{subsection.11.3}%
+\contentsline {subsection}{\numberline {11.4}Fast API}{113}{subsection.11.4}%
+\contentsline {subsubsection}{\numberline {11.4.1}Erstellen einer Fast API}{113}{subsubsection.11.4.1}%
+\contentsline {subsubsection}{\numberline {11.4.2}Temperatursensor}{116}{subsubsection.11.4.2}%
+\contentsline {subsubsection}{\numberline {11.4.3}UV-Sensor}{116}{subsubsection.11.4.3}%
+\contentsline {subsubsection}{\numberline {11.4.4}Drucksensor}{117}{subsubsection.11.4.4}%
+\contentsline {subsubsection}{\numberline {11.4.5}Schalten zwischen High und Low}{117}{subsubsection.11.4.5}%
+\contentsline {subsubsection}{\numberline {11.4.6}Motor und Endschalter}{118}{subsubsection.11.4.6}%
+\contentsline {subsection}{\numberline {11.5}Webapplikation}{119}{subsection.11.5}%
+\contentsline {subsubsection}{\numberline {11.5.1}Wie funktioniert Dash }{119}{subsubsection.11.5.1}%
+\contentsline {subsubsection}{\numberline {11.5.2}Callbacks }{119}{subsubsection.11.5.2}%
+\contentsline {subsubsection}{\numberline {11.5.3}HTML-Objekte in Dash}{120}{subsubsection.11.5.3}%
+\contentsline {subsubsection}{\numberline {11.5.4}Das Programm „dashboard.py“}{121}{subsubsection.11.5.4}%
+\contentsline {subsubsection}{\numberline {11.5.5}Das HTML-Layout}{122}{subsubsection.11.5.5}%
+\contentsline {subsubsection}{\numberline {11.5.6}Die Funktion ‚generate\_figure‘}{123}{subsubsection.11.5.6}%
+\contentsline {subsubsection}{\numberline {11.5.7}Die Callbacks der Website}{125}{subsubsection.11.5.7}%
+\contentsline {subsubsection}{\numberline {11.5.8}Die Funktion ‚update\_args‘}{126}{subsubsection.11.5.8}%
+\contentsline {subsubsection}{\numberline {11.5.9}Design der Webapplikation }{127}{subsubsection.11.5.9}%
+\contentsline {subsubsection}{\numberline {11.5.10}Steuerung von Aktoren}{128}{subsubsection.11.5.10}%
+\contentsline {subsubsection}{\numberline {11.5.11}MQTT}{128}{subsubsection.11.5.11}%
+\contentsline {subsubsection}{\numberline {11.5.12}Fast API}{129}{subsubsection.11.5.12}%
+\contentsline {section}{\numberline {12}Testen}{130}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Testroutine}{130}{subsection.12.1}%
+\contentsline {subsubsection}{\numberline {12.1.1}Rotationstest}{130}{subsubsection.12.1.1}%
+\contentsline {subsubsection}{\numberline {12.1.2}Vibrationstest}{130}{subsubsection.12.1.2}%
+\contentsline {subsubsection}{\numberline {12.1.3}Test im Vakuum}{130}{subsubsection.12.1.3}%
+\contentsline {subsubsection}{\numberline {12.1.4}Einsatz von Sensoren}{131}{subsubsection.12.1.4}%
+\contentsline {subsubsection}{\numberline {12.1.5}UV-Lampe}{131}{subsubsection.12.1.5}%
+\contentsline {subsubsection}{\numberline {12.1.6}Kühlung}{132}{subsubsection.12.1.6}%
+\contentsline {subsubsection}{\numberline {12.1.7}Fazit der Tests}{132}{subsubsection.12.1.7}%
+\contentsline {subsection}{\numberline {12.2}Messungen}{133}{subsection.12.2}%
+\contentsline {subsubsection}{\numberline {12.2.1}Erklärung der Daten}{133}{subsubsection.12.2.1}%
+\contentsline {subsubsection}{\numberline {12.2.2}Temperatur }{133}{subsubsection.12.2.2}%
+\contentsline {subsubsection}{\numberline {12.2.3}Messung des Magnetfeldes}{133}{subsubsection.12.2.3}%
+\contentsline {subsubsection}{\numberline {12.2.4}Messung von Beschleunigung}{134}{subsubsection.12.2.4}%
+\contentsline {subsubsection}{\numberline {12.2.5}Messung der UV-Strahlung}{134}{subsubsection.12.2.5}%
+\contentsline {subsubsection}{\numberline {12.2.6}Messung der Luftfeuchtigkeit}{134}{subsubsection.12.2.6}%
+\contentsline {subsubsection}{\numberline {12.2.7}Messung des Luftdrucks}{135}{subsubsection.12.2.7}%
+\contentsline {subsubsection}{\numberline {12.2.8}Messung der Luftqualität }{135}{subsubsection.12.2.8}%
+\contentsline {subsubsection}{\numberline {12.2.9}Messergebnisse der Sensoren}{135}{subsubsection.12.2.9}%
+\contentsline {subsubsection}{\numberline {12.2.10}Messergebnis Temperatur}{135}{subsubsection.12.2.10}%
+\contentsline {subsubsection}{\numberline {12.2.11}Messergebnis Luftfeuchtigkeit}{137}{subsubsection.12.2.11}%
+\contentsline {subsubsection}{\numberline {12.2.12}Messergebnis Luftdruck}{137}{subsubsection.12.2.12}%
+\contentsline {subsubsection}{\numberline {12.2.13}Messergebnis des UV-Sensors}{139}{subsubsection.12.2.13}%
+\contentsline {subsubsection}{\numberline {12.2.14}Messergebnis der Geschwindigkeit und des Gyroskops}{140}{subsubsection.12.2.14}%
+\contentsline {section}{\numberline {13}Dokumentationsaufteilung}{142}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Sophia Hagen }{142}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}Julius Scherrer }{142}{subsection.13.2}%
+\contentsline {subsection}{\numberline {13.3}Constantin Zumtobel }{143}{subsection.13.3}%
+\contentsline {subsection}{\numberline {13.4}Sebastian Bellai }{144}{subsection.13.4}%
+\contentsline {section}{\numberline {14}Projektmanagement}{145}{section.14}%
+\contentsline {subsection}{\numberline {14.1}Projektmanagementtool}{145}{subsection.14.1}%
+\contentsline {subsubsection}{\numberline {14.1.1}GanttProject}{145}{subsubsection.14.1.1}%
+\contentsline {subsubsection}{\numberline {14.1.2}GitHub}{145}{subsubsection.14.1.2}%
+\contentsline {subsection}{\numberline {14.2}Einteilung des Projektes}{147}{subsection.14.2}%
+\contentsline {subsection}{\numberline {14.3}Arbeitsaufteilung}{147}{subsection.14.3}%
+\contentsline {subsection}{\numberline {14.4}Arbeitszeiten}{147}{subsection.14.4}%
+\contentsline {section}{\numberline {15}Probleme}{149}{section.15}%
+\contentsline {section}{\numberline {16}Verzeichnisse}{150}{section.16}%
+\contentsline {section}{\numberline {17}Anhang}{161}{section.17}%
+\contentsline {subsection}{\numberline {17.1}Entwicklungsumgebung für Hardware}{161}{subsection.17.1}%
+\contentsline {subsubsection}{\numberline {17.1.1}Solidworks\blx@tocontentsinit {0}\autocite {SOLIDWORKS}}{161}{subsubsection.17.1.1}%
+\contentsline {subsubsection}{\numberline {17.1.2}Eagle 7.7.0}{161}{subsubsection.17.1.2}%
+\contentsline {subsection}{\numberline {17.2}Entwicklungsumgebung für Software}{162}{subsection.17.2}%
+\contentsline {subsubsection}{\numberline {17.2.1}Thonny}{162}{subsubsection.17.2.1}%
+\contentsline {subsubsection}{\numberline {17.2.2}Visual Studio Code\blx@tocontentsinit {0}\autocite {VScode}}{162}{subsubsection.17.2.2}%
+\contentsline {subsubsection}{\numberline {17.2.3}Plotly Dash}{163}{subsubsection.17.2.3}%
+\contentsline {subsubsection}{\numberline {17.2.4}TeraTerm}{163}{subsubsection.17.2.4}%
+\contentsline {subsection}{\numberline {17.3}3D-Druck}{163}{subsection.17.3}%
+\contentsline {subsection}{\numberline {17.4}Datenblätter}{164}{subsection.17.4}%

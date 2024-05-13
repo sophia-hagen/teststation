@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{c+c1}{\PYGZsh{}Einbinden der Bibliothek im Programm}
+    \PYG{k+kn}{import} \PYG{n+nn}{adafruit\PYGZus{}dht}
+
+    \PYG{c+c1}{\PYGZsh{}Definition des Sensors und festlegen des Pins}
+    \PYG{n}{dhtDevice1} \PYG{o}{=} \PYG{n}{adafruit\PYGZus{}dht}\PYG{o}{.}\PYG{n}{DHT22}\PYG{p}{(}\PYG{n}{board}\PYG{o}{.}\PYG{n}{D2}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{}Funktion temperature einer Variable zuweisen}
+    \PYG{n}{temp\PYGZus{}c} \PYG{o}{=} \PYG{n}{dhtDevice1}\PYG{o}{.}\PYG{n}{temperature}
+
+    \PYG{c+c1}{\PYGZsh{}Funktion humidity einer Variable zuweisen}
+    \PYG{n}{humidity} \PYG{o}{=} \PYG{n}{dhtDevice1}\PYG{o}{.}\PYG{n}{humidity}
+\end{Verbatim}

@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+		\PYG{c+c1}{\PYGZsh{} Pfad der CSV\PYGZhy{}Datei}
+		\PYG{n}{csv\PYGZus{}file\PYGZus{}path}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}C:}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{Users}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{Constantin}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{Documents}
+		\PYGZbs{}\PYGZbs{}\PYG{l+m+mi}{5}\PYG{n}{BHEL}\PYGZbs{}\PYGZbs{}\PYG{n}{Diplomarbeit}\PYGZbs{}\PYGZbs{}\PYG{n}{DashboardSTS1}
+		\PYGZbs{}\PYGZbs{}\PYG{n}{udp\PYGZus{}data}\PYG{o}{.}\PYG{n}{csv}\PYG{l+s+s1}{\PYGZsq{}}
+		
+\end{Verbatim}

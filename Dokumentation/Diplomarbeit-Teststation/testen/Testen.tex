@@ -1,0 +1,190 @@
+\section{Testen}\label{sec: testen}
+
+\subsection{Testroutine}\label{sec_routine}
+\subsubsection{Rotationstest}
+Für den Rotationstest des CubeSats mittels Gyroskop wird der CubeSat sicher in einer speziellen Halterung befestigt, die direkt mit dem Gyroskop verbunden ist. Sobald der CubeSat in Position ist, wird der Motor eingeschaltet, um das Gyroskop und somit den CubeSat in Rotation zu versetzen. \\
+\vspace{3mm}
+Während dieses Vorgangs werden die Rotationsbewegungen in den drei Achsen X, Y und Z kontinuierlich überwacht. Die Daten, die während des Tests gesammelt werden, können durch das Auslesen der Sensoren, welche sich auf dem CubeSat befinden erfolgen. Dies ermöglicht eine detaillierte Analyse der Rotationsgeschwindigkeiten und -richtungen in Echtzeit.
+
+\subsubsection{Vibrationstest}
+Der CubeSat wird fest auf der Rüttelplatte fixiert. Sobald der CubeSat positioniert ist, wird die Rüttelplatte in Betrieb genommen und die Vibrationen werden schrittweise erhöht, um die Belastungen zu simulieren.\\
+\vspace{3mm}
+Diese Rüttelplatten sind sorgfältig kalibriert und können eine breite Palette von Frequenzen und Amplituden erzeugen, um die unterschiedlichen Phasen des Startvorgangs, wie das Abheben, die Beschleunigung und das Eintritt in die Umlaufbahn, zu simulieren.
+
+\subsubsection{Test im Vakuum}
+Ein weiterer wichtiger Testschritt besteht darin, eine Kombination aus Vibrationstests und der Simulation des Vakuums des Weltraums durchzuführen. Dabei wird der CubeSat nicht nur auf einer Rüttelplatte platziert, sondern es wird auch eine Vakuumglocke verwendet, um die Bedingungen des Weltraums zu simulieren.\\
+\newpage
+Die Rüttelplatte wird weiterhin dazu verwendet, die starken Vibrationen zu erzeugen, die während des Raketenstarts auftreten. Gleichzeitig wird eine Vakuumglocke über den CubeSat gesetzt, um die Umgebungsbedingungen des Weltraums zu simulieren. 
+Durch das Entfernen der Luft innerhalb der Vakuumglocke wird der Druck stark reduziert, um den nahezu vollständigen Vakuumzustand des Weltraums nachzuahmen. Dies ermöglicht es, die Reaktion des CubeSats unter den Bedingungen des Weltraumvakuums zu testen. Der CubeSat kann auch auf der Rüttelplatte befestigt werden, ohne dass die Vibrationen getestet werden. Damit kann ausschließlich das Verhalten des CubeSats auf das Vakuum getestet werden. 
+
+\subsubsection{Einsatz von Sensoren}
+Die Durchführung von Tests unter Einsatz von Sensoren, sowohl auf dem CubeSat selbst als auch in der Testumgebung, spielt eine entscheidende Rolle bei der Vorbereitung des Satelliten auf seinen Einsatz im Weltraum. Diese ermöglichen es, eine Vielzahl von Daten zu erfassen, die für die Bewertung der Leistungsfähigkeit und Zuverlässigkeit des CubeSats unter verschiedenen Simulationen bzw. Tests unerlässlich sind.
+
+\subsubsection{UV-Lampe}
+Um die Sonnenstrahlung zu simulieren, wird die UV-Lampe so positioniert, dass sie das Sonnenlicht auf den CubeSat emittiert. Dabei sollte die Intensität der UV-Strahlung derjenigen im Weltraum möglichst genau entsprechen. Die UV-Lampe wird typischerweise über einen definierten Zeitraum eingeschaltet, um die Belichtung des CubeSats mit Sonnenstrahlung zu simulieren. Während dieses Tests können verschiedene Parameter überwacht werden, wie z.B. die Temperatur des CubeSats und seiner Oberfläche sowie die Reaktion von Materialien und elektronischen Komponenten auf die Strahlung.\\
+\vspace{3mm}
+Zusätzlich zur Simulation von Sonnenstrahlung kann eine UV-Lampe auch als Heizquelle dienen. Durch die Erzeugung von UV-Strahlung wird Wärme erzeugt, die den CubeSat und seine Komponenten aufheizen kann. Dies ist besonders nützlich während der Tests in Umgebungen mit niedrigen Temperaturen, in denen der CubeSat vor dem Start oder während seiner Mission im Weltraum möglicherweise gekühlt werden muss.
+\newpage
+\subsubsection{Kühlung}
+Das Kühlgerät kann verwendet werden, um den CubeSat während Tests zu kühlen und die Abwechslung zwischen Heizen (z.B. durch eine UV-Lampe) und Wärmen zu ermöglichen.\\
+\vspace{3mm}
+Zunächst wird das Kühlgerät eingeschaltet und auf die gewünschte Kühltemperatur eingestellt. Dies kann durch verschiedene Kühlmethoden erfolgen, wie beispielsweise durch die Lüftungsfunktion des Kühlers. Es kann aber auch die Funktion verwendet werden, dass das Kühlgerät den Filter befeuchtet.
+
+
+\subsubsection{Fazit der Tests}
+Die sorgfältige Durchführung dieser vielfältigen Tests ist von fundamentaler Bedeutung für die Vorbereitung des CubeSats auf seine Mission im Weltraum. Indem sie eine breite Palette an Umweltbedingungen simulieren, die im Weltraum vorherrschen, tragen diese Tests entscheidend dazu bei, die Zuverlässigkeit, Leistungsfähigkeit und Missionstauglichkeit des CubeSats zu gewährleisten.
+
+\newpage
+
+\SecAuth{\nameCZ}
+
+\subsection{Messungen}\label{Messungen}
+\subsubsection{Erklärung der Daten}
+Um die Daten darzustellen und gegebenenfalls zu analysieren, müssen alle Daten zuerst fest definiert werden. Dazu sollte der Nutzen der Daten erklärt und alle Einheiten klargemacht werden. 
+
+\subsubsection{Temperatur }
+Auf dem EDU-Hat gibt es zwei Sensoren, welche akkurat die Temperatur des Raumes messen können. Der erste Sensor (TMP112) ist ein reiner Temperaturmesser, welcher die Temperatur in Grad Celsius zurückgibt. Auch der Gassensor (BME688) gibt die Temperatur akkurat in Grad Celsius an. \\
+\vspace{3mm}
+Das Messen der Temperatur ist für mögliche Experimente im All sehr wichtig. Eine Messung der Temperaturveränderung des CubeSats, um die Auswirkungen der Sonneneinstrahlung zu studieren, wäre hier ein gutes Experiment.\\
+\vspace{3mm}
+Weitere Informationen über die Sensoren können in Kapitel \ref{temperatur} gefunden werden.
+
+\subsubsection{Messung des Magnetfeldes}
+Der Magnetfeldsensor (BMM150 siehe Kap.: \ref{magentsen}) gibt seine Werte in einem kartesischen Koordinatensystem aus. Alle X, Y und Z Werte werden als µT (Micro-Teslas) zurückgegeben. Tesla ist die standardisierte Einheit für die magnetische Flussdichte. Das Magnetfeld der Erde besitzt am Äquator etwa 30 µT\autocite{Erdmagnetfeld}, während ein durchschnittlicher Magnet etwa 1T-1,5T besitzt.\\
+\vspace{3mm}
+Der Magnetfeldsensor dient zur Messung der Rotation des Satellites. Auch können mögliche magnetische Störungen vom Sensor, wie zum Beispiel magnetische Stürme oder das Magnetfeld der Erde, aufgenommen werden.\\
+\vspace{3mm}
+Signifikante Messergebnisse können möglicherweise durch den Einfluss eines externen Magneten in der Teststation gemessen werden.
+\newpage
+\subsubsection{Messung von Beschleunigung}
+Wie in Kapitel \ref{beschleuni} schon erwähnt, werden die Werte des Beschleunigungssensors (ADXL345) in G-Kräften angegeben. Ein G entspricht der Erdanziehungskraft, während zum Beispiel 6G der sechsfachen Erdanziehungskraft entsprechen. \\
+\vspace{3mm}
+G-Kräfte können sich jedoch nicht nur auf die Gravitationskraft der Erde beziehen. Die Größe kann auch für die Beschleunigung eines Objekts verwendet werden. \\
+\vspace{3mm}
+Obwohl in der Teststation nur gyroskopische Effekte auf den Satelliten wirken, können eventuell mögliche Erschütterungen durch eine eingebaute Rüttelplatte gemessen werden. Sonstige Bewegungen müssen außerhalb der Teststation simuliert werden.
+
+\subsubsection{Messung der UV-Strahlung}\label{messuv}
+Der UV-Sensor (GUVA\_C32) welcher für die Messung einkommender UV-Strahlung verwendet wird, gibt bei der Auslesung zwei wichtige Werte zurück.\\
+\vspace{3mm}
+Der Wert UVA steht für Ultraviolettstrahlung vom Typ A. UVA-Strahlen haben eine Wellenlänge von 320-400 Nanometer.\\
+\vspace{3mm}
+Der UV-Index ist ein internationaler Index für die Messung der Stärke von UV-Strahlen. Der UV-Index berücksichtigt sowohl UVA-, als auch UVB-Strahlen und wird in einem Index von 0 bis 11+ skaliert, wobei 0 die niedrigste Stärke darstellt.\\
+\vspace{3mm}
+UVB-Strahlen stehen für Ultraviolettstrahlung vom Typ B. Diese Strahlen haben eine Wellenlänge von 280-320 Nanometer und sind hauptverantwortlich bei der Entstehung von Sonnenbrand und Hautkrebs.\\
+\vspace{3mm}
+Der Sensor ist besonders wichtig, um die Sonneneinstrahlung im Weltraum, wo die Strahlungsintensität um einiges höher ist als auf der Erdoberfläche, zu messen. 
+
+\subsubsection{Messung der Luftfeuchtigkeit}
+Für die Messung der Luftfeuchtigkeit ist der Gassensor (BME688) zuständig. Die Luftfeuchtigkeit ist der Anteil des gasförmigen Wassers, welcher sich in einem Raum, bzw. in der Atomsphäre, befindet. Dieser Anteil wird in Prozent angegeben und korreliert mit der Temperatur.\\
+\vspace{3mm}
+Der Feuchtigkeitssensor kann verwendet werden, um die Menge des Wasserdampfes in der oberen Atmosphäre zu messen. Somit kann der Sensor für verschiedene meteorologische Versuche verwendet werden. 
+
+\newpage
+\subsubsection{Messung des Luftdrucks}
+Der Luftdruck wird ebenfalls über den BME688 gemessen. Der Luftdruck ist definiert als das Gewicht der Luft in der Erdatmosphäre. Je nach Höhe des Messvorgangs kann sich dieser Wert verändern. Der Luftdruck nimmt mit zunehmender Höhe des Satelliten ab. Der Luftdruck wird in der Einheit des Drucks (Pa - Pascal) angegeben. Bei der Testung des Systems sollte der Luftdruck bei einer Höhe von 461m (Höhe Rankweil) und bei einer Raumtemperatur von 25°C etwa 96080Pa sein.\\
+\vspace{3mm}
+Solch ein Sensor kann im Sensor verwendet werden, um Höheninformationen zu ermitteln. Auch können Änderungen des Luftdrucks wichtig für die Vorhersage von anstehenden Wetterveränderungen sein. 
+
+\subsubsection{Messung der Luftqualität }
+Der Gassensor (BME688) kann auch die Luftqualität in einem bestimmten Raum, bzw. Gebiet messen. Dazu wird der Wert der Gasbeständigkeit genutzt und in Ohm angegeben. Je höher die Gasbeständigkeit in einem Raum ist, desto besser ist die allgemeine Luftqualität.\\
+\vspace{3mm}
+Somit kann der Sensor auch für die Überprüfung der Carbon Emissionen von bestimmten Gebieten genutzt werden. 
+
+\subsubsection{Messergebnisse der Sensoren}
+Nachdem die Sensordaten erfolgreich über die Webanwendung (siehe Kapitel: \ref{Web}) ausgegeben und in einer visuell ansprechenden Weise dargestellt wurden, besteht die Möglichkeit, die Sensorik des EDUs eingehend zu prüfen. Diese Prüfung zielt darauf ab, die Funktionalität der Sensorik unter variierenden Umweltbedingungen zu testen. 
+
+\subsubsection {Messergebnis Temperatur}
+Beide Temperatursensoren messen die Temperatur bei einer Raumtemperatur von 28°C. Nach der Belüftung des Raumes, in dem sich der EDU befindet, wird erwartet, dass die von den beiden Temperatursensoren erfasste Temperatur sinkt. Dies ist eine direkte Folge der Abkühlung, die durch den Luftaustausch während des Lüftens verursacht wird.\\
+\vspace{3mm}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale = 1]{image/tempmess1.png}
+	\caption{Messung Temperatur}
+	\label{fig:enter-label}
+\end{figure}
+\vspace{3mm}
+Zu sehen ist der Temperaturunterschied des Sensors BME688 (Kap.:\ref{temperatur}). Links im Diagramm ist die Raumtemperatur zu sehen. Anschließend wird das Fenster des Raumes geöffnet und die Temperatur sinkt. Die linear verlaufende Linie, die zwischen den zwei Temperaturunterschieden zu sehen ist, kennzeichnet, dass in diesem Zeitraum keine Datenaufnahme stattgefunden hat.
+\vspace{3mm}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1]{image/temp2mess.png}
+	\caption{Messung Temperatur}
+	\label{fig:enter-label}
+\end{figure}
+\vspace{3mm}
+Auch der Temperatursensor TMP112 zeigt das gleiche Verhalten wie der obere Sensor. Jedoch sind die Messwerte des reinen Temperatursensors um ca. 1,5°C kälter als die Temperaturwerte des Gassensors (BME688).
+
+\subsubsection{Messergebnis Luftfeuchtigkeit}
+Die Luftfeuchtigkeit kann durch die Verwendung eines Luftbefeuchters, welcher mit Hilfe von Wasserdampf die Luft feuchter macht, beeinflusst werde.\\
+\vspace{3mm}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1]{image/feuchtigkeit.png}
+	\caption{Messung Feuchtigkeit}
+	\label{fig:enter-label}
+\end{figure}
+\vspace{3mm}
+Hier ist die Veränderung der Luftfeuchtigkeit über die Zeit zu sehen. Zu Beginn der Datenaufnahme wurde die normale Luftfeuchtigkeit des Raumes ohne äußere Einflüsse gemessen (Wert = 20\%). Anschließend wurde der Luftbefeuchter eingeschaltet, was die Luftfeuchtigkeit des Raumes auf 40\% erhöhte.
+
+\subsubsection{Messergebnis Luftdruck}
+Der Luftdruck eines Raumes kann verändert werden, indem die Temperatur des Raumes verändert wird. Umso höher die Temperatur eines Raumes ist, desto größer ist der Luftdruck des Raumes. Somit kann der Luftdruck auf die gleiche Weise wie die Temperatur beeinflusst werden.
+\vspace{3mm}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1]{image/druck.png}
+	\caption{Messung Druck}
+	\label{fig:enter-label}
+\end{figure}
+\vspace{3mm}
+Oben zu sehen ist die Veränderung des Luftdrucks über die Zeit. Die Korrelation des Luftdrucks und der Temperatur ist dabei gut zu sehen. \\
+\vspace{3mm}
+Der Luftdruck kann mit folgender Formel berechnet werden: \\
+\vspace{3mm}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1.1]{image/formel.png}
+	\caption{Formel Druck}
+	\label{fig:enter-label}
+\end{figure}
+Dabei ist:
+\begin{itemize}
+	\item Pabs der[H] absolute Luftdruck
+	\item Prel der relative Luftdruck
+	\item H die Höhe in Metern über dem Meeresspiegel
+	\item T0 die Standardtemperatur auf Meereshöhe in Kelvin
+\end{itemize}
+\newpage
+Die Messung wurde in Klaus, mit einer Höhe von etwa 507 m. ü. A. (Meter über Adria) durchgeführt. Als relativer Luftdruck wird der Luftdruck am Meeresspiegel verwendet (1013.25 hPa). Anschließend kann der Luftdruck berechnet werden:\\
+\vspace{3mm}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1.2]{image/berechnung.png}
+	\caption{Druckberechnung}
+	\label{fig:enter-label}
+\end{figure}
+\vspace{3mm}
+Der berechnete Wert und der gemessene Wert weichen um ca. 5 hPa ab. Der Grund dafür ist, dass die Luftfeuchtigkeit, welche für die Messung künstlich erhöht wurde, in der Rechnung nicht berücksichtigt wurde.
+
+\subsubsection{Messergebnis des UV-Sensors}
+Eine Veränderung der UV-Strahlung lässt sich durch langes Messen (ca. ein Tag) gut beobachten. Vor allem lässt sich die Veränderung der UVA-Strahlung (siehe: Kap.: \ref{messuv}) erkennen. Die Messung des UV-Index gestaltet sich zu dieser Jahreszeit (stand: 5.03.2024) jedoch schwierig.\\
+\vspace{3mm}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1]{image/uvamessung.png}
+	\caption{Messung UV}
+	\label{fig:enter-label}
+\end{figure}
+\vspace{3mm}
+Zu sehen ist die Veränderung der UVA-Strahlung über eine Zeit von 7 Stunden. Die Sonne ging zu dieser Zeit des Jahres um etwa 18:30 Uhr unter, was auch bedeutet, dass die Sonnenstrahlung schwächer wird. 
+
+\subsubsection{Messergebnis der Geschwindigkeit und des Gyroskops}
+Sowohl das Gyroskop als auch der Geschwindigkeitssensor können auf die gleiche Weise getestet werden. Durch Drehung des Sensorbretts oder des CubeSats kann eine Bewegung durch die Schwerkraft simuliert werden.\\
+\vspace{3mm}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1]{image/messgyros.png}
+	\caption{Messung Gyroskop}
+	\label{fig:enter-label}
+\end{figure}
+\vspace{3mm}
+Hier sehen Sie den gyroskopischen, magnetischen Sensor BMM150. Es ist zu erkennen, dass für die gyroskopische Messung drei Achsen verwendet werden. Zunächst ist der Wert Z auf eins, was auf die Orientierung des Sensors in Richtung der Z-Achse hinweist. Anschließend um etwa 22:30 Uhr wurde der CubeSat auf seine X-Achse gestellt.

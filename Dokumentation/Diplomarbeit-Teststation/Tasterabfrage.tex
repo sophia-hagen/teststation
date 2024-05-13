@@ -1,0 +1,23 @@
+\subsection{Tasterabfrage}\label{sec:Tasterabfrage}
+\SecAuth{\nameSH}
+Die Tasterabfrage wird in verschiedenen Programmabschnitten benötigt. Je nachdem wie oft ein Button gedrückt wird, soll ein anderer Programmteil abarbeitet werden. Dieser Ablauf wird benutzt um zum Beispiel eine Lampe ein und auszuschalten. Um die Tasterabfrage zu realisieren, werden boolsche Variablen verwendet. \\
+\vspace{2mm}
+Zu beginn des Programm wird eine boolsche Variable festgelegt, diese wird auf \textit{False} gesetzt. Damit die Variable auch im Unterprogramm verwendet werden kann, muss sie zum Beispiel mit \textbf{global} \textit{boolUV} übergeben werden. In der nächsten Zeile wird der Zustand der Variable gewechselt. Da diese am Anfang auf \textit{False} gesetzt ist, wird sie jetzt auf \textit{True} gesetzt. Jedes mal wenn der Button gedrückt wird, durchläuft das Programm diesen Abschnitt. Durch den Wechsel wird dafür gesorgt, dass nach jedem Drücken einer der beiden Codeteile abarbeitet wird. Wenn die boolsche Variable \textit{True} ist, wird der Code der unter dem Abschnitt \textit{True} steht abarbeitet. Das selbe geschieht, wenn die Variable auf \textit{False} gesetzt ist.\\
+\vspace{3mm}
+\begin{figure}[h]
+    \centering
+    \begin{minted}{python}
+                #globale boolsche Variable
+                global boolUV
+
+                #Zustandswechsel
+                boolUV = not boolUV
+
+                if boolUV == True :
+                    #Code um UV-Lampe einzuschalten
+        
+                else:
+                    #Code um Lampe auszuschalten
+    \end{minted}
+    \caption{Beispielcode Tasterabfrage}
+\end{figure}

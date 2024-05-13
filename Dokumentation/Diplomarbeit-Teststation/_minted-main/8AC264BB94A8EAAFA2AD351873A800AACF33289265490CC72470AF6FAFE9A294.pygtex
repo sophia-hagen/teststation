@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+		\PYG{c+c1}{\PYGZsh{}Dictionary für die Sensorwerte erstellen}
+		\PYG{n}{sensor\PYGZus{}data} \PYG{o}{=} \PYG{p}{\PYGZob{}} \PYG{l+s+s2}{\PYGZdq{}Temperature (TMP112)\PYGZdq{}}\PYG{p}{:} \PYG{n}{data}\PYG{o}{.}\PYG{n}{tempTMP}\PYG{p}{,}
+			\PYG{l+s+s2}{\PYGZdq{}Temperature (BME688)\PYGZdq{}}\PYG{p}{:} \PYG{n}{data}\PYG{o}{.}\PYG{n}{tempBME}\PYG{p}{,}
+			\PYG{l+s+s2}{\PYGZdq{}Humidity\PYGZdq{}}\PYG{p}{:} \PYG{n}{data}\PYG{o}{.}\PYG{n}{hum}\PYG{p}{,}
+			\PYG{l+s+s2}{\PYGZdq{}Pressure\PYGZdq{}}\PYG{p}{:} \PYG{n}{data}\PYG{o}{.}\PYG{n}{press}\PYG{p}{,}
+			\PYG{l+s+s2}{\PYGZdq{}Gas Resistance\PYGZdq{}}\PYG{p}{:} \PYG{n}{data}\PYG{o}{.}\PYG{n}{gasRes}\PYG{p}{,}
+			\PYG{l+s+s2}{\PYGZdq{}Acceleration X\PYGZdq{}}\PYG{p}{:} \PYG{n}{data}\PYG{o}{.}\PYG{n}{accX}\PYG{p}{,}
+			\PYG{l+s+s2}{\PYGZdq{}Acceleration Y\PYGZdq{}}\PYG{p}{:} \PYG{n}{data}\PYG{o}{.}\PYG{n}{accY}\PYG{p}{,}
+			\PYG{l+s+s2}{\PYGZdq{}Acceleration Z\PYGZdq{}}\PYG{p}{:} \PYG{n}{data}\PYG{o}{.}\PYG{n}{accZ}\PYG{p}{,}
+			\PYG{l+s+s2}{\PYGZdq{}Gyroscope X\PYGZdq{}}\PYG{p}{:} \PYG{n}{data}\PYG{o}{.}\PYG{n}{gX}\PYG{p}{,}
+			\PYG{l+s+s2}{\PYGZdq{}Gyroscope Y\PYGZdq{}}\PYG{p}{:} \PYG{n}{data}\PYG{o}{.}\PYG{n}{gY}\PYG{p}{,}
+			\PYG{l+s+s2}{\PYGZdq{}Gyroscope Z\PYGZdq{}}\PYG{p}{:} \PYG{n}{data}\PYG{o}{.}\PYG{n}{gZ}\PYG{p}{,}
+			\PYG{l+s+s2}{\PYGZdq{}UVA\PYGZdq{}}\PYG{p}{:} \PYG{n}{data}\PYG{o}{.}\PYG{n}{uva}\PYG{p}{,}
+			\PYG{l+s+s2}{\PYGZdq{}UVA Index\PYGZdq{}}\PYG{p}{:} \PYG{n}{data}\PYG{o}{.}\PYG{n}{uvaI} \PYG{p}{\PYGZcb{}}
+		
+\end{Verbatim}

@@ -1,0 +1,79 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: biblatex.bst
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'field_info' (item size: 4) to 13960 items.
+Database file #1: main-blx.bib
+Database file #2: sophisnachschlagwerk.bib
+I was expecting a `,' or a `}'---line 142 of file sophisnachschlagwerk.bib
+ :  title = {OMICRON} 
+ :                    {\textbar} {Innovative} {Prüflösungen} für die {Energietechnik}},
+I'm skipping whatever remains of this entry
+Repeated entry---line 287 of file sophisnachschlagwerk.bib
+ : @misc{LTR390
+ :             ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "https://m.media-amazon.com/images/I/617AufdHaoL._AC_SL1500_.jpg"
+Biblatex version: 3.19
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+You've used 63 entries,
+            6399 wiz_defined-function locations,
+            1545 strings with 29851 characters,
+and the built_in function-call counts, 219021 in all, are:
+= -- 6110
+> -- 16486
+< -- 1926
++ -- 14927
+- -- 14259
+* -- 9310
+:= -- 21641
+add.period$ -- 0
+call.type$ -- 63
+change.case$ -- 381
+chr.to.int$ -- 1500
+cite$ -- 124
+duplicate$ -- 20649
+empty$ -- 21984
+format.name$ -- 262
+if$ -- 35952
+int.to.chr$ -- 0
+int.to.str$ -- 90
+missing$ -- 0
+newline$ -- 1188
+num.names$ -- 359
+pop$ -- 19803
+preamble$ -- 1
+purify$ -- 334
+quote$ -- 0
+skip$ -- 6214
+stack$ -- 0
+substring$ -- 11574
+swap$ -- 7427
+text.length$ -- 1494
+text.prefix$ -- 62
+top$ -- 1
+type$ -- 2130
+warning$ -- 0
+while$ -- 1644
+width$ -- 0
+write$ -- 1126
+(There were 2 error messages)

@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{k}{def} \PYG{n+nf}{update\PYGZus{}stored\PYGZus{}time\PYGZus{}range}\PYG{p}{(}\PYG{n}{start\PYGZus{}date}\PYG{p}{,} \PYG{n}{end\PYGZus{}date}\PYG{p}{):}
+        \PYG{k}{return} \PYG{p}{\PYGZob{}}\PYG{l+s+s1}{\PYGZsq{}start\PYGZus{}date\PYGZsq{}}\PYG{p}{:} \PYG{n}{start\PYGZus{}date}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}end\PYGZus{}date\PYGZsq{}}\PYG{p}{:} \PYG{n}{end\PYGZus{}date}\PYG{p}{\PYGZcb{}}
+
+\end{Verbatim}

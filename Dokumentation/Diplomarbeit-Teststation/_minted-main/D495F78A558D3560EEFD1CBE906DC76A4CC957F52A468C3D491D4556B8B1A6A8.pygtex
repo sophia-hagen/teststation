@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+   dcc.Interval(id=\PYGZsq{}update\PYGZhy{}interval\PYGZsq{}, interval=5000, n\PYGZus{}intervals=0),
+   \PYGZsh{} Update every 5 seconds
+    html.Div([
+      html.Div([\PYGZsh{}Switch for Power Adapter
+        html.Div(\PYGZsq{}Power Adapter\PYGZsq{}, className=\PYGZsq{}switch\PYGZhy{}text\PYGZsq{}),
+        dcc.Checklist(
+            id=\PYGZsq{}switch\PYGZhy{}poweradapter\PYGZsq{},
+            options=[\PYGZob{}\PYGZsq{}label\PYGZsq{}: \PYGZsq{}\PYGZsq{}, \PYGZsq{}value\PYGZsq{}: \PYGZsq{}PA\PYGZsq{}\PYGZcb{}],
+            value=[],
+            inputClassName=\PYGZsq{}switch\PYGZhy{}input\PYGZsq{},
+            labelClassName=\PYGZsq{}switch\PYGZhy{}label\PYGZsq{}
+        )
+    ], className=\PYGZsq{}switch\PYGZhy{}wrapper\PYGZsq{}),
+\end{Verbatim}

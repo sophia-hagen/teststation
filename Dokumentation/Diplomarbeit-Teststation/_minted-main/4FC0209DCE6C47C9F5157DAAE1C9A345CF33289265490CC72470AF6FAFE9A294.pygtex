@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+		\PYG{n}{Die} \PYG{n}{Variable} \PYG{n}{t}\PYGZbs{}\PYG{n}{\PYGZus{}sleep}\PYG{p}{:}
+		\PYG{c+c1}{\PYGZsh{} Konfiguration der Wartezeit}
+		\PYG{n}{t\PYGZus{}sleep} \PYG{o}{=} \PYG{l+m+mi}{5} \PYG{c+c1}{\PYGZsh{}Wartezeit: Kann verändert werden}
+		
+		\PYG{n}{Schließung} \PYG{n}{des} \PYG{n}{Sockets} \PYG{n}{und} \PYG{n}{Verwendung} \PYG{n}{der} \PYG{n}{Wartezeit}\PYG{p}{:}
+		\PYG{n}{sock}\PYG{o}{.}\PYG{n}{close}\PYG{p}{()} \PYG{c+c1}{\PYGZsh{}Schließen des Sockets nach dem Senden}
+		\PYG{c+c1}{\PYGZsh{}Warten für t\PYGZus{}sleep Sekunden}
+		\PYG{n}{time}\PYG{o}{.}\PYG{n}{sleep}\PYG{p}{(}\PYG{n}{t\PYGZus{}sleep}\PYG{p}{)}
+		
+\end{Verbatim}

@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+                \PYG{c+c1}{\PYGZsh{}globale boolsche Variable}
+                \PYG{k}{global} \PYG{n}{boolUV}
+
+                \PYG{c+c1}{\PYGZsh{}Zustandswechsel}
+                \PYG{n}{boolUV} \PYG{o}{=} \PYG{o+ow}{not} \PYG{n}{boolUV}
+
+                \PYG{k}{if} \PYG{n}{boolUV} \PYG{o}{==} \PYG{k+kc}{True} \PYG{p}{:}
+                    \PYG{c+c1}{\PYGZsh{}Code um UV\PYGZhy{}Lampe einzuschalten}
+
+                \PYG{k}{else}\PYG{p}{:}
+                    \PYG{c+c1}{\PYGZsh{}Code um Lampe auszuschalten}
+\end{Verbatim}

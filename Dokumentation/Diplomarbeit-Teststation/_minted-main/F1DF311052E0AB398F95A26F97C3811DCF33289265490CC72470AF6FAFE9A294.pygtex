@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{n+nd}{@app}\PYG{o}{.}\PYG{n}{post}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}/uvlampe\PYGZdq{}}\PYG{p}{)}
+    \PYG{k}{def} \PYG{n+nf}{uvlampe}\PYG{p}{():}
+        \PYG{k}{global} \PYG{n}{boolUV}
+        \PYG{n}{boolUV} \PYG{o}{=} \PYG{o+ow}{not} \PYG{n}{boolUV}
+        \PYG{k}{if} \PYG{n}{boolUV} \PYG{o}{==} \PYG{k+kc}{True} \PYG{p}{:}
+            \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{output}\PYG{p}{(}\PYG{n}{PinUV}\PYG{p}{,}\PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{HIGH}\PYG{p}{)}
+            \PYG{k}{return}\PYG{p}{\PYGZob{}}\PYG{l+s+s2}{\PYGZdq{}UV\PYGZhy{}Lampe eingeschaltet\PYGZdq{}}\PYG{p}{\PYGZcb{}}
+        \PYG{k}{else}\PYG{p}{:}
+            \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{output}\PYG{p}{(}\PYG{n}{PinUV}\PYG{p}{,}\PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{LOW}\PYG{p}{)}
+            \PYG{k}{return}\PYG{p}{\PYGZob{}}\PYG{l+s+s2}{\PYGZdq{}UV\PYGZhy{}Lampe ausgeschaltet\PYGZdq{}}\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

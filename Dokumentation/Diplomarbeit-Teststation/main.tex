@@ -1,0 +1,75 @@
+\input{prelude.tex}
+
+
+\input{Kommando.tex} 
+
+\addbibresource{sophisnachschlagwerk}
+
+\fancyhf{} % Löscht alle voreingestellten Kopf- und Fußzeilen
+
+\lhead{\hspace{0.2cm} \includegraphics[height=1.04cm]{image/htlr_logo.png}}
+\chead{\textbf{HTBLuVA  Rankweil} 
+	\\[0.05in]
+	\footnotesize{\textit{Höhere Lehranstalt für Elektronik und Technische Informatik}}}
+\rhead{\includegraphics[height=1.04cm]{image/htl_logo.jpg} \hspace{0.2cm}}
+\newcommand\SecAuth[1]{\def\@SecAuth{#1}}
+\pagestyle{fancy}
+%\fancyfoot{}
+
+\begin{document}
+
+%\input{Titelseite} schöne Titelseite
+%\maketitle schöne Titelseite
+%\thispagestyle{empty} schöne titelseite
+\input{HTLhome}
+\newpage
+\input{eidestattlicherklärung}
+\newpage
+\tableofcontents
+\newpage
+
+\fancyfoot[LE,RO]{\thepage}
+	\fancyfoot[LO,RE]{\DADate~\textbar~\pjname~\textbar ~\@SecAuth}
+	\renewcommand{\footrulewidth}{0.4pt} % anzeigen Separator-Strich in der Fußzeile 
+	\onehalfspacing
+\renewcommand{\thepage}{\arabic{page}} % ab hier arabische Fußzeile
+\SecAuth{\nameSH}
+\input{Diplomarbeit Dokumentation}
+%\newpage
+\input{Zusammenfassung}
+\newpage
+\input{Diploma Thesis Documentation}
+%\newpage
+\input{Abstract}
+\newpage
+\input{Danksagung}
+\newpage
+\input{pflichtenheft}
+\newpage
+\input{Abkürzungen}
+\newpage
+\input{Hardware}
+\newpage
+\input{Software}
+\newpage
+\input{Steuerung}
+\newpage
+\SecAuth{\nameSB}
+\input{testen/Testen}
+\newpage
+\SecAuth{\nameSH}
+\input{Dokumentation}
+\newpage
+\input{Projektmanagment/Projektmanagement}
+\newpage
+\input{probleme}
+\newpage
+
+
+\section{Verzeichnisse}
+\listoffigures
+\listoftables
+\printbibliography
+\newpage
+\input{Anhang}
+\end{document}

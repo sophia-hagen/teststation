@@ -1,0 +1,1312 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global}
+  \entry{TCP-Handshake}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{1}
+    \field{sortinithash}{1}
+    \field{title}{1*{IE}\_SkdCYUrY3HyQ5U59WZg.webp ({WEBP}-{Grafik},
+  551 × 351 {Pixel})}
+    \verb{url}
+    \verb https://miro.medium.com/v2/resize:fit:828/format:webp/1*IE_SkdCYUrY3H
+    \verb yQ5U59WZg.png
+    \endverb
+    \field{urlday}{20}
+    \field{urlmonth}{03}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{W237-103}{misc}{}
+    \list{language}{1}{%
+      {de-at}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{2}
+    \field{sortinithash}{2}
+    \field{abstract}{%
+    Heute bestellt, heute ausgeliefert. 237-103 – 3 Klemmleisten
+  Anschlussblöcke - Draht zu Board Horizontal mit Platine 0,197" (5,00mm)
+  Durchkontaktierung von WAGO Corporation. Preisgestaltung und Verfügbarkeit
+  für Millionen von elektronischen Komponenten von DigiKey.%
+    }
+    \field{title}{237-103}
+    \verb{url}
+    \verb https://www.digikey.at/de/products/detail/wago-corporation/237-103/15
+    \verb 539605
+    \endverb
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\hagen\\Zotero\\storage\\W9RJIX24\\15539605.html:
+    \verb text/html
+    \endverb
+    \field{journaltitle}{Digi-Key Electronics}
+    \field{urlday}{15}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{Beispielbild_Magnet}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{6}
+    \field{sortinithash}{6}
+    \field{title}{{61QHrBwsDuL}.\_SL1500\_.jpg ({JPEG}-{Grafik}, 1500 × 1500
+  {Pixel}) - {Skaliert} (37\%)}
+    \verb{url}
+    \verb https://m.media-amazon.com/images/I/61QHrBwsDuL._SL1500_.jpg
+    \endverb
+    \field{urlday}{22}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{LTR390}{misc}{}
+    \list{language}{1}{%
+      {de}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{abstract}{%
+    Entdecken Sie bei Eckstein Komponente eine Vielzahl an Elektronikprodukten
+  – von epaper eink displays bis hin zu Entwicklungsbrettern wie Raspberry Pi
+  und A%
+    }
+    \field{title}{Adafruit {LTR390} {UV} {Light} {Sensor} 300 to 350nm {STEMMA}
+  {QT} {Qwiic} 4831 - {E}, 6,95 €}
+    \verb{url}
+    \verb https://eckstein-shop.de/Adafruit-LTR390-UV-Light-Sensor-300-to-350nm
+    \verb -STEMMA-QT-Qwiic
+    \endverb
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\hagen\\Zotero\\storage\\TU7KTPMV\\Adafruit-LTR39
+    \verb 0-UV-Light-Sensor-300-to-350nm-STEMMA-QT-Qwiic.html:text/html
+    \endverb
+    \field{journaltitle}{Adafruit LTR390 UV Light Sensor 300 to 350nm STEMMA QT
+  Qwiic 4831 - E, 6,95 €}
+    \field{urlday}{24}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{Adafruit_DHT}{misc}{}
+    \list{publisher}{1}{%
+      {Adafruit Industries}%
+    }
+    \keyw{hacktoberfest}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{abstract}{%
+    CircuitPython support for DHT11 and DHT22 type temperature/humidity
+  devices%
+    }
+    \field{note}{original-date: 2017-09-18T19:18:29Z}
+    \field{title}{adafruit/{Adafruit}\_CircuitPython\_DHT}
+    \verb{url}
+    \verb https://github.com/adafruit/Adafruit_CircuitPython_DHT
+    \endverb
+    \field{month}{01}
+    \field{year}{2024}
+    \field{urlday}{15}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{ADXL345}{misc}{}
+    \list{language}{1}{%
+      {de}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{abstract}{%
+    The ADXL345 - Acceleration Sensor from Analog Devices, is a triple-axis
+  accelerometer with digital I2C and SPI interface We added an on-board 3 3V
+  regulator%
+    }
+    \field{title}{{ADXL345} - {Acceleration} {Sensor}}
+    \verb{url}
+    \verb https://electronics.semaf.at/ADXL345-Acceleration-Sensor
+    \endverb
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\hagen\\Zotero\\storage\\YM6ITXHM\\ADXL345-Accele
+    \verb ration-Sensor.html:text/html
+    \endverb
+    \field{journaltitle}{ADXL345 - Acceleration Sensor}
+    \field{urlday}{20}
+    \field{urlmonth}{03}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{alu}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{Alu {Profile} 40 x 40 bis 80 x 80 {\textbar} {Robotunits}}
+    \verb{url}
+    \verb https://robotunits.com/produkt-kategorie/profil-und-verbindungstechni
+    \verb k/profiltechnik-raster-40/?_gl=1*fndd4f*_up*MQ..&gclid=CjwKCAiAqNSsBh
+    \verb AvEiwAn_tmxSP6zdLT_F1BTP2o3lHqzjZf7ORmw6HcQwWkvvrNG_26JvM0blCGJBoCeVM
+    \verb QAvD_BwE
+    \endverb
+    \field{urlday}{04}
+    \field{urlmonth}{03}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{KY-024}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{{ARD} {SEN} {HALL3}: {Arduino} - {Hall}-{Magnet}-{Sensor},
+  linear bei reichelt kaufen}
+    \verb{url}
+    \verb https://www.reichelt.at/at/de/shopat/produkt/arduino_-_hall-magnet-se
+    \verb nsor_linear-282517?PROVID=2807&gad_source=1&gclid=CjwKCAjw7-SvBhB6Eiw
+    \verb AwYdCAbZ7Ol-FbjLjSRpjVmrhAa5qN7-wLTtEN4oU8bHXUSue7ac6Dxl5tBoCSloQAvD_
+    \verb BwE&q=%2Fat%2Fde%2Fshopat%2Fat%2Fde%2Farduino-hall-magnet-sensor-line
+    \verb ar-ard-sen-hall3-p282517.html
+    \endverb
+    \verb{file}
+    \verb ARD SEN HALL3\: Arduino - Hall-Magnet-Sensor, linear bei reichelt kau
+    \verb fen:C\:\\Users\\hagen\\Zotero\\storage\\X4MFJEAH\\arduino_-_hall-magn
+    \verb et-sensor_linear-282517.html:text/html
+    \endverb
+    \field{urlday}{19}
+    \field{urlmonth}{03}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{Arduino}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{Arduino - {Home}}
+    \verb{url}
+    \verb https://www.arduino.cc/
+    \endverb
+    \verb{file}
+    \verb Arduino - Home:C\:\\Users\\hagen\\Zotero\\storage\\HWY6HITN\\www.ardu
+    \verb ino.cc.html:text/html
+    \endverb
+    \field{urlday}{20}
+    \field{urlmonth}{03}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{Eagle}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{Autodesk {Eagle}}
+    \verb{url}
+    \verb http://eagle.autodesk.com/eagle/software-versions/1
+    \endverb
+    \field{urlday}{28}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{BMP180}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{{AZDelivery} {GY}-68 {BMP180} {Barometrischer} {Luftdruck}
+  und {Temperatur} {Sensor} kompatibel mit {Arduino} und {Raspberry} {Pi}
+  inklusive {E}-{Book}! : {Amazon}.de: {Gewerbe}, {Industrie} \&
+  {Wissenschaft}}
+    \verb{url}
+    \verb https://www.amazon.de/dp/B07D8S617X?ref=ppx_yo2ov_dt_b_product_detail
+    \verb s&th=1
+    \endverb
+    \field{urlday}{22}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{Bachmann_electronic_GmbH}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Bachmann electronic {GmbH} - {Bachmann} electronic {GmbH}}
+    \verb{url}
+    \verb https://www.bachmann.info/de
+    \endverb
+    \field{urlday}{22}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{BME688}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{{BME} 688: {KI}-{Kombo}-{Sensor},
+  {Luftdruck}/{Luftfeuchtigkeit}/{Temp}./{Gas} bei reichelt kaufen}
+    \verb{url}
+    \verb https://www.reichelt.at/at/de/shopat/produkt/ki-kombo-sensor_luftdruc
+    \verb k_luftfeuchtigkeit_temp_gas-306044?q=%2Fat%2Fde%2Fshopat%2Fki-kombo-s
+    \verb ensor-luftdruck-luftfeuchtigkeit-temp-gas-bme-688-p306044.html
+    \endverb
+    \verb{file}
+    \verb BME 688\: KI-Kombo-Sensor, Luftdruck/Luftfeuchtigkeit/Temp./Gas bei r
+    \verb eichelt kaufen:C\:\\Users\\hagen\\Zotero\\storage\\DARADAWC\\ki-kombo
+    \verb -sensor_luftdruck_luftfeuchtigkeit_temp_gas-306044.html:text/html
+    \endverb
+    \field{urlday}{20}
+    \field{urlmonth}{03}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{BMM150}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{{BMM150} {\textbar} {Bosch} {Sensortec}
+  {Bewegungssensormodul} 3-{Achsen} {SMD} {I2C} / {SPI} {Digital} {\textbar}
+  {RS}}
+    \verb{url}
+    \verb https://at.rs-online.com/web/p/bewegungssensor-ics/2457371?cm_mmc=AT-
+    \verb PPC-DS3A-_-google-_-DSA_AT_DE_Halbleiter_Index-_-Bewegungssensor+ICs%
+    \verb 7C+Products-_-DYNAMIC+SEARCH+ADS&matchtype=&dsa-1654329450134&gad_sou
+    \verb rce=1&gclid=CjwKCAjwkuqvBhAQEiwA65XxQP9VN1biIntS7zBuzc5rYth-NugztQtlX
+    \verb hkPJmtFZY61_vwQ6QHg3xoCVtYQAvD_BwE&gclsrc=aw.ds
+    \endverb
+    \verb{file}
+    \verb BMM150 | Bosch Sensortec Bewegungssensormodul 3-Achsen SMD I2C / SPI
+    \verb Digital | RS:C\:\\Users\\hagen\\Zotero\\storage\\UCCGRYZB\\2457371.ht
+    \verb ml:text/html
+    \endverb
+    \field{urlday}{20}
+    \field{urlmonth}{03}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{BMP180bib}{misc}{}
+    \keyw{adafruit,, barometric,, blinka,, bmp180,, circuitpython,, driver,,
+  micropython,, pressure,, sensor, Software Development - Embedded Systems,
+  Software Development - Libraries, System - Hardware}
+    \field{labeltitlesource}{shorttitle}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{shorttitle}{circuitpython-bmp180}
+    \field{title}{circuitpython-bmp180: {CircuitPython} driver for the bmp180
+  sensor}
+    \verb{url}
+    \verb https://github.com/jposada202020/CircuitPython_bmp180
+    \endverb
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\hagen\\Zotero\\storage\\EZZNGSK3\\circuitpython-
+    \verb bmp180.html:text/html
+    \endverb
+    \field{urlday}{24}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{Cosmic}{misc}{}
+    \list{language}{1}{%
+      {EN}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    The Earth is permanently bombarded by energetic particles, cosmic rays,
+  coming from space or produced in the atmosphere%
+    }
+    \field{title}{Cosmic {Rays} {Exposure}}
+    \verb{url}
+    \verb https://laradioactivite.com/in_daily_life/dose_cosmic
+    \endverb
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\hagen\\Zotero\\storage\\FXF8JUQ2\\dose_cosmic.ht
+    \verb ml:text/html
+    \endverb
+    \field{journaltitle}{laradioactivite.com}
+    \field{urlday}{20}
+    \field{urlmonth}{03}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{Dash}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{Dash {Documentation} \& {User} {Guide} {\textbar} {Plotly}}
+    \verb{url}
+    \verb https://dash.plotly.com/
+    \endverb
+    \field{urlday}{19}
+    \field{urlmonth}{03}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{VakuumEjektor}{booklet}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{Datenblatt Vakuum Ejektor}
+    \verb{url}
+    \verb https://www.parker.com/literature/Pneumatics%20Division%20Europe/PDE-
+    \verb Documents/Vacuum%20Generators_Technical%20Catalogue-DE.pdf
+    \endverb
+  \endentry
+
+  \entry{Ventil}{booklet}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{Datenblatt VY-83ELB00-T}
+    \verb{url}
+    \verb https://www.airwork-pneumatic.com/wp-content/uploads/2016/11/VY_solen
+    \verb oid_valves_2021.pdf
+    \endverb
+  \endentry
+
+  \entry{Kuehlung}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{title}{Emerio {Verdunstungskühler}, {Luftkühler}, für eine
+  angenehme kühle {Brise}, {Ventilator} {Funktion}, 2
+  {Geschwindigkeitseinstellungen}, {AC}-116964, weiß/blau : {Amazon}.de:
+  {Küche}, {Haushalt} \& {Wohnen}}
+    \verb{url}
+    \verb https://www.amazon.de/Emerio-Verdunstungsk%C3%BChler-Luftk%C3%BChler-
+    \verb Ventilator-Geschwindigkeitseinstellungen/dp/B0893QFYNP
+    \endverb
+    \field{urlday}{20}
+    \field{urlmonth}{03}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{Erdmagnetfeld}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{title}{Erdmagnetfeld – {Wikipedia}}
+    \verb{url}
+    \verb https://de.wikipedia.org/wiki/Erdmagnetfeld#:~:text=Am
+    \endverb
+    \field{urlday}{20}
+    \field{urlmonth}{03}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{SwaggerUI}{misc}{}
+    \list{language}{1}{%
+      {en}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{abstract}{%
+    FastAPI framework, high performance, easy to learn, fast to code, ready for
+  production%
+    }
+    \field{title}{Features - {FastAPI}}
+    \verb{url}
+    \verb https://fastapi.tiangolo.com/features/
+    \endverb
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\hagen\\Zotero\\storage\\QARDYV9U\\features.html:
+    \verb text/html
+    \endverb
+    \field{urlday}{24}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{GanttProject}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{{GanttProject}: {Free} {Project} {Management} {App}}
+    \verb{url}
+    \verb https://www.ganttproject.biz/
+    \endverb
+    \field{urlday}{04}
+    \field{urlmonth}{03}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{GETvsPOST}{misc}{}
+    \list{language}{1}{%
+      {de-AT}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    Die HTTP-Requests GET und POST führen zum selben Ergebnis, unterscheiden
+  sich aber grundlegend. Worauf es bei der Wahl GET vs. POST ankommt, erfahren
+  Sie hier.%
+    }
+    \field{title}{{GET} vs. {POST} – die beiden wichtigsten {HTTP}-{Requests}
+  im {Vergleich}}
+    \verb{url}
+    \verb https://www.ionos.at/digitalguide/websites/web-entwicklung/get-vs-pos
+    \verb t/
+    \endverb
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\hagen\\Zotero\\storage\\XL7BVLFI\\get-vs-post.ht
+    \verb ml:text/html
+    \endverb
+    \field{journaltitle}{IONOS Digital Guide}
+    \field{month}{04}
+    \field{year}{2020}
+    \field{urlday}{24}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{Hefel_Technik_GmbH}{misc}{}
+    \list{language}{1}{%
+      {de-AT}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{abstract}{%
+    Engineering im Bereich Automatisierungstechnik - Lösungen für Pneumatik-,
+  elektrische Antriebstechnik und industrielle Bildverarbeitung sowie
+  Hydraulik.%
+    }
+    \field{title}{Hefel {Technik} auf {Facebook}}
+    \verb{url}
+    \verb https://www.hefel-technik.com/
+    \endverb
+    \field{urlday}{22}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{TU_Wien_Spaceteam}{misc}{}
+    \list{language}{1}{%
+      {de-AT}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{abstract}{%
+    Projekte%
+    }
+    \field{title}{Homepage}
+    \verb{url}
+    \verb https://spaceteam.at/
+    \endverb
+    \field{journaltitle}{TU Wien Space Team}
+    \field{urlday}{22}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{AM2302}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=IA}{%
+         family={Industries},
+         familyi={I\bibinitperiod},
+         given={Adafruit},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en-US}%
+    }
+    \strng{namehash}{IA1}
+    \strng{fullhash}{IA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{abstract}{%
+    Discontinued - you can grab AM2301B - Wired Enclosed AHT20 - Temperature
+  and Humidity Sensor\&nbsp;instead!The AM2302 is a wired version of the DHT22,
+  in a large plastic body. It is a basic, ...%
+    }
+    \field{title}{{AM2302} (wired {DHT22}) temperature-humidity sensor}
+    \verb{url}
+    \verb https://www.adafruit.com/product/393
+    \endverb
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\hagen\\Zotero\\storage\\3JJ26FE4\\393.html:text/
+    \verb html
+    \endverb
+    \field{urlday}{14}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{I2CMode}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{title}{I²{C} {Slave} {Mode}}
+    \verb{url}
+    \verb https://onlinedocs.microchip.com/pr/GUID-CA6B1F8F-E09D-4780-A52A-CBBF
+    \verb 61902464-en-US-2/index.html?GUID-5CCAB0DB-28BD-4095-B2E2-2F3CF0FC6966
+    \endverb
+    \verb{file}
+    \verb I²C Slave Mode:C\:\\Users\\hagen\\Zotero\\storage\\LDJMFEFI\\index.h
+    \verb tml:text/html
+    \endverb
+    \field{urlday}{05}
+    \field{urlmonth}{04}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{Zusammenschaltungmagnet}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{title}{{KY}-024 {Linearer}, magnetischer {Hall}-{Sensor} -
+  {SensorKit}}
+    \verb{url}
+    \verb https://sensorkit.joy-it.net/de/sensors/ky-024
+    \endverb
+    \verb{file}
+    \verb KY-024 Linearer, magnetischer Hall-Sensor - SensorKit:C\:\\Users\\hag
+    \verb en\\Zotero\\storage\\ECQR8E7J\\ky-024.html:text/html
+    \endverb
+    \field{urlday}{19}
+    \field{urlmonth}{03}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{Befehlszeile}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{title}{lcd-sudo-su.png ({PNG}-{Grafik}, 672 × 423 {Pixel})}
+    \verb{url}
+    \verb https://www.circuitbasics.com/wp-content/uploads/2015/02/lcd-sudo-su.
+    \verb png
+    \endverb
+    \field{urlday}{15}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{mqtt}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=MM}{%
+         family={Mai},
+         familyi={M\bibinitperiod},
+         given={Marc},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {de-DE}%
+    }
+    \strng{namehash}{MM1}
+    \strng{fullhash}{MM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    Dieser Beitrag gibt eine kleine Einführung in die Funktionsweise von MQTT
+  (Message Queue Telemetry Transport).%
+    }
+    \field{title}{{MQTT} für {Dummies}}
+    \verb{url}
+    \verb https://blog.doubleslash.de/mqtt-fuer-dummies
+    \endverb
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\hagen\\Zotero\\storage\\UCPAMNFJ\\mqtt-fuer-dumm
+    \verb ies.html:text/html
+    \endverb
+    \field{journaltitle}{Business -Software- und IT-Blog - Wir gestalten
+  digitale Wertschöpfung}
+    \field{month}{03}
+    \field{year}{2016}
+    \field{urlday}{19}
+    \field{urlmonth}{03}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{MeanWell}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{{MeanWell} {LRS}-100-24 {108W} {24V} 4,{5A} {Industrielles}
+  {Netzteil} : {Amazon}.de: {Computer} \& {Zubehör}}
+    \verb{url}
+    \verb https://www.amazon.de/dp/B06XWR8RGJ?ref=ppx_yo2ov_dt_b_product_detail
+    \verb s&th=1
+    \endverb
+    \field{urlday}{04}
+    \field{urlmonth}{03}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{UV-Lampe}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{{MEEKBOS} {UV} {Schwarzlicht} {Strahler},{60W} {LED}
+  {Schwarzlichtlampe},385-{400NM} {IP66} {Wasserdicht} {UV} {Flutlicht} mit
+  {Stecker},{UV} {Fluter} für {Black} light {Party},{GLOW},{Fluoreszierende}
+  {Malerei},{Körperbemalung},{Halloween} : {Amazon}.de: {Beleuchtung}}
+    \verb{url}
+    \verb https://www.amazon.de/dp/B09Y34KSR5?psc=1&ref=ppx_yo2ov_dt_b_product_
+    \verb details
+    \endverb
+    \field{urlday}{18}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{mqtt-architecture}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{{MQTT}-architecture.jpg.webp ({WEBP}-{Grafik}, 800 × 475
+  {Pixel})}
+    \verb{url}
+    \verb https://www.verytechnology.com/wp-content/uploads/2023/06/MQTT-archit
+    \verb ecture.jpg.webp
+    \endverb
+    \field{urlday}{19}
+    \field{urlmonth}{03}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{Magnet}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{title}{{OCEUMAOA} {Neodym} {Magnete} mit {Loch} 30kg {Magnete}
+  {Stark},{Magnet} zum {Anschrauben} mit {Schrauben} für
+  {Werkstatteinrichtung} {Zubehör} 25mm 4 {Stück} : {Amazon}.de: {Küche},
+  {Haushalt} \& {Wohnen}}
+    \verb{url}
+    \verb https://www.amazon.de/dp/B0C61QL9LD/ref=sspa_dk_detail_2?pd_rd_i=B0C6
+    \verb 1QL9LD&pd_rd_w=JicHo&content-id=amzn1.sym.ae2317a0-2175-4285-af64-665
+    \verb 39858231f&pf_rd_p=ae2317a0-2175-4285-af64-66539858231f&pf_rd_r=G92WGW
+    \verb Q0R5PSNDPJP713&pd_rd_wg=9E3cK&pd_rd_r=3d5d3a39-475d-4c21-85cd-c5ad2e7
+    \verb 4ff9f&s=industrial&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw&th=1
+    \endverb
+    \field{urlday}{22}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{OMICRON_electronics_GmbH}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{title}{OMICRON}
+  \endentry
+
+  \entry{Grafische-Oberfläche}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{title}{pixel.jpg ({JPEG}-{Grafik}, 750 × 422 {Pixel})}
+    \verb{url}
+    \verb https://i.ds.at/GMLBkw/rs:fill:750:0/plain/2016/09/29/pixel.jpg
+    \endverb
+    \field{urlday}{15}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{PneumatischerVibrator}{misc}{}
+    \list{language}{1}{%
+      {de-de}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{abstract}{%
+    Typ: Balltyp. 1 Pneumatischer Vibrator. Nennfrequenz: 7500-34100 mal/min.
+  Spezialfett: Mit einem speziellen Fett vibriert der Kolben mit dem Kolben
+  außerhalb des Gehäuses und hat eine lange Lebensdauer.%
+    }
+    \field{title}{Pneumatischer {Vibrator} 245-4000 {N} 7500-34100 {Mal}/min
+  {Balltyp} {Filtersieb}}
+    \verb{url}
+    \verb https://www.ebay.de/itm/176052899010
+    \endverb
+    \field{journaltitle}{eBay}
+    \field{urlday}{10}
+    \field{urlmonth}{03}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{PRT-14017}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{title}{{PRT}-14017 footprint \& symbol by {SparkFun} {Electronics}
+  {\textbar} {SnapMagic} {Search}}
+    \verb{url}
+    \verb https://www.snapeda.com/parts/PRT-14017/SparkFun%20Electronics/view-p
+    \verb art/
+    \endverb
+    \verb{file}
+    \verb PRT-14017 footprint & symbol by SparkFun Electronics | SnapMagic Sear
+    \verb ch:C\:\\Users\\hagen\\Zotero\\storage\\5L7VXCL9\\view-part.html:text/
+    \verb html
+    \endverb
+    \field{urlday}{15}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{FastAPI}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=RS}{%
+         family={Ramírez},
+         familyi={R\bibinitperiod},
+         given={Sebastián},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RS1}
+    \strng{fullhash}{RS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    FastAPI framework, high performance, easy to learn, fast to code, ready for
+  production%
+    }
+    \field{note}{original-date: 2018-12-08T08:21:47Z}
+    \field{title}{{FastAPI}}
+    \verb{url}
+    \verb https://github.com/tiangolo/fastapi
+    \endverb
+    \field{month}{02}
+    \field{year}{2024}
+    \field{urlday}{18}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{Raspberry}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{Raspberry {Pi} 4 {Modell} {B} 4 {GB} {RAM}, {Cortex}-{A72} 64
+  {Bit} {Wi}-{FI} {Bluetooth}: {Amazon}.de: {Computer} \& {Zubehör}}
+    \verb{url}
+    \verb https://www.amazon.de/gp/product/B0C7KXMP7W/ref=ppx_yo_dt_b_asin_titl
+    \verb e_o07_s00?ie=UTF8&psc=1
+    \endverb
+    \field{urlday}{04}
+    \field{urlmonth}{03}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{raspberry_Konfiguartion}{misc}{}
+    \field{labeltitlesource}{shorttitle}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{shorttitle}{Raspberry {Pi}}
+    \field{title}{Raspberry {Pi}: {Erste} {Schritte} bei der {Konfiguration}
+  ({Grundkonfiguration})}
+    \verb{url}
+    \verb https://www.elektronik-kompendium.de/sites/raspberry-pi/1906291.htm
+    \endverb
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\hagen\\Zotero\\storage\\6VE4BCXI\\1906291.html:t
+    \verb ext/html
+    \endverb
+    \field{urlday}{15}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{robogmbh}{misc}{}
+    \list{language}{1}{%
+      {de\_DE}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    Der Automatisierungsbaukasten von Robotunits bietet ein Maximum an
+  Möglichkeiten mit einem Minimum an Komponenten. Genial einfach - einfach
+  genial.%
+    }
+    \field{title}{Robotunits – {Der} {Automatisierungsbaukasten}}
+    \verb{url}
+    \verb https://robotunits.com/
+    \endverb
+    \field{journaltitle}{Robotunits}
+    \field{urlday}{22}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{KY-053}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{{RPI} {ADC}: {Raspberry} {Pi} - {Analog}/{Digital}
+  {Konverter} bei reichelt kaufen}
+    \verb{url}
+    \verb https://www.reichelt.at/at/de/shopat/produkt/raspberry_pi_-_analog_di
+    \verb gital_konverter-226847?PROVID=2807&gad_source=1&gclid=CjwKCAjw7-SvBhB
+    \verb 6EiwAwYdCAdMjdMf7eZKzJNCL_2VYPVofDJnrXHpxryPIag0MNFIP9oVM3vPepRoCYOEQ
+    \verb AvD_BwE&q=%2Fat%2Fde%2Fshopat%2Fat%2Fde%2Fraspberry-pi-analog-digital
+    \verb -konverter-rpi-adc-p226847.html
+    \endverb
+    \verb{file}
+    \verb RPI ADC\: Raspberry Pi - Analog/Digital Konverter bei reichelt kaufen
+    \verb :C\:\\Users\\hagen\\Zotero\\storage\\IIKMQI4Y\\raspberry_pi_-_analog_
+    \verb digital_konverter-226847.html:text/html
+    \endverb
+    \field{urlday}{19}
+    \field{urlmonth}{03}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{Netatmo}{misc}{}
+    \list{language}{1}{%
+      {en-EU}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    Access your Smart Home Weather Station’s readings in real-time on your
+  smartphone and discover all the secrets of your environment.%
+    }
+    \field{title}{Smart {Home} {Weather} {Station}}
+    \verb{url}
+    \verb https://www.netatmo.com/en-eu/smart-weather-station
+    \endverb
+    \field{journaltitle}{Netatmo}
+    \field{urlday}{24}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{SOLIDWORKS}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{{SOLIDWORKS}}
+    \verb{url}
+    \verb https://www.solidworks.com/de
+    \endverb
+    \field{urlday}{15}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{Solidworks-Logo}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{solidworks-connect\_2.jpg ({JPEG}-{Grafik}, 1518 × 644
+  {Pixel}) - {Skaliert} (84\%)}
+    \verb{url}
+    \verb https://www.solidworks.com/sites/default/files/inline-images/solidwor
+    \verb ks-connect_2.jpg
+    \endverb
+    \field{urlday}{15}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{Schrittmotor}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{{STEPPERONLINE} {Schrittmotor} {Nema} 17 {Stepper} {Motor}
+  {59Ncm} {2A} 1.8deg 2 {Phase} 4-{Draht} {Stepping} {Motor} w/1m {Kabel} \&
+  {Verbinder} für {3D} {Drucker}/{CNC} {Reprap} : {Amazon}.de: {Gewerbe},
+  {Industrie} \& {Wissenschaft}}
+    \verb{url}
+    \verb https://www.amazon.de/dp/B00PNEQKC0?psc=1&ref=ppx_yo2ov_dt_b_product_
+    \verb details
+    \endverb
+    \field{urlday}{04}
+    \field{urlmonth}{03}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{4-polige-Schraubklemme}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=TwreGI}{%
+         family={Team\bibnamedelima (webmaster@reichelt.de)},
+         familyi={T\bibinitperiod\bibinitdelim w\bibinitperiod},
+         given={reichelt elektronik GmbH\bibnamedelima Internet},
+         giveni={r\bibinitperiod\bibinitdelim e\bibinitperiod\bibinitdelim
+  G\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {de}%
+    }
+    \strng{namehash}{TwreGI1}
+    \strng{fullhash}{TwreGI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    flaches Profil2- bis 12- polige Doppelverriegelung für erhöhte
+  Kräftemassive Blöcke mit 4 bis 12 Steckplätzen, stapelbarunverlierbare
+  SchraubenSpannungsfestigkeit - AC1500 V/1 minSchraube/Drehmo [...]%
+    }
+    \field{title}{{CTB0502}-4 - {Lötbare} {Schraubklemme} - 4-pol, {RM} 5 mm,
+  90°}
+    \verb{url}
+    \verb https://www.reichelt.at/at/de/loetbare-schraubklemme-4-pol-rm-5-mm-90
+    \verb --ctb0502-4-p292693.html
+    \endverb
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\hagen\\Zotero\\storage\\QVYTPZHT\\loetbare-schra
+    \verb ubklemme-4-pol-rm-5-mm-90--ctb0502-4-p292693.html:text/html
+    \endverb
+    \field{journaltitle}{Elektronik und Technik bei reichelt elektronik
+  günstig bestellen}
+    \field{urlday}{15}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{Relais}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=TwreGI}{%
+         family={Team\bibnamedelima (webmaster@reichelt.de)},
+         familyi={T\bibinitperiod\bibinitdelim w\bibinitperiod},
+         given={reichelt elektronik GmbH\bibnamedelima Internet},
+         giveni={r\bibinitperiod\bibinitdelim e\bibinitperiod\bibinitdelim
+  G\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {de}%
+    }
+    \strng{namehash}{TwreGI1}
+    \strng{fullhash}{TwreGI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    Das SPDT-Relais (30 A) ist ein hochwertiges einpoliges Zweiwege-Relais
+  (SPDT), das aus einer Spule, einer gemeinsamen Klemme, einer Öffnerklemme
+  (NC) und einer Schließerklemme (NO) besteht. Wenn [...]%
+    }
+    \field{title}{{GRV} {RELAY} {SPDT30} - {Arduino} - {Relais} {SPDT}, 30 {A},
+  {SLA}-{05VDC}-{SL}-{C}}
+    \verb{url}
+    \verb https://www.reichelt.at/at/de/arduino-relais-spdt-30-a-sla-05vdc-sl-c
+    \verb -grv-relay-spdt30-p243033.html
+    \endverb
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\hagen\\Zotero\\storage\\AC5TBV6F\\arduino-relais
+    \verb -spdt-30-a-sla-05vdc-sl-c-grv-relay-spdt30-p243033.html:text/html
+    \endverb
+    \field{journaltitle}{Elektronik und Technik bei reichelt elektronik
+  günstig bestellen}
+    \field{urlday}{19}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{TeraTerm}{misc}{}
+    \list{language}{1}{%
+      {en}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    Download Tera Term for free. TeraTerm Project is developing the terminal
+  emulator Tera Term and the SSH compatible extension module TTSSH. This is
+  open source software under the BSD license.%
+    }
+    \field{title}{Tera {Term}}
+    \verb{url}
+    \verb https://sourceforge.net/projects/tera-term/
+    \endverb
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\hagen\\Zotero\\storage\\MU2VHGXK\\tera-term.html
+    \verb :text/html
+    \endverb
+    \field{journaltitle}{SourceForge}
+    \field{month}{11}
+    \field{year}{2023}
+    \field{urlday}{19}
+    \field{urlmonth}{03}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{Thonny}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{Thonny, {Python} {IDE} for beginners}
+    \verb{url}
+    \verb https://thonny.org/
+    \endverb
+    \verb{file}
+    \verb Thonny, Python IDE for beginners:C\:\\Users\\hagen\\Zotero\\storage\\
+    \verb QWQZ8NRQ\\thonny.org.html:text/html
+    \endverb
+    \field{urlday}{19}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{Logo-Thonny}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{thonny-{Thonny}-icon.png ({WEBP}-{Grafik}, 224 × 224
+  {Pixel})}
+    \verb{url}
+    \verb https://images.sftcdn.net/images/t_app-icon-m/p/b7c6837f-d3d8-48a2-98
+    \verb 5a-aae1988e1ac3/524712048/thonny-Thonny-icon.png
+    \endverb
+    \field{urlday}{19}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{TMP112}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{{TMP112}-{Q1} {Datenblatt}, {Produktinformationen} und
+  {Support} {\textbar} {TI}.com}
+    \verb{url}
+    \verb https://www.ti.com/product/de-de/TMP112-Q1
+    \endverb
+    \field{urlday}{20}
+    \field{urlmonth}{03}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{TCP}{misc}{}
+    \list{language}{1}{%
+      {de}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    Das Transmission Control Protocol (TCP, englisch für
+  „Übertragungssteuerungsprotokoll“) ist ein Netzwerkprotokoll, das
+  definiert, auf welche Art und Weise Daten zwischen Netzwerkkomponenten
+  ausgetauscht werden sollen. Nahezu sämtliche aktuelle Betriebssysteme
+  moderner Computer beherrschen TCP und nutzen es für den Datenaustausch mit
+  anderen Rechnern. Das Protokoll ist ein zuverlässiges,
+  verbindungsorientiertes, paketvermitteltes Transportprotokoll in
+  Computernetzwerken. Es ist Teil der Internetprotokollfamilie, der Grundlage
+  des Internets. Entwickelt wurde TCP von Robert E. Kahn und Vinton G. Cerf.
+  Ihre Forschungsarbeit, die sie im Jahr 1973 begannen, dauerte mehrere Jahre.
+  Die erste Standardisierung von TCP erfolgte deshalb erst im Jahr 1981 als RFC
+  793. Danach gab es viele Erweiterungen, die bis heute in neuen RFCs, einer
+  Reihe von technischen und organisatorischen Dokumenten zum Internet,
+  spezifiziert werden. RFC 9293 bündelt die ursprüngliche Fassung und alle
+  ihre Erweiterungen in ein einziges Dokument. Im Unterschied zum
+  verbindungslosen UDP (englisch User Datagram Protocol) stellt TCP eine
+  Verbindung zwischen zwei Endpunkten einer Netzverbindung (Sockets) her. Auf
+  dieser Verbindung können in beide Richtungen Daten übertragen werden. TCP
+  setzt in den meisten Fällen auf das IP (Internet-Protokoll) auf, weshalb
+  häufig (und oft nicht ganz korrekt) auch vom „TCP/IP-Protokoll“ die Rede
+  ist. In Protokollstapeln wie dem OSI-Modell sind TCP und IP nicht auf
+  derselben Schicht angesiedelt. TCP ist eine Implementierung der
+  Transportschicht. Aufgrund seiner vielen positiven Eigenschaften
+  (Datenverluste werden erkannt und automatisch behoben, Datenübertragung ist
+  in beiden Richtungen möglich, Netzüberlastung wird verhindert usw.) ist TCP
+  ein sehr weit verbreitetes Protokoll zur Datenübertragung. Beispielsweise
+  wurde TCP lange Zeit als fast ausschließliches Transportprotokoll für das
+  WWW, E-Mail und viele andere populäre Netzdienste verwendet. Im WWW bekommt
+  TCP Konkurrenz durch das verschlüsselte Transportprotokoll QUIC, das im Jahr
+  2021 standardisiert wurde.%
+    }
+    \field{note}{Page Version ID: 243014776}
+    \field{title}{Transmission {Control} {Protocol}}
+    \verb{url}
+    \verb https://de.wikipedia.org/w/index.php?title=Transmission_Control_Proto
+    \verb col&oldid=243014776#Daten%C3%BCbertragung
+    \endverb
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\hagen\\Zotero\\storage\\UHFRXRC5\\Transmission_C
+    \verb ontrol_Protocol.html:text/html
+    \endverb
+    \field{journaltitle}{Wikipedia}
+    \field{month}{03}
+    \field{year}{2024}
+    \field{urlday}{20}
+    \field{urlmonth}{03}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{Tschabrun_Hermann_Gesellschaft}{misc}{}
+    \list{language}{1}{%
+      {de}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    Bau- und Dämmstoffe, Schnittholz, Furniere, Plattenwerkstoffe,
+  Konstruktionsholz/Hobelware, Terrasse oder Garten, Trockenbau / Baustoffe,
+  das alles gibt es bei Tschabrun Holz- und Baustoffe in Rankweil, Vorarlberg.%
+    }
+    \field{title}{Tschabrun {Holz}- und {Baustoffe} in {Rankweil},
+  {Bludenz}-{Bürs} und {Innsbruck} {\textbar} {Tschabrun} {Holz} \&
+  {Baustoffe} - {Starke} {Produkte}. {Starke} {Beratung}.}
+    \verb{url}
+    \verb https://www.tschabrun.at/
+    \endverb
+    \field{urlday}{22}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{Treiber}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{Twotrees {DM542} 5.{6A} {Schrittmotortreiber} {Stepper}
+  {Treiber}, {Dm542} 2 {Phasen} {Schrittmotortreiber} {Dc} 18-48v 57/86
+  {Stepper} {Motor} {Driver} {Peak} 4.2a : {Amazon}.de: {Gewerbe}, {Industrie}
+  \& {Wissenschaft}}
+    \verb{url}
+    \verb https://www.amazon.de/dp/B093LFXT5S?ref=ppx_yo2ov_dt_b_product_detail
+    \verb s&th=1
+    \endverb
+    \field{urlday}{04}
+    \field{urlmonth}{03}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{UDP}{misc}{}
+    \list{language}{1}{%
+      {de}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{U}
+    \field{sortinithash}{U}
+    \field{abstract}{%
+    Das User Datagram Protocol (UDP) ist ein minimales, verbindungsloses
+  Netzwerkprotokoll, das zur Transportschicht der Internetprotokollfamilie
+  gehört. UDP ermöglicht Anwendungen den Versand von Datagrammen in
+  IP-basierten Rechnernetzen. UDP wurde 1980 von der Internet Engineering Task
+  Force als Internetstandard veröffentlicht. Es wurde als Alternative zum
+  Transmission Control Protocol für Anwendungen eingeführt, die keine
+  zuverlässige Datenübertragung benötigen. Als frühe Anwendungszwecke
+  wurden ein Vorläufer des Domain Name System und das Trivial File Transfer
+  Protocol genannt. Zu den späteren Anwendungszwecken gehören unter anderem
+  Onlinespiele und IP-Telefonie, da bei diesen Anwendungen eine geringe
+  Verzögerungszeit wichtiger ist als eine zuverlässige Übertragung.%
+    }
+    \field{note}{Page Version ID: 242735887}
+    \field{title}{User {Datagram} {Protocol}}
+    \verb{url}
+    \verb https://de.wikipedia.org/w/index.php?title=User_Datagram_Protocol&old
+    \verb id=242735887
+    \endverb
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\hagen\\Zotero\\storage\\ZLN5I9G8\\User_Datagram_
+    \verb Protocol.html:text/html
+    \endverb
+    \field{journaltitle}{Wikipedia}
+    \field{month}{03}
+    \field{year}{2024}
+    \field{urlday}{20}
+    \field{urlmonth}{03}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{uvicorn}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{U}
+    \field{sortinithash}{U}
+    \field{title}{Uvicorn}
+    \verb{url}
+    \verb https://www.uvicorn.org/
+    \endverb
+    \field{urlday}{18}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{Verbinder}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{title}{Verbinder 40x40 {\textbar} {Robotunits} {Verbindungstechnik}
+  {Raster} 40}
+    \verb{url}
+    \verb https://robotunits.com/shop/profil-und-verbindungstechnik/verbindungs
+    \verb technik-raster-40/verbinder-40x40/?_gl=1*1aqg5as*_up*MQ..&gclid=CjwKC
+    \verb AiAqNSsBhAvEiwAn_tmxSP6zdLT_F1BTP2o3lHqzjZf7ORmw6HcQwWkvvrNG_26JvM0bl
+    \verb CGJBoCeVMQAvD_BwE
+    \endverb
+    \verb{file}
+    \verb Verbinder 40x40 | Robotunits Verbindungstechnik Raster 40:C\:\\Users\
+    \verb \hagen\\Zotero\\storage\\XTLBPZHB\\verbinder-40x40.html:text/html
+    \endverb
+    \field{urlday}{04}
+    \field{urlmonth}{03}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{VScode}{misc}{}
+    \list{language}{1}{%
+      {en}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{abstract}{%
+    Visual Studio Code is a code editor redefined and optimized for building
+  and debugging modern web and cloud applications.  Visual Studio Code is free
+  and available on your favorite platform - Linux, macOS, and Windows.%
+    }
+    \field{title}{Visual {Studio} {Code} - {Code} {Editing}. {Redefined}}
+    \verb{url}
+    \verb https://code.visualstudio.com/
+    \endverb
+    \field{urlday}{23}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{Logo_VSCode}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{title}{Visual\_Studio\_Code\_1.35\_icon.svg.png ({PNG}-{Grafik},
+  768 × 768 {Pixel}) - {Skaliert} (73\%)}
+    \verb{url}
+    \verb https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Stud
+    \verb io_Code_1.35_icon.svg/768px-Visual_Studio_Code_1.35_icon.svg.png
+    \endverb
+    \field{urlday}{23}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+\enddatalist
+\endinput

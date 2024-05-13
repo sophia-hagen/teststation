@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+		\PYG{c+c1}{\PYGZsh{}Öffnen der CSV\PYGZhy{}Datei im Modus a}
+		\PYG{k}{with} \PYG{n+nb}{open}\PYG{p}{(}\PYG{n}{csv\PYGZus{}file\PYGZus{}path}\PYG{p}{,} \PYG{n}{mode}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}a\PYGZsq{}}\PYG{p}{,} \PYG{n}{newline}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}\PYGZsq{}}\PYG{p}{)} \PYG{k}{as} \PYG{n}{file}\PYG{p}{:}
+		\PYG{c+c1}{\PYGZsh{} Überprüft, ob die Datei leer ist}
+		\PYG{n}{file\PYGZus{}empty} \PYG{o}{=} \PYG{n}{file}\PYG{o}{.}\PYG{n}{tell}\PYG{p}{()} \PYG{o}{==} \PYG{l+m+mi}{0}
+		\PYG{c+c1}{\PYGZsh{}Erstellen eines CSV wirter Objekts}
+		
+\end{Verbatim}

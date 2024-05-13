@@ -1,0 +1,350 @@
+
+\subsection{Testprogramm}\label{sec:Testprogramm} 
+\SecAuth{\nameJS}
+Die Steuerung der Hardware Module wie Motor, Netzteil, UV-Lampe und die Auslesung vom Notaus oder der Sensoren werden mit einer GUI verwirklicht. Diese GUI dient aber nur für Entwicklungszwecke, da diese später von einer API ersetzt wird. Die GUI kann über das LX-Terminal vom Raspberry gestartet werde.
+\subsubsection{GUI}\label{sec:GUI}
+Um eine GUI zu erstellen und die Ein und Ausgänge vom Raspberry Pi zu steuern, werden 2 Bibliotheken benötigt.\\
+\vspace{3mm}
+Tkinter: Um eine grafische Benutzeroberfläche zu erstellen, wird die Python-Bibliothek „tkinter“ benötigt. Mit dieser Bibliothek können Fenster, Schaltflächen, Eingabefelder und andere GUI-Elemente erstellt werden.\\
+\vspace{3mm}
+RPi.GPIO: Die Python Bibliothek RPi.GPIO ermöglicht, mit den Ein und Ausgänge vom Raspberry Pi zu kommunizieren. In unserer Anwendung werden Sensoren eingelesen und externe Geräte gesteuert.\\
+\vspace{3mm}
+Installieren: Damit man die Bibliotheken verwenden kann, müssen sie auf dem Raspberr Pi installiert werden. Normalerweise ist Tkinter bereits vorinstalliert, doch bei unserem Raspberry Pi nicht. Folgenden Befehlen müssen im Terminal ausgeführt werden um die Bibliotheken zu erhalten.\\
+\begin{verbatim}
+    Sudo apt-get update
+    Sudo apt-get install python3 -tk
+    Sudo apt-get install python3-pip
+    Sudo pip install Rpi.GPIO
+\end{verbatim}
+\pagebreak
+Einbinde der Bibliotheken:
+\begin{figure}[H]
+    \centering
+    \begin{minted}{python}
+    from tkinter import *
+    import RPi.GPIO as GPIO
+    \end{minted}
+    \caption{GUI-Bibliothek einbinden}
+\end{figure}
+Fenster erstellen: Dieser Code erstellt ein Hauptfenster für eine GUI-Anwendung mit dem Titel "Controll Unit", einem weißen Hintergrund und einem Frame namens rightFrame, das als Container für weitere GUI-Elemente innerhalb des Hauptfensters dient. Die Höhe dieses Fensters ist 800 Pixel und eine Breite von 800 Pixel.\\
+\vspace{3mm}
+\begin{figure}[H]
+    \centering
+    \begin{minted}{python}
+    #Fenster Erstellen
+    root = Tk()
+    root.wm_title("Controll Unit")
+    root.config(background = "#FFFFFF")
+ 
+    rightFrame = Frame(root, width=500, height =800)
+    rightFrame.grid(row=100, column =200, padx=0, pady=3)
+    \end{minted}
+    \caption{Beispielcode Fenster erstellen}
+\end{figure}
+Ein weiteres Fenster wird erstellt, um darauf alle Buttons zu platzieren. Dieses ist innerhalb des „rightFrame“ und kann so die GUI zwischen Ein und Ausgabe trennen. Für die Sensordaten wird ein weiteres Fenster erstellt.\\
+\vspace{3mm}
+\begin{figure}[H]
+    \centering
+    \begin{minted}{python}
+    #GUI-Fenster Erstellen
+    buttonFrame = Frame(rightFrame)
+    buttonFrame.grid(row=0, column=0, padx=50,pady=3) 
+    \end{minted}
+    \caption{Beispielcode GUI-Fenster erstellen}
+\end{figure}
+
+\newpage
+\subsubsection{Button}\label{sec:Button}
+Fürs Ein- und Ausschalten von Geräten werden Buttons verwendet. Buttons können in der GUI gedrückt werden und die gewünschte Funktion wird gestartet.\\
+\vspace{3mm}
+\begin{figure}[H]
+	\centering
+	\begin{minted}{python}
+		#Button erstellen:
+		btmot = Button(buttonFrame, text="Exit", bg = "#FF0000",
+		width=15,command=exitProgram)
+		btmot.grid(row=50, column=1, padx=0,pady=5)
+		
+		#Button Funktion:
+		#Wird der Button gedrückt, wird folgende 
+		#Funktion gestartet:
+		def btmot():
+			#Funktion… 
+	\end{minted}
+	\caption{Beispielcode Button}
+\end{figure}
+
+
+\subsubsection{Temperatursensor}\label{sec:Testprogramm Temp}
+\SecAuth{\nameSH}
+Die Temperatursensoren wird nicht über ein Button gesteuert, damit die aktuelle Temperatur immer wieder ausgegeben wird. Die empfangenen Daten werden nach dem Starten des Programms, automatisch auf der GUI angezeigt. Durch die zuvor installierte Bibliothek, werden nur wenige Zeilen an Code benötigt, um Sensordaten auszugeben.
+\begin{figure}[H]
+    \centering
+    \begin{minted}{python}
+    #Einbinden der Bibliothek im Programm
+    import adafruit_dht
+    
+    #Definition des Sensors und festlegen des Pins
+    dhtDevice1 = adafruit_dht.DHT22(board.D2)     
+
+    #Funktion temperature einer Variable zuweisen
+    temp_c = dhtDevice1.temperature                
+
+    #Funktion humidity einer Variable zuweisen                             
+    humidity = dhtDevice1.humidity 
+    \end{minted}
+    \caption{Beispielcode Temperatursensor}
+\end{figure}
+
+\newpage
+\subsubsection{UV-Sensor}\label{sec:Testprogramm UV-Sensor}
+Wie beim Temperatursensor, wird auch hier die Ausgabe direkt nach dem Starten des Programms erfolgen. Es muss die zuvor installierte Bibliothek eingebunden werden. Danach kann auch hier das Programm in wenigen Schritten programmiert werden.
+\begin{figure}[H]
+    \centering
+    \begin{minted}{python}
+    #Einbinden der Bibliothek
+    import adafruit_ltr390
+    
+    #I2C-Schnittstelle initialisieren
+    i2c = board.I2C()
+
+    #Definition des Sensors und Übergabe des I2C-Schnittstelle
+    ltr = adafruit_ltr390.LTR390(i2c)
+
+    while True:
+        #Ausgabe der gemessenen Werte
+        
+        print("UV-Index:", ltr.uvi, 
+              "Umgebungslicht in Lux:", ltr.light)
+        
+    \end{minted}
+    \caption{Beispielcode UV-Sensor}
+\end{figure}
+\newpage
+\subsubsection{Drucksensor}\label{sec:Testprogramm Drucksensor}
+Der Drucksensor wird im Testprogramm verwendet, um die richtigkeit des Sensors zu überprüfen. Die Werte des Drucksensors können sehr einfach überprüft werden. Indem im Internet nach der Höhe von Rankweil gesucht wird und mit dem gemessenen Wert verglichen werden. 
+\begin{figure}[H]
+    \centering
+    \begin{minted}{python}
+    #Einbinden der Bibliothek
+    import bmp180
+    
+    i2c = board.I2C()
+        bmp = bmp180.BMP180(i2c)
+        bmp.sea_level_pressure = 1013.25
+        return{f"Druck: {bmp.pressure:.1f} hPa", 
+                f"Meereshöhe: {bmp.altitude:.1f} Meter"}
+    \end{minted}
+    \caption{Beispielcode Drucksensor}
+\end{figure}
+
+\newpage
+\subsubsection{UV-Lampe}\label{sec:Testprogramm UV-Lampe}
+Damit getestet werden kann, ob und wie gut die Lampe funktioniert, wurde ein Code zur Ansteuerung für das Relais erstellt. Mithilfe des Button und der Tasterabfrage wird die Lampe ein- und ausgeschaltet. 
+\begin{figure}[H]
+    \centering
+    \begin{minted}{python}
+    #boolUV als globale Variable deklarieren
+    global boolUV
+    #wechseln des bool Zustandes
+    boolUV = not boolUV
+
+    if boolUV == True :
+        #Pin auf High setzten (Lampe wird eingeschalten)
+        GPIO.output(PinUV,GPIO.HIGH)
+        #Text auf Button ändern
+        btuv["text"]= "UV-Lampe aus" 
+        #Lampe ein wird ausgegeben
+        print("Lampe ein")
+        
+    else:
+        #Pin auf Low setzten (Lampe wird ausgeschalten)
+        GPIO.output(PinUV,GPIO.LOW)
+        #Text auf Button ändern
+        btuv["text"]= "UV-Lampe ein"
+        #Lampe aus wird ausgegeben
+        print("Lampe aus") 
+    \end{minted}
+    \caption{Beispielcode UV-Lampe}
+\end{figure}
+
+\newpage
+\SecAuth{\nameJS}
+\subsubsection{Motor}\label{sec:test motor}
+Der Motor wird mit einem Button ein und ausgeschalten. Jedes Mal, wenn der Button betätigt wird, sollte der Motor ein oder ausgeschalten werden. Die Buttonabfrage, wurde schon bei der UV-Lampe ausführlich erklärt.  \\
+\vspace{3mm}
+Da die Masse, die bewegt werden muss, relativ schwer ist, wird der Motor als Rampe programmiert. Der Motor braucht dann ca. 3 Sekunden, bis er die Endgeschwindigkeit erreicht. Mit dieser Programmierung braucht der Motor nicht so viel Kraft, um das Gyroskop in
+Bewegung zu bringen und zusätzlich wird eine ruckartige Bewegung verhindert. Beim Ausschalten wird dasselbe Prinzip angewendet, denn sonst würde es die Wicklungen vom Motor negativ in Anspruch nehmen und die Lebensdauer verkürzt.\\
+\vspace{3mm}
+\begin{figure}[H]
+    \centering
+    \begin{minted}{python}
+    #Initialisierung:
+    PUL= 17
+    EN=13
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setup(PUL, GPIO.OUT)
+    GPIO.setup(EN, GPIO.OUT)
+
+    #PWM Signal:
+    for i in range(10000000):
+        GPIO.output(PUL,GPIO.HIGH)
+        time.sleep(0.0005)
+        GPIO.output(PUL,GPIO.LOW)
+        time.sleep(0.0005)
+
+    \end{minted}
+    \caption{Beispielcode UV-Lampe}
+\end{figure}
+
+\subsubsection{Netzteil}\label{sec:test netzteil}
+Das Netzteil kann mit einer Button Betätigung ein und ausgeschalten werden. Dazu wird ein Relais verwendet. Die Funktion des Buttons und der Tasterabfrage \ref{sec:Tasterabfrage} wurde schon erklärt. 
+\newpage
+\subsubsection{LED-Streifen}\label{sec:test Led}
+Um die LED’s zu programmieren wird die Bibliothek „import neopixel“ benötigt. Diese kann in der Console installiert werden.\\
+\vspace{3mm}
+Mit dieser Bibliothek kann man die LED’s einfach steuern.\\
+\vspace{3mm}
+Folgender Coder verwirklicht das: Mit der „brightness“ und der „fill“ können die LEDs spezifisch gesteuert werden.\\
+\vspace{3mm}
+\begin{figure}[H]
+	\centering
+	\begin{minted}{python}
+		global boolLED
+		print(boolLED)
+		boolLED = not boolLED
+		print(boolLED)
+		pixels = neopixel.NeoPixel(board.D21, 40, brightness =5)
+		pixels.fill((0,0,0))
+		if boolLED == True :
+		pixels.fill((0,255,0))
+		btled["text"]= "LEDs aus"
+		print(boolLED)
+		else:
+		pixels.fill((0,0,0))
+		btled["text"]= "LEDs ein"
+		print(boolLED)
+	\end{minted}
+	\caption{Beispielcode LED-Streifen}
+\end{figure}
+
+
+\subsubsection{Schlüsselschalter}\label{sec:test schlüssel}
+Hier wird einfach nur geprüft, ob der Schalter auf High oder Low ist.
+\begin{figure}[H]
+    \centering
+    \begin{minted}{python}
+    SS=6
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setup(SS, GPIO.OUT)
+
+    if(GPIO.input(SS) == GPIO.LOW)):
+        continue
+    else:
+    \end{minted}
+    \caption{Beispielcode Schlüsselschalter}
+\end{figure}
+
+\subsubsection{Notausschalter}\label{sec:test notaus}
+Beim Notaus wird derselbe Code wie beim Schlüsselschalter verwendet. Es wird geprüft, ob der Schalter auf High oder Low ist. Die Reaktionszeit, bis das Gyroskop ausgeschalten wird, ist unter 0,5 Sekunden und somit akzeptabel.  
+\subsubsection{Endschalter}\label{sec:test end}
+Um den Schalterzustand zu erkennen, wird geprüft, ob der Schalter auf High oder Low ist. Sind beide Schalter auf Lauf, ist die Tür geschlossen und der Motor kann gestartet werden. \\
+\vspace{3mm}
+\begin{figure}[H]
+    \centering
+    \begin{minted}{python}
+    #Initialisierung
+    END1= 27
+    END2=22
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setup(END1, GPIO.OUT)
+    GPIO.setup(END2, GPIO.OUT)
+
+    #Abfrage
+    while(TRUE):
+    #Tasterabfrage
+    #Motoransteuerung
+    if(GPIO.input(END1) == GPIO.LOW) and (GPIO.input(END2) == GPIO.LOW):
+        continue
+    else:
+        break
+
+    \end{minted}
+    \caption{Beispielcode Endschalter}
+\end{figure}
+
+\SecAuth{\nameSB}
+\subsubsection{Kühlung}\label{sec: kühlung test}
+Der angepasste Code für den Raspberry Pi dient dazu, den Lüfter eines Kühlgerätes in zwei Stufen zu steuern und gleichzeitig einen Filter zu befeuchten. Dabei wird die Tasterabfrage \ref{sec:Tasterabfrage} genutzt, um zwischen den beiden Zuständen der Kühlung (Ein/Aus) umzuschalten und die Intensität der Kühlung (Stufe 1 oder Stufe 2) sowie die Befeuchtung des Filters zu kontrollieren.\\
+\vspace{3mm}
+\begin{figure}[H]
+    \centering
+    \begin{minted}{python}
+    #boolUV als globale Variable deklarieren
+    global boolKühlung
+    #wechseln des bool Zustandes
+    boolKühlung = not boolKühlung
+
+    if boolKühlung == True :
+        #Pin auf High setzten (Kühlung wird eingeschalten)
+        GPIO.output(KuehlungPin, GPIO.HIGH)
+        #Text auf Button ändern
+        btuv["text"]= "Kühlung Stufe 2" 
+        #Filter Pin auf High setzen
+        GPIO.output(filterPin, GPIO.HIGH)
+        #Ausgabe in der Konsole
+        print("Kühlung eingeschalten - Stufe 1")
+        
+        else:
+        #Pin auf Low setzten (Kühlung kurz ausgeschalten)
+        GPIO.output(KuehlungPin, GPIO.LOW)
+        # Pausiert das Programm kurz für 0.1 Sekunden.
+        time.sleep(0.1)
+        #Pin auf High setzten (Kühlung wird eingeschalten)
+        GPIO.output(KuehlungPin, GPIO.HIGH)
+        #Filter Pin auf High setzen
+        GPIO.output(filterPin, GPIO.HIGH)
+        #Text auf Button ändern
+        btuv["text"]= "Kühlung Stufe 1"
+        #Ausgabe in der Konsole
+        print("Kühlung eingeschalten - Stufe 2")
+
+		#Kühlung Pin und Filter Pin auf Low setzen
+		GPIO.output(KuehlungPin, GPIO.LOW)
+		GPIO.output(filterPin, GPIO.LOW)
+		
+		#Ausgabe in der Konsole
+		print("Kühlung ausgeschalten")        
+    \end{minted}
+    \caption{Beispielcode Kühlung}
+\end{figure}
+\newpage
+\subsubsection{Lüfter}\label{sec: lüfter test}
+Dieser Code steuert das Ein- und Ausschalten des Lüfters über einen GPIO-Pin des Raspberry Pi, mithilfe der Tasterabfrage \ref{sec:Tasterabfrage}.
+\vspace{3mm}
+\begin{figure}[H]
+    \centering
+    \begin{minted}{python}
+    #boolUV als globale Variable deklarieren
+    global boolLüfter
+    #wechseln des bool Zustandes
+    boolLüfter = not boolLüfter
+
+    if boolLüfter == True :
+        #Pin auf High setzten (Lüfter wird eingeschalten)
+       GPIO.output(lueftungPin, GPIO.HIGH)
+        #Text auf Button ändern
+        btuv["text"]= "Lüfter aus" 
+        #Lüfter ein wird ausgegeben
+        print("Lüftung eingeschalten")
+        
+    else:
+        #Pin auf Low setzten (Lüfter wird ausgeschalten)
+        GPIO.output(lueftungPin, GPIO.LOW)
+        #Text auf Button ändern
+        btuv["text"]= "Lüfter ein"
+        #Lüfter aus wird ausgegeben
+        print("Lüftung ausgeschalten")
+    \end{minted}
+    \caption{Beispielcode Lüfter}
+\end{figure}

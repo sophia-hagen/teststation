@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{c+c1}{\PYGZsh{}Filterung der Daten basierend auf dem ausgewählten Zeitpunkt}
+    \PYG{k}{if} \PYG{n}{start\PYGZus{}date} \PYG{o+ow}{and} \PYG{n}{end\PYGZus{}date}\PYG{p}{:}
+        \PYG{n}{filtered\PYGZus{}df} \PYG{o}{=} \PYG{n}{df}\PYG{p}{[(}\PYG{n}{df}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}Timestamp\PYGZsq{}}\PYG{p}{]} \PYG{o}{\PYGZgt{}=} \PYG{n}{start\PYGZus{}date}\PYG{p}{)} \PYG{o}{\PYGZam{}}
+        \PYG{p}{(}\PYG{n}{df}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}Timestamp\PYGZsq{}}\PYG{p}{]}\PYG{o}{\PYGZlt{}=}             \PYG{n}{end\PYGZus{}date}\PYG{p}{)]}
+    \PYG{k}{else}\PYG{p}{:}
+        \PYG{n}{filtered\PYGZus{}df} \PYG{o}{=} \PYG{n}{df}
+
+\end{Verbatim}

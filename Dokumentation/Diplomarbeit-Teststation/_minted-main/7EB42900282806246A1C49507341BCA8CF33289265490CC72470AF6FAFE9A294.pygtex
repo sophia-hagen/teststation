@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+		\PYG{c+c1}{\PYGZsh{} Daten über UDP\PYGZhy{}Socket schicken}
+		\PYG{n}{sock}\PYG{o}{.}\PYG{n}{sendto}\PYG{p}{(}\PYG{n}{data\PYGZus{}string}\PYG{o}{.}\PYG{n}{encode}\PYG{p}{(),} \PYG{p}{(}\PYG{n}{udp\PYGZus{}ip}\PYG{p}{,} \PYG{n}{udp\PYGZus{}port}\PYG{p}{))}
+		
+\end{Verbatim}

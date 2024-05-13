@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+		\PYG{k}{except} \PYG{n}{json}\PYG{o}{.}\PYG{n}{JSONDecodeError} \PYG{k}{as} \PYG{n}{e}\PYG{p}{:}
+		\PYG{c+c1}{\PYGZsh{}Apprüfung von Fehlern der JSON\PYGZhy{}Dekodierung}
+		\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}JSON Decode Error: }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{e}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+		\PYG{c+c1}{\PYGZsh{}Ausgabe des Fehlers}
+		\PYG{k}{except} \PYG{n+ne}{Exception} \PYG{k}{as} \PYG{n}{e}\PYG{p}{:}
+		\PYG{c+c1}{\PYGZsh{}Apprüfung für allgemeine Fehler}
+		\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}Unexpected error: }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{e}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+		\PYG{c+c1}{\PYGZsh{}Ausgabe der allgemeinen Fehler}
+		
+\end{Verbatim}

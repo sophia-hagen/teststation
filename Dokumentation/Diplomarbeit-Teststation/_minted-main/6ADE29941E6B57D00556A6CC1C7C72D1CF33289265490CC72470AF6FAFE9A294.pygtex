@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{c+c1}{\PYGZsh{}Einbinden der Bibliothek}
+    \PYG{k+kn}{import} \PYG{n+nn}{bmp180}
+
+    \PYG{n}{i2c} \PYG{o}{=} \PYG{n}{board}\PYG{o}{.}\PYG{n}{I2C}\PYG{p}{()}
+        \PYG{n}{bmp} \PYG{o}{=} \PYG{n}{bmp180}\PYG{o}{.}\PYG{n}{BMP180}\PYG{p}{(}\PYG{n}{i2c}\PYG{p}{)}
+        \PYG{n}{bmp}\PYG{o}{.}\PYG{n}{sea\PYGZus{}level\PYGZus{}pressure} \PYG{o}{=} \PYG{l+m+mf}{1013.25}
+        \PYG{k}{return}\PYG{p}{\PYGZob{}}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}Druck: }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{bmp}\PYG{o}{.}\PYG{n}{pressure}\PYG{l+s+si}{:}\PYG{l+s+s2}{.1f}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{ hPa\PYGZdq{}}\PYG{p}{,}
+                \PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}Meereshöhe: }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{bmp}\PYG{o}{.}\PYG{n}{altitude}\PYG{l+s+si}{:}\PYG{l+s+s2}{.1f}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{ Meter\PYGZdq{}}\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

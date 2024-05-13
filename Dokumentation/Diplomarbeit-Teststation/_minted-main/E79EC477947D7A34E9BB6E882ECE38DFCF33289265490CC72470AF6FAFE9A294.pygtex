@@ -1,0 +1,22 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{c+c1}{\PYGZsh{}boolUV als globale Variable deklarieren}
+    \PYG{k}{global} \PYG{n}{boolUV}
+    \PYG{c+c1}{\PYGZsh{}wechseln des bool Zustandes}
+    \PYG{n}{boolUV} \PYG{o}{=} \PYG{o+ow}{not} \PYG{n}{boolUV}
+
+    \PYG{k}{if} \PYG{n}{boolUV} \PYG{o}{==} \PYG{k+kc}{True} \PYG{p}{:}
+        \PYG{c+c1}{\PYGZsh{}Pin auf High setzten (Lampe wird eingeschalten)}
+        \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{output}\PYG{p}{(}\PYG{n}{PinUV}\PYG{p}{,}\PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{HIGH}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{}Text auf Button ändern}
+        \PYG{n}{btuv}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}text\PYGZdq{}}\PYG{p}{]}\PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}UV\PYGZhy{}Lampe aus\PYGZdq{}}
+        \PYG{c+c1}{\PYGZsh{}Lampe ein wird ausgegeben}
+        \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Lampe ein\PYGZdq{}}\PYG{p}{)}
+
+    \PYG{k}{else}\PYG{p}{:}
+        \PYG{c+c1}{\PYGZsh{}Pin auf Low setzten (Lampe wird ausgeschalten)}
+        \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{output}\PYG{p}{(}\PYG{n}{PinUV}\PYG{p}{,}\PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{LOW}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{}Text auf Button ändern}
+        \PYG{n}{btuv}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}text\PYGZdq{}}\PYG{p}{]}\PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}UV\PYGZhy{}Lampe ein\PYGZdq{}}
+        \PYG{c+c1}{\PYGZsh{}Lampe aus wird ausgegeben}
+        \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Lampe aus\PYGZdq{}}\PYG{p}{)}
+\end{Verbatim}

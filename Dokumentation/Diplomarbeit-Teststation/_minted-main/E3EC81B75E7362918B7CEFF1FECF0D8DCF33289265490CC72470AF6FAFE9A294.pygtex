@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+  \PYG{n}{fig}\PYG{o}{.}\PYG{n}{update\PYGZus{}layout}\PYG{p}{(}
+        \PYG{n}{plot\PYGZus{}bgcolor}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}\PYGZsh{}002533\PYGZsq{}}\PYG{p}{,}  \PYG{c+c1}{\PYGZsh{} Dunkler Hintergrund innerhalb}
+        \PYG{n}{paper\PYGZus{}bgcolor}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}\PYGZsh{}00171f\PYGZsq{}}\PYG{p}{,}  \PYG{c+c1}{\PYGZsh{} Dunkler Hintergrund außerhalb}
+        \PYG{n}{font\PYGZus{}color}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}white\PYGZsq{}}\PYG{p}{,}  \PYG{c+c1}{\PYGZsh{} Weißer Text für bessere Erkennbarkeit}
+        \PYG{n}{title\PYGZus{}font\PYGZus{}color}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}white\PYGZsq{}}\PYG{p}{,}  \PYG{c+c1}{\PYGZsh{} Titel Farbe}
+
+\end{Verbatim}

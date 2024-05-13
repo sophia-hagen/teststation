@@ -1,0 +1,82 @@
+\documentclass[hidelinks,12pt,a4paper,twoside]{article}
+
+\usepackage[utf8]{inputenc}
+% Paket für die Anpassung von Layout und Abständen
+\usepackage{setspace} 	
+\usepackage{array} 
+\usepackage{tocloft}
+
+\usepackage[bottom,hang,stable]{footmisc}
+\usepackage[font=small]{caption}
+\usepackage{subcaption}
+
+
+\setlength{\cftsubsecnumwidth}{3em}
+
+\makeatletter                               
+\renewcommand*\l@table{\@dottedtocline{1}{3em}{5em}}
+\renewcommand*\l@figure{\@dottedtocline{1}{1.5em}{4em}}
+\makeatother
+
+\usepackage{longtable}
+
+\usepackage{graphicx} % Required for inserting images
+\usepackage{fancyhdr}
+
+\usepackage{amssymb}
+% Überschriftenabstand anpassen
+\usepackage{titlesec}
+\usepackage[ngerman]{babel}
+\usepackage[document]{ragged2e}
+\usepackage[top=3.5cm,left=3cm,right=2cm,bottom=2.5cm,headsep=0.3in,headheight=1in]{geometry}
+
+\usepackage{charter}
+\usepackage{adjustbox}
+\usepackage{csquotes}
+\usepackage[citestyle=authortitle, backend=bibtex]{biblatex}
+\usepackage{minted}
+\usepackage{picinpar}
+\usepackage{wrapfig}
+\usepackage{pdfpages} %pdf 
+\usepackage{varwidth}
+\usepackage{hyperref} % Paket für Hyperlinks
+					
+					
+				
+\usepackage{amsmath} 	
+
+\usepackage{listings,xcolor}
+\usepackage{listingsutf8} 
+\usepackage{float} 
+\usepackage{footnote}
+\usepackage{enumitem}
+\usepackage{longtable}
+
+\usepackage{bold-extra}
+
+
+% allgemein gültige Formateinstellungen
+% -------------------------------------
+\renewcommand{\familydefault}{\sfdefault} 	% set Font-Family to a similar font like Arial
+\raggedbottom 								% Abschnitte werden nicht auseinander gezogen, um den restlichen Platz auf einer Seite zu füllen
+%\raggedright 								% gesamtes Dokument linksbündig (auch Paragraphen) OHNE Silbentrennung
+
+\usepackage{ragged2e}						% gesamtes Dokument linksbündig (auch Paragraphen) MIT Silbentrennung
+\RaggedRight
+
+\onehalfspacing 							% 1.5-facher Abstand zwischen den Zeilen
+
+\renewcommand{\arraystretch}{1.05} 			% Vergrößerung des Abstands zwischen den Tabellenzeilen
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}} % erstellen eines Spaltentyps mit zentriertem Inhalt unter der Angabe einer Spaltenbreite
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}} % erstellen eines Spaltentyps mit linksbündigem Inhalt unter der Angabe einer Spaltenbreite
+
+\setlength{\footnotemargin}{0.5cm} 			% Abstand zwischen Fußnotennummer und -text
+\setlist{nosep} 							% zusätzliche Abstände bei Aufzählungen entfernen
+\setlength{\parskip}{1em} 					% Abstand nach einem Absatz
+
+\skip\footins 30pt
+
+% Abstände vor und nach Überschriften auf den verschiedenen Ebenen
+\titlespacing\section       {0pt}{0pt plus 0pt minus 1pt}{0pt plus 1pt minus 1pt}
+\titlespacing\subsection    {0pt}{0pt plus 0pt minus 1pt}{0pt plus 1pt minus 1pt}
+\titlespacing\subsubsection {0pt}{0pt plus 0pt minus 1pt}{0pt plus 1pt minus 1pt}

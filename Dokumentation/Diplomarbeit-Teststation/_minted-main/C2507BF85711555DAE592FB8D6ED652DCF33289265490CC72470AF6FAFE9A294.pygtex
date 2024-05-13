@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{n+nd}{@app}\PYG{o}{.}\PYG{n}{get}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}/uv\PYGZdq{}}\PYG{p}{)}
+    \PYG{k}{def} \PYG{n+nf}{uv}\PYG{p}{():}
+        \PYG{n}{i2c} \PYG{o}{=} \PYG{n}{board}\PYG{o}{.}\PYG{n}{I2C}\PYG{p}{()}
+        \PYG{n}{ltr} \PYG{o}{=} \PYG{n}{adafruit\PYGZus{}ltr390}\PYG{o}{.}\PYG{n}{LTR390}\PYG{p}{(}\PYG{n}{i2c}\PYG{p}{)}
+
+        \PYG{k}{while} \PYG{k+kc}{True}\PYG{p}{:}
+            \PYG{k}{return}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}UV\PYGZhy{}Index:\PYGZdq{}}\PYG{p}{,} \PYG{n}{ltr}\PYG{o}{.}\PYG{n}{uvi}\PYG{p}{,}
+                   \PYG{l+s+s2}{\PYGZdq{}Umgebungslicht in Lux:\PYGZdq{}}\PYG{p}{,} \PYG{n}{ltr}\PYG{o}{.}\PYG{n}{light}\PYG{p}{)}
+            \PYG{n}{time}\PYG{o}{.}\PYG{n}{sleep}\PYG{p}{(}\PYG{l+m+mf}{1.0}\PYG{p}{)}
+\end{Verbatim}

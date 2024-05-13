@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{c+c1}{\PYGZsh{}Initialisierung}
+    \PYG{n}{END1}\PYG{o}{=} \PYG{l+m+mi}{27}
+    \PYG{n}{END2}\PYG{o}{=}\PYG{l+m+mi}{22}
+    \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{setmode}\PYG{p}{(}\PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{BCM}\PYG{p}{)}
+    \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{setup}\PYG{p}{(}\PYG{n}{END1}\PYG{p}{,} \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{OUT}\PYG{p}{)}
+    \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{setup}\PYG{p}{(}\PYG{n}{END2}\PYG{p}{,} \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{OUT}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{}Abfrage}
+    \PYG{k}{while}\PYG{p}{(}\PYG{n}{TRUE}\PYG{p}{):}
+    \PYG{c+c1}{\PYGZsh{}Tasterabfrage}
+    \PYG{c+c1}{\PYGZsh{}Motoransteuerung}
+    \PYG{k}{if}\PYG{p}{(}\PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{input}\PYG{p}{(}\PYG{n}{END1}\PYG{p}{)} \PYG{o}{==} \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{LOW}\PYG{p}{)} \PYG{o+ow}{and} \PYG{p}{(}\PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{input}\PYG{p}{(}\PYG{n}{END2}\PYG{p}{)} \PYG{o}{==} \PYG{n}{GPIO}\PYG{o}{.}\PYG{n}{LOW}\PYG{p}{):}
+        \PYG{k}{continue}
+    \PYG{k}{else}\PYG{p}{:}
+        \PYG{k}{break}
+
+\end{Verbatim}

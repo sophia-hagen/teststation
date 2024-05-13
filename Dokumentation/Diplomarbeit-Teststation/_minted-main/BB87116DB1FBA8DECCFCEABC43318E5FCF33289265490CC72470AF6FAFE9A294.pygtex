@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+		\PYG{c+c1}{\PYGZsh{} Flag Controlling für den Loop}
+		\PYG{n}{running} \PYG{o}{=} \PYG{k+kc}{True}
+		\PYG{k}{try}\PYG{p}{:}
+		\PYG{k}{while} \PYG{n}{running}\PYG{p}{:}
+		\PYG{c+c1}{\PYGZsh{} Rest des Codes}
+		
+\end{Verbatim}

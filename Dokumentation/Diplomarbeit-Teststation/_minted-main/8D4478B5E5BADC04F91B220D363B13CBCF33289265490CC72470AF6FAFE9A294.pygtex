@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+     \PYG{c+c1}{\PYGZsh{}Funktion für die Aktualisierung}
+    \PYG{k}{def} \PYG{n+nf}{update\PYGZus{}graphs}\PYG{p}{(}\PYG{n}{n\PYGZus{}intervals}\PYG{p}{,} \PYG{n}{stored\PYGZus{}time\PYGZus{}range}\PYG{p}{,} \PYG{o}{*}\PYG{n}{args}\PYG{p}{):}
+\end{Verbatim}

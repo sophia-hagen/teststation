@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+		\PYG{n}{data}\PYG{p}{,} \PYG{n}{addr} \PYG{o}{=} \PYG{n}{sock}\PYG{o}{.}\PYG{n}{recvfrom}\PYG{p}{(}\PYG{l+m+mi}{1024}\PYG{p}{)}
+		\PYG{c+c1}{\PYGZsh{}Warten auf Date \PYGZhy{}\PYGZgt{} Buffer size 1024}
+		\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}Data received from }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{addr}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+		\PYG{c+c1}{\PYGZsh{}Anzeigen von welcher IP\PYGZhy{}Adresse das Paket}
+		\PYG{c+c1}{\PYGZsh{}kommt}
+\end{Verbatim}
