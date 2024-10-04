@@ -1,0 +1,201 @@
+/* dashboard.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #00171f !important; /* Ensuring the background color is applied */
+}
+.header {
+    background-color: #00171f !important; /* Ensuring consistency for the header */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+.header h1 {
+    margin: 0;
+}
+
+#graphs-container {
+    padding: 40px; /* Increased padding for the graph container */
+    background-color: #002533; /* Even darker shade for the graphs container */
+}
+
+.dcc_control {
+    margin-bottom: 5px;
+}
+
+.DatePickerRange {
+    display: block;
+    margin: 0 auto 40px auto; /* Increased margin and centered the DatePicker */
+    text-align: center;
+}
+
+.Graph {
+    margin-bottom: 20px;
+}
+
+/* Style DatePickerRange */
+.DateInput_input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #003459; /* Border color changed to a darker shade */
+    border-radius: 4px;
+    background-color: #002533; /* Background color changed to match the graph container */
+    color: white; /* Text color changed to white for better contrast */
+}
+
+.DateInput_input__focused {
+    border-color: #00a8e8; /* Kept the focused color for visibility */
+}
+
+.CalendarDay__selected_span, .CalendarDay__selected, .CalendarDay__hovered_span:hover, .CalendarDay__hovered_span {
+    background: #004d6e; /* Darker selection background */
+    border-color: #007ea7; /* Adjusted to a darker border color */
+    color: white;
+}
+
+.CalendarDay__selected_span:active, .CalendarDay__selected:active {
+    background: #00171f; /* Darker active state */
+}
+
+/* Adjust the position of the DatePicker to center */
+.DateRangePicker_picker {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+#graphs-container {
+    padding: 40px;
+    background-color: #002533 !important; /* Ensuring the graph container background is applied */
+}
+
+/* Custom styles for buttons and dropdowns can be added here */
+/* Assuming you want the buttons and dropdowns to also match the dark theme */
+/* Unified button and select styling for theme consistency */
+button, select {
+    background-color: #003459 !important; /* Ensuring button backgrounds are consistent */
+    color: white !important; /* Ensuring text color is consistent */
+    border: 1px solid #004d6e !important; /* Ensuring border color is consistent */
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin: 5px;
+    transition: background-color 0.2s, border-color 0.2s; /* Smooth transitions for interactions */
+}
+
+button:hover, select:hover {
+    background-color: #002533 !important; /* Darker background on hover */
+    border-color: #00a8e8 !important; /* Highlighted border on hover */
+    cursor: pointer;
+}
+
+button:active, select:active {
+    background-color: #00171f !important; /* Even darker on active */
+}
+
+/* For the plot area */
+.plot-background {
+    background-color: #333; /* Dark background for the plot */
+  }
+  
+  /* If the plot uses SVG elements */
+  line, path {
+    stroke: #fff; /* White lines for visibility */
+  }
+  
+  text {
+    fill: #fff; /* White text for visibility */
+  }
+  
+  /* For the date picker */
+  .date-picker-input {
+    background-color: #333; /* Dark background for the input */
+    color: #fff; /* White text for visibility */
+    border: 1px solid #444; /* Slightly lighter border for visibility */
+  }
+  
+  /* You might also need to style the dropdown or calendar that appears */
+  .date-picker-dropdown {
+    background-color: #333;
+    color: #fff;
+  }
+
+/* Style for the switches container */
+.switches-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Allows scrolling if content is too wide */
+}
+
+/* Style for individual switch wrappers */
+.switch-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 10px; /* Space between switches */
+}
+
+.switch-wrapper:last-child {
+    margin-right: 0; /* No margin for the last switch */
+}
+
+/* Custom label style for the switch */
+.switch-label {
+    display: block;
+    cursor: pointer;
+    width: 60px; /* Width of the switch */
+    height: 30px; /* Height of the switch */
+    background-color: white; /* Default background for "off" state */
+    border-radius: 15px;
+    border: 2px solid #cccccc; /* Border for switch when it's not active */
+    position: relative;
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Animation for background and border color */
+    text-align: center; /* Ensure text is centered */
+    line-height: 30px; /* Align text vertically */
+    color: #000; /* Text color when switch is not active */
+}
+
+
+/* Style for the pseudo-element that acts as the "slider" */
+.switch-label:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease; /* Animate the transform instead of 'left' */
+    transform: translateX(0); /* Start at 0 translation */
+}
+
+
+
+/* Style when switch is active/checked */
+.switch-input:checked + .switch-label:before {
+    left: calc(100% - 25px); /* Move circle to the right inside the switch */
+    transition: left 0.3s ease; /* Ensure the transition is applied to the movement */
+}
+
+
+.switch-input:checked + .switch-label {
+    background-color: #0074D9; /* Background color for "on" state */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Style for the label text over the switch */
+.switch-text {
+    color: white; /* Text color to match the theme */
+    margin-bottom: 5px; /* Space between text and switch */
+    font-size: 16px; /* Font size for readability */
+}
+
+.some-critical-element {
+    padding: 20px !important; /* Example: Ensuring padding is applied */
+}
